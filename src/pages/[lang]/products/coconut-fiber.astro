@@ -1,0 +1,107 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/common/Header.astro';
+import Footer from '../../../components/common/Footer.astro';
+import Button from '../../../components/common/Button.astro';
+import { CheckCircle2, ChevronRight } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../../i18n/utils';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as keyof typeof languages);
+const translatePath = useTranslatedPath(lang as keyof typeof languages);
+---
+
+<Layout title={`${t('seo.fiber.h1')} - King Coco`} description={t('seo.fiber.h1.sub')}>
+	<Header />
+
+	<main class="flex-grow pt-20">
+		<div class="pt-16 pb-16 bg-bg-light">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<!-- Breadcrumb -->
+				<nav class="flex mb-8 text-sm" aria-label="Breadcrumb">
+					<ol class="inline-flex items-center space-x-1 md:space-x-3">
+						<li class="inline-flex items-center">
+							<a href={translatePath('/')} class="text-gray-500 hover:text-primary-green transition-colors">{t('nav.home')}</a>
+						</li>
+						<li>
+							<div class="flex items-center">
+								<ChevronRight class="w-4 h-4 text-gray-400 mx-1" />
+								<span class="text-gray-900 font-medium">Coconut Fiber</span>
+							</div>
+						</li>
+					</ol>
+				</nav>
+
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+					<!-- Image Gallery -->
+					<div class="space-y-4">
+						<div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden bg-white shadow-lg border border-gray-100 flex items-center justify-center bg-gray-50">
+							<!-- Placeholder as user didn't provide explicit fiber image yet -->
+							<img src="/images/cocopeat/image.png" alt={t('seo.fiber.h1')} class="w-full h-full object-cover opacity-80" />
+							<div class="absolute inset-0 flex items-center justify-center">
+                                <span class="bg-black/50 text-white px-4 py-2 rounded">Coconut Fiber (Baby Fiber)</span>
+                            </div>
+						</div>
+					</div>
+
+					<!-- Product Info -->
+					<div>
+						<span class="inline-block px-4 py-1.5 rounded-full bg-primary-green/10 text-primary-green font-semibold text-sm mb-6">
+							Industrial Materials
+						</span>
+						
+						<h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal mb-6 leading-tight">
+							{t('seo.fiber.h1')}
+						</h1>
+						
+						<p class="text-lg text-text-muted mb-8 leading-relaxed">
+							{t('seo.fiber.h1.sub')}
+						</p>
+
+						<!-- Specifications -->
+						<h2 class="text-2xl font-bold text-primary-charcoal mb-4">{t('seo.fiber.spec')}</h2>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
+								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
+								<div>
+									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.fiber.spec.moisture')}</span>
+									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">&lt; [DATA REQUIRED] %</span>
+								</div>
+							</div>
+							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
+								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
+								<div>
+									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.fiber.spec.impurity')}</span>
+									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">&lt; [DATA REQUIRED] %</span>
+								</div>
+							</div>
+							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm sm:col-span-2">
+								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
+								<div>
+									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.fiber.spec.weight')}</span>
+									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">[DATA REQUIRED] kg / bale</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Actions -->
+						<div class="flex flex-col sm:flex-row gap-4 mt-10">
+							<Button href={translatePath('/#contact')} variant="primary" class="flex-1 justify-center py-4 text-lg shadow-lg shadow-primary-green/20">
+								{t('seo.fiber.cta')}
+							</Button>
+							<Button href={translatePath('/#contact')} variant="outline" class="flex-1 justify-center py-4 text-lg border-2 border-primary-green text-primary-green hover:bg-primary-green hover:text-white">
+								{t('contact.wa')}
+							</Button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<Footer />
+</Layout>

@@ -1,0 +1,122 @@
+---
+import Button from './Button.astro';
+import { Menu, X, Globe } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <a href={translatePath('/')} class="flex gap-2 items-center py-2">
+                    <img src="/images/logo-king-coco.svg" alt="King Coco Logo" class="h-16 w-auto hidden sm:block brightness-0" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                    <span class="text-3xl font-heading font-bold text-primary-charcoal tracking-tight" style="display: none;">KING<span class="text-accent-gold">COCO</span></span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 ltr:space-x-8 rtl:space-x-reverse">
+                <a href={translatePath('/')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.home')}</a>
+                <a href={translatePath('/#about')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.about')}</a>
+                <a href={translatePath('/#products')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.products')}</a>
+                <a href={translatePath('/oem-private-label')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide text-primary-green font-bold">OEM / Private Label</a>
+                <a href={translatePath('/#gallery')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.gallery')}</a>
+                <a href={translatePath('/#faq')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.faq')}</a>
+            </nav>
+
+            <!-- Desktop CTA & Lang Switcher -->
+            <div class="hidden md:flex items-center gap-4">
+                <div class="relative group h-full flex items-center">
+                    <button class="flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8">
+                        <Globe class="w-4 h-4" />
+                        <span class="uppercase">{lang}</span>
+                    </button>
+                    <div class="absolute right-0 top-full -mt-2 w-32 pt-2 hidden group-hover:block transition-all opacity-0 group-hover:opacity-100 z-50">
+                        <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
+                            {Object.entries(languages).map(([code, label]) => (
+                                <a href={`/${code}`} class={`block px-4 py-2 text-sm ${lang === code ? 'text-accent-gold font-bold bg-gray-50' : 'text-primary-charcoal hover:bg-gray-50 hover:text-accent-gold'}`}>
+                                    {label}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <Button href={translatePath('/#contact')} variant="primary" class="py-2.5 px-6 text-sm">
+                    {t('btn.quote')}
+                </Button>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center gap-4">
+                <div class="relative group h-full flex items-center">
+                    <button class="flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8">
+                        <span class="uppercase">{lang}</span>
+                    </button>
+                    <div class="absolute right-0 top-full -mt-2 w-32 pt-2 hidden group-hover:block transition-all opacity-0 group-hover:opacity-100 z-50">
+                        <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
+                            {Object.entries(languages).map(([code, label]) => (
+                                <a href={`/${code}`} class={`block px-4 py-2 text-sm ${lang === code ? 'text-accent-gold font-bold bg-gray-50' : 'text-primary-charcoal hover:bg-gray-50 hover:text-accent-gold'}`}>
+                                    {label}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="mobile-menu-btn" class="text-primary-charcoal hover:text-accent-gold focus:outline-none">
+                    <span class="sr-only">Open main menu</span>
+                    <Menu class="h-6 w-6" id="menu-icon-open" />
+                    <X class="h-6 w-6 hidden" id="menu-icon-close" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="md:hidden hidden bg-white border-t border-gray-100 shadow-lg" id="mobile-menu">
+        <div class="px-2 pt-2 pb-6 space-y-1 sm:px-3 flex flex-col items-center">
+            <a href={translatePath('/')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.home')}</a>
+            <a href={translatePath('/#about')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.about')}</a>
+            <a href={translatePath('/#products')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.products')}</a>
+            <a href={translatePath('/oem-private-label')} class="block px-3 py-3 text-base font-medium text-primary-green hover:text-accent-gold font-bold">OEM / Private Label</a>
+            <a href={translatePath('/#gallery')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.gallery')}</a>
+            <a href={translatePath('/#faq')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.faq')}</a>
+            <div class="mt-4 w-full px-4">
+                <Button href={translatePath('/#contact')} variant="primary" class="w-full justify-center">
+                    {t('btn.quote')}
+                </Button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    if(btn && menu && iconOpen && iconClose) {
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        });
+    }
+
+    // Scroll effect
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            header?.classList.add('shadow-md');
+        } else {
+            header?.classList.remove('shadow-md');
+        }
+    });
+</script>

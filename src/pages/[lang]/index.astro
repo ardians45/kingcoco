@@ -1,0 +1,496 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+import Button from '../../components/common/Button.astro';
+import { CheckCircle2, Factory, PackageCheck, Ship, Globe } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<Layout>
+	<Header />
+
+	<main class="flex-grow">
+		<!-- HERO SECTION -->
+		<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary-charcoal">
+			<div class="absolute inset-0 z-0">
+				<img src="/images/gallery/sabut kelapa.png" alt="Coconut Plantation" class="w-full h-full object-cover opacity-30" />
+				<div class="absolute inset-0 bg-gradient-to-r from-primary-charcoal via-primary-charcoal/80 to-transparent"></div>
+			</div>
+			
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-10 pb-20">
+				<div class="max-w-3xl">
+					<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-green/30 border border-primary-green backdrop-blur-sm mb-8">
+						<span class="w-2 h-2 rounded-full bg-accent-gold animate-pulse"></span>
+						<span class="text-sm font-semibold text-gray-200 tracking-wide">{t('hero.badge')}</span>
+					</div>
+					
+					<h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6">
+						{t('hero.title.1')}
+					</h1>
+					
+					<p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+						{t('hero.desc')}
+					</p>
+					
+					<div class="flex flex-col sm:flex-row gap-4">
+						<Button href={translatePath('/#contact')} variant="primary" class="py-4 px-8 text-lg w-full sm:w-auto text-center justify-center shadow-lg shadow-accent-gold/20">
+							{t('btn.quote')}
+						</Button>
+						<Button href={translatePath('/#products')} variant="outline" class="py-4 px-8 text-lg w-full sm:w-auto text-center justify-center bg-white/5 hover:bg-white/10 text-white border-white/20">
+							{t('btn.explore')}
+						</Button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Quick Stats -->
+			<div class="absolute bottom-0 left-0 w-full bg-primary-green/90 backdrop-blur-md border-t border-white/10 hidden md:block">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+					<div class="grid grid-cols-4 gap-8 divide-x divide-white/20">
+						<div class="text-center px-4">
+							<div class="text-3xl font-bold text-accent-gold mb-1">10+</div>
+							<div class="text-sm text-gray-200 uppercase tracking-wider">{t('stats.exp')}</div>
+						</div>
+						<div class="text-center px-4">
+							<div class="text-3xl font-bold text-accent-gold mb-1">500+</div>
+							<div class="text-sm text-gray-200 uppercase tracking-wider">{t('stats.containers')}</div>
+						</div>
+						<div class="text-center px-4">
+							<div class="text-3xl font-bold text-accent-gold mb-1">25+</div>
+							<div class="text-sm text-gray-200 uppercase tracking-wider">{t('stats.countries')}</div>
+						</div>
+						<div class="text-center px-4">
+							<div class="text-3xl font-bold text-accent-gold mb-1">100%</div>
+							<div class="text-sm text-gray-200 uppercase tracking-wider">{t('stats.quality')}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ABOUT SECTION -->
+		<section id="about" class="py-24 bg-white relative overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+					<div class="relative">
+						<div class="absolute -inset-4 bg-accent-gold/20 rounded-3xl transform rotate-3"></div>
+						<img src="/images/dus-rapi.png" alt="Warehouse and Production Capacity" class="relative rounded-3xl shadow-2xl object-cover w-full h-[500px]" />
+					</div>
+					<div>
+						<h2 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">{t('about.subtitle')}</h2>
+						<h3 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-6 leading-tight">{t('about.title')}</h3>
+						<p class="text-text-muted mb-8 text-lg leading-relaxed">
+							{t('about.desc')}
+						</p>
+						<ul class="space-y-4 mb-10">
+							<li class="flex items-center gap-3 text-primary-charcoal font-medium">
+								<CheckCircle2 class="text-accent-gold w-6 h-6 shrink-0" />
+								<span>{t('about.point1')}</span>
+							</li>
+							<li class="flex items-center gap-3 text-primary-charcoal font-medium">
+								<CheckCircle2 class="text-accent-gold w-6 h-6 shrink-0" />
+								<span>{t('about.point2')}</span>
+							</li>
+							<li class="flex items-center gap-3 text-primary-charcoal font-medium">
+								<CheckCircle2 class="text-accent-gold w-6 h-6 shrink-0" />
+								<span>{t('about.point3')}</span>
+							</li>
+						</ul>
+						<Button href={translatePath('/#contact')} variant="primary" class="shadow-lg shadow-primary-green/20">
+							{t('about.btn')}
+						</Button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- VISION & MISSION -->
+		<section class="py-20 bg-bg-light">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal">{t('vm.title')}</h2>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+					<div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
+						<div class="absolute top-0 right-0 w-32 h-32 bg-primary-green/5 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
+						<h3 class="text-2xl font-bold text-primary-green mb-4">{t('vm.vision.title')}</h3>
+						<p class="text-text-muted leading-relaxed">
+							{t('vm.vision.desc')}
+						</p>
+					</div>
+					<div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
+						<div class="absolute top-0 right-0 w-32 h-32 bg-accent-gold/5 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
+						<h3 class="text-2xl font-bold text-accent-gold mb-4">{t('vm.mission.title')}</h3>
+						<p class="text-text-muted leading-relaxed">
+							{t('vm.mission.desc')}
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- WHY CHOOSE US -->
+		<section class="py-24 bg-primary-charcoal text-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-heading font-bold text-white">{t('why.title')}</h2>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
+						<div class="w-14 h-14 bg-primary-green rounded-2xl flex items-center justify-center mb-6 text-white shadow-lg shadow-primary-green/30">
+							<PackageCheck class="w-7 h-7" />
+						</div>
+						<h3 class="text-xl font-bold mb-3 text-white">{t('why.q.title')}</h3>
+						<p class="text-gray-400 text-sm leading-relaxed">{t('why.q.desc')}</p>
+					</div>
+					<div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
+						<div class="w-14 h-14 bg-accent-gold rounded-2xl flex items-center justify-center mb-6 text-white shadow-lg shadow-accent-gold/30">
+							<Factory class="w-7 h-7" />
+						</div>
+						<h3 class="text-xl font-bold mb-3 text-white">{t('why.c.title')}</h3>
+						<p class="text-gray-400 text-sm leading-relaxed">{t('why.c.desc')}</p>
+					</div>
+					<div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
+						<div class="w-14 h-14 bg-primary-green rounded-2xl flex items-center justify-center mb-6 text-white shadow-lg shadow-primary-green/30">
+							<Ship class="w-7 h-7" />
+						</div>
+						<h3 class="text-xl font-bold mb-3 text-white">{t('why.oem.title')}</h3>
+						<p class="text-gray-400 text-sm leading-relaxed">{t('why.oem.desc')}</p>
+					</div>
+					<div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
+						<div class="w-14 h-14 bg-accent-gold rounded-2xl flex items-center justify-center mb-6 text-white shadow-lg shadow-accent-gold/30">
+							<Globe class="w-7 h-7" />
+						</div>
+						<h3 class="text-xl font-bold mb-3 text-white">{t('why.export.title')}</h3>
+						<p class="text-gray-400 text-sm leading-relaxed">{t('why.export.desc')}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PRODUCT SHOWCASE -->
+		<section id="products" class="py-24 bg-bg-light">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-4">{t('prod.title')}</h2>
+					<p class="text-text-muted max-w-2xl mx-auto">{t('prod.desc')}</p>
+				</div>
+
+				<!-- Cocopeat Products -->
+				<div class="mb-16">
+					<h3 class="text-2xl font-bold text-primary-green mb-8 border-b border-gray-200 pb-2">{t('prod.cat.cocopeat')}</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+						<div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-xl transition-all">
+							<div class="w-32 h-32 mb-6 overflow-hidden rounded-full border-4 border-gray-50">
+								<img src="/images/cocopeat/image copy.png" alt="Polybag" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+							</div>
+							<h4 class="text-xl font-bold text-primary-charcoal mb-3">{t('prod.coco.polybag')}</h4>
+							<Button href={translatePath('/products/cocopeat')} variant="outline" class="mt-auto border-primary-green text-primary-green hover:bg-primary-green hover:text-white w-full">{t('prod.view_spec')}</Button>
+						</div>
+
+						<div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-xl transition-all relative">
+							<div class="absolute top-0 right-0 bg-primary-green text-white text-xs font-bold px-3 py-1 rounded-bl-lg">HOT</div>
+							<div class="w-32 h-32 mb-6 overflow-hidden rounded-full border-4 border-gray-50">
+								<img src="/images/cocopeat/image.png" alt="Cocopeat Block" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+							</div>
+							<h4 class="text-xl font-bold text-primary-charcoal mb-3">{t('prod.coco.block.low')}</h4>
+							<Button href={translatePath('/products/cocopeat')} variant="outline" class="mt-auto border-primary-green text-primary-green hover:bg-primary-green hover:text-white w-full">{t('prod.view_spec')}</Button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Coconut Fiber -->
+				<div class="mb-16">
+					<h3 class="text-2xl font-bold text-primary-green mb-8 border-b border-gray-200 pb-2">{t('prod.cat.fiber')}</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+						<div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-xl transition-all">
+							<div class="w-32 h-32 mb-6 overflow-hidden rounded-full border-4 border-gray-50">
+								<img src="/images/cocopeat/image copy 2.png" alt="Baby Fiber" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+							</div>
+							<h4 class="text-xl font-bold text-primary-charcoal mb-3">{t('prod.coco.baby')}</h4>
+							<Button href={translatePath('/products/cocopeat')} variant="outline" class="mt-auto border-primary-green text-primary-green hover:bg-primary-green hover:text-white w-full">{t('prod.view_spec')}</Button>
+						</div>
+
+						<div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-xl transition-all">
+							<div class="w-32 h-32 mb-6 overflow-hidden rounded-full border-4 border-gray-50">
+								<img src="/images/gallery/sabut kelapa.png" alt="Coconut Fiber" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+							</div>
+							<h4 class="text-xl font-bold text-primary-charcoal mb-3">{t('prod.coco.fiber')}</h4>
+							<Button href={translatePath('/products/cocopeat')} variant="outline" class="mt-auto border-primary-green text-primary-green hover:bg-primary-green hover:text-white w-full">{t('prod.view_spec')}</Button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Charcoal -->
+				<div>
+					<h3 class="text-2xl font-bold text-primary-green mb-8 border-b border-gray-200 pb-2">{t('prod.cat.charcoal')}</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+						<div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-xl transition-all relative">
+							<div class="absolute top-0 right-0 bg-accent-gold text-white text-xs font-bold px-3 py-1 rounded-bl-lg">TOP</div>
+							<div class="w-32 h-32 mb-6 overflow-hidden rounded-full border-4 border-gray-50">
+								<img src="/images/charcoal briket/image.png" alt="Shisha Charcoal" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+							</div>
+							<h4 class="text-xl font-bold text-primary-charcoal mb-3">{t('prod.charcoal.shisha')}</h4>
+							<Button href={translatePath('/products/charcoal-briquette')} variant="outline" class="mt-auto border-primary-charcoal text-primary-charcoal hover:bg-primary-charcoal hover:text-white w-full">{t('prod.view_spec')}</Button>
+						</div>
+
+						<div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-xl transition-all">
+							<div class="w-32 h-32 mb-6 overflow-hidden rounded-full border-4 border-gray-50">
+								<img src="/images/charcoal briket/image copy.png" alt="BBQ Charcoal" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+							</div>
+							<h4 class="text-xl font-bold text-primary-charcoal mb-3">{t('prod.charcoal.bbq')}</h4>
+							<Button href={translatePath('/products/charcoal-briquette')} variant="outline" class="mt-auto border-primary-charcoal text-primary-charcoal hover:bg-primary-charcoal hover:text-white w-full">{t('prod.view_spec')}</Button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- HOW TO ORDER -->
+		<section class="py-24 bg-white overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+					<div class="order-2 lg:order-1">
+						<img src="/images/angkut/image copy.png" alt="Export Logistics" class="rounded-3xl shadow-xl w-full h-[600px] object-cover" />
+					</div>
+					<div class="order-1 lg:order-2">
+						<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-10">{t('order.title')}</h2>
+						
+						<div class="space-y-6">
+							<div class="flex gap-4">
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">1</div>
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step1.title')}</h3>
+									<p class="text-text-muted text-sm">{t('order.step1.desc')}</p>
+								</div>
+							</div>
+							<div class="flex gap-4">
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold text-white flex items-center justify-center font-bold text-lg shadow-md">2</div>
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step2.title')}</h3>
+									<p class="text-text-muted text-sm">{t('order.step2.desc')}</p>
+								</div>
+							</div>
+							<div class="flex gap-4">
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">3</div>
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step3.title')}</h3>
+									<p class="text-text-muted text-sm">{t('order.step3.desc')}</p>
+								</div>
+							</div>
+							<div class="flex gap-4">
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-charcoal text-white flex items-center justify-center font-bold text-lg shadow-md">4</div>
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step4.title')}</h3>
+									<p class="text-text-muted text-sm">{t('order.step4.desc')}</p>
+								</div>
+							</div>
+							<div class="flex gap-4">
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold text-white flex items-center justify-center font-bold text-lg shadow-md">5</div>
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step5.title')}</h3>
+									<p class="text-text-muted text-sm">{t('order.step5.desc')}</p>
+								</div>
+							</div>
+							<div class="flex gap-4">
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">6</div>
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step6.title')}</h3>
+									<p class="text-text-muted text-sm">{t('order.step6.desc')}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GALLERY & VIDEOS -->
+		<section id="gallery" class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-4">{t('gallery.subtitle')}</h2>
+					<h3 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">{t('gallery.title')}</h3>
+					<p class="text-text-muted max-w-2xl mx-auto">{t('gallery.desc')}</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px]">
+					<!-- Video 1 -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md md:col-span-2 lg:col-span-2 lg:row-span-2">
+						<video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+							<source src="/images/cocopeat/video proses olah cocopeat.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Cocopeat Processing</span>
+						</div>
+					</div>
+
+					<!-- Image 1 -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md">
+						<img src="/images/charcoal briket/image copy 2.png" alt="Charcoal Production" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image 2 -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md">
+						<img src="/images/gallery/sabut kelapa.png" alt="Raw Materials" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Video 2 -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md lg:row-span-2">
+						<video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+							<source src="/images/charcoal briket/video briket.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<!-- Image 3 -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md md:col-span-2">
+						<img src="/images/angkut/image.png" alt="Logistics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image 4 -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md">
+						<img src="/images/spesifikasi/coco peat.png" alt="Cocopeat Block" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Video 3 -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md lg:col-span-2">
+						<video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+							<source src="/images/angkut/video angkut cocopeat yang di karung ke truck.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Export Loading</span>
+						</div>
+					</div>
+					
+					<!-- Image 5 -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md">
+						<img src="/images/charcoal briket/briket dus.png" alt="Briquette Packaging" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TESTIMONIALS -->
+		<section class="py-24 bg-bg-light">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-4">{t('testi.title')}</h2>
+					<p class="text-text-muted max-w-2xl mx-auto">{t('testi.desc')}</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Review 1 -->
+					<div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+						<div class="flex text-accent-gold mb-4 text-xl">★★★★★</div>
+						<p class="text-text-muted mb-6 flex-grow italic">"King Coco has been supplying our shisha charcoal for over 2 years. The quality is incredibly consistent, low ash, and very long burning. Highly recommended partner!"</p>
+						<div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+							<div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-primary-charcoal font-bold">A</div>
+							<div>
+								<p class="font-bold text-primary-charcoal">Ahmed M.</p>
+								<p class="text-sm text-gray-500">Distributor, UAE</p>
+							</div>
+						</div>
+					</div>
+					<!-- Review 2 -->
+					<div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+						<div class="flex text-accent-gold mb-4 text-xl">★★★★★</div>
+						<p class="text-text-muted mb-6 flex-grow italic">"We switched our cocopeat supply to King Coco for our greenhouse operations. Their Low EC block has perfect water retention. Great service and communication."</p>
+						<div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+							<div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-primary-charcoal font-bold">M</div>
+							<div>
+								<p class="font-bold text-primary-charcoal">Michael T.</p>
+								<p class="text-sm text-gray-500">Agriculture, Netherlands</p>
+							</div>
+						</div>
+					</div>
+					<!-- Review 3 -->
+					<div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+						<div class="flex text-accent-gold mb-4 text-xl">★★★★★</div>
+						<p class="text-text-muted mb-6 flex-grow italic">"Handling large volumes (FCL) without quality drop is rare. King Coco manages our OEM packaging and ships flawlessly every month."</p>
+						<div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+							<div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-primary-charcoal font-bold">Y</div>
+							<div>
+								<p class="font-bold text-primary-charcoal">Yusuf A.</p>
+								<p class="text-sm text-gray-500">Retail Chain, Turkey</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT & RFQ -->
+		<section id="contact" class="py-24 bg-bg-light">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+					<div>
+						<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-6">{t('contact.title')}</h2>
+						<p class="text-text-muted mb-10 text-lg">
+							{t('contact.desc')}
+						</p>
+						
+						<div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 mb-8">
+							<h3 class="font-bold text-primary-charcoal mb-2">{t('contact.email')}</h3>
+							<a href="mailto:export@kingcoco.id" class="text-accent-gold text-lg font-medium hover:underline">export@kingcoco.id</a>
+						</div>
+						
+						<div class="bg-primary-green p-8 rounded-3xl shadow-lg text-white">
+							<h3 class="font-bold mb-2">{t('contact.wa')}</h3>
+							<p class="text-gray-300 mb-6">+62 838 7909 9434</p>
+							<Button href="https://wa.me/6283879099434" variant="primary" class="w-full justify-center bg-white text-primary-green hover:bg-gray-100 border-none">
+								{t('contact.btn.wa')}
+							</Button>
+						</div>
+					</div>
+					
+					<div class="bg-white p-8 md:p-10 rounded-3xl shadow-2xl">
+						<h3 class="text-2xl font-bold text-primary-charcoal mb-8">{t('contact.form.title')}</h3>
+						<form class="space-y-6" onsubmit="event.preventDefault(); alert('Form integration goes here.');">
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+								<div>
+									<label class="block text-sm font-medium text-primary-charcoal mb-2">{t('contact.form.name')}</label>
+									<input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50 text-primary-charcoal" required />
+								</div>
+								<div>
+									<label class="block text-sm font-medium text-primary-charcoal mb-2">{t('contact.form.company')}</label>
+									<input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50 text-primary-charcoal" required />
+								</div>
+							</div>
+							<div>
+								<label class="block text-sm font-medium text-primary-charcoal mb-2">{t('contact.form.email')}</label>
+								<input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50 text-primary-charcoal" required />
+							</div>
+							<div>
+								<label class="block text-sm font-medium text-primary-charcoal mb-2">{t('contact.form.product')}</label>
+								<select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50 text-primary-charcoal" required>
+									<option value="">-- Select Product --</option>
+									<option value="cocopeat">Premium Cocopeat</option>
+									<option value="charcoal">Charcoal Briquettes</option>
+									<option value="both">Both Products</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-sm font-medium text-primary-charcoal mb-2">{t('contact.form.msg')}</label>
+								<textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50 text-primary-charcoal"></textarea>
+							</div>
+							<Button type="submit" variant="primary" class="w-full justify-center py-4 text-lg">
+								{t('contact.form.send')}
+							</Button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<Footer />
+</Layout>

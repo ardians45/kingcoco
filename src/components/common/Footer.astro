@@ -1,0 +1,86 @@
+---
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<footer class="bg-primary-charcoal pt-20 pb-10 border-t border-white/10 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand -->
+            <div>
+                <a href={translatePath('/')} class="flex gap-2 items-center mb-6">
+                    <img src="/images/logo-king-coco.svg" alt="King Coco Logo" class="h-12 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                    <span class="text-2xl font-heading font-bold text-white tracking-tight" style="display: none;">KING<span class="text-accent-gold">COCO</span></span>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    {t('about.desc')}
+                </p>
+                <!-- Social Links Placeholder -->
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent-gold transition-colors text-gray-400 hover:text-white">
+                        <span class="sr-only">LinkedIn</span>
+                        in
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent-gold transition-colors text-gray-400 hover:text-white">
+                        <span class="sr-only">Instagram</span>
+                        ig
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-heading font-bold mb-6 text-white tracking-wide uppercase">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href={translatePath('/#about')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm">{t('nav.about')}</a></li>
+                    <li><a href={translatePath('/#products')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm">{t('nav.products')}</a></li>
+                    <li><a href={translatePath('/oem-private-label')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm">OEM / Private Label</a></li>
+                    <li><a href={translatePath('/#gallery')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm">{t('nav.gallery')}</a></li>
+                    <li><a href={translatePath('/#faq')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm">{t('nav.faq')}</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div>
+                <h3 class="text-lg font-heading font-bold mb-6 text-white tracking-wide uppercase">Our Products</h3>
+                <ul class="space-y-3">
+                    <li><a href={translatePath('/products/cocopeat')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm">Premium Cocopeat</a></li>
+                    <li><a href={translatePath('/products/charcoal-briquette')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm">Charcoal Briquettes</a></li>
+                    <li><a href={translatePath('/products/coconut-fiber')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm">Coconut Fiber</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-heading font-bold mb-6 text-white tracking-wide uppercase">{t('nav.contact')}</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3 text-sm text-gray-400">
+                        <span class="font-bold text-accent-gold mt-0.5">A.</span>
+                        Jakarta, Indonesia (Head Office)
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-gray-400">
+                        <span class="font-bold text-accent-gold">E.</span>
+                        <a href="mailto:export@kingcoco.id" class="hover:text-accent-gold transition-colors">export@kingcoco.id</a>
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-gray-400">
+                        <span class="font-bold text-accent-gold">P.</span>
+                        <a href="tel:+6283879099434" class="hover:text-accent-gold transition-colors">+62 838 7909 9434</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-sm">
+                &copy; {new Date().getFullYear()} King Coco Indonesia. All rights reserved.
+            </p>
+            <div class="flex gap-6">
+                <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>

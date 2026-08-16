@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+import Button from '../../components/common/Button.astro';
+import { CheckCircle2, ChevronRight } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as keyof typeof languages);
+const translatePath = useTranslatedPath(lang as keyof typeof languages);
+---
+
+<Layout title={`${t('seo.oem.h1')} - King Coco`} description={t('seo.oem.h1.sub')}>
+	<Header />
+
+	<main class="flex-grow pt-20">
+		<div class="pt-16 pb-16 bg-bg-light">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<!-- Breadcrumb -->
+				<nav class="flex mb-8 text-sm" aria-label="Breadcrumb">
+					<ol class="inline-flex items-center space-x-1 md:space-x-3">
+						<li class="inline-flex items-center">
+							<a href={translatePath('/')} class="text-gray-500 hover:text-primary-green transition-colors">{t('nav.home')}</a>
+						</li>
+						<li>
+							<div class="flex items-center">
+								<ChevronRight class="w-4 h-4 text-gray-400 mx-1" />
+								<span class="text-gray-900 font-medium">OEM & Private Label</span>
+							</div>
+						</li>
+					</ol>
+				</nav>
+
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+					<!-- Hero Text -->
+					<div>
+						<span class="inline-block px-4 py-1.5 rounded-full bg-accent-gold/10 text-accent-gold font-semibold text-sm mb-6">
+							B2B Services
+						</span>
+						
+						<h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal mb-6 leading-tight">
+							{t('seo.oem.h1')}
+						</h1>
+						
+						<p class="text-lg text-text-muted mb-8 leading-relaxed">
+							{t('seo.oem.h1.sub')}
+						</p>
+
+						<!-- Why Choose Us -->
+						<h2 class="text-2xl font-bold text-primary-charcoal mb-6">{t('seo.oem.why')}</h2>
+						<div class="space-y-6 mb-10">
+							<div class="flex items-start bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+								<CheckCircle2 class="w-6 h-6 text-primary-green mr-4 flex-shrink-0 mt-1" />
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('seo.oem.why.1.title')}</h3>
+									<p class="text-text-muted text-sm">{t('seo.oem.why.1.desc')}</p>
+								</div>
+							</div>
+							<div class="flex items-start bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+								<CheckCircle2 class="w-6 h-6 text-primary-green mr-4 flex-shrink-0 mt-1" />
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('seo.oem.why.2.title')}</h3>
+									<p class="text-text-muted text-sm">{t('seo.oem.why.2.desc')}</p>
+								</div>
+							</div>
+							<div class="flex items-start bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+								<CheckCircle2 class="w-6 h-6 text-primary-green mr-4 flex-shrink-0 mt-1" />
+								<div>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('seo.oem.why.3.title')}</h3>
+									<p class="text-text-muted text-sm">{t('seo.oem.why.3.desc')}</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- How it works -->
+						<h2 class="text-2xl font-bold text-primary-charcoal mb-4">{t('seo.oem.how')}</h2>
+						<div class="p-6 bg-primary-charcoal text-white rounded-xl mb-10">
+							<p class="font-medium text-center text-lg">{t('seo.oem.how.desc')}</p>
+						</div>
+
+						<!-- Actions -->
+						<div class="flex flex-col sm:flex-row gap-4">
+							<Button href={translatePath('/#contact')} variant="primary" class="flex-1 justify-center py-4 text-lg shadow-lg shadow-primary-green/20">
+								{t('seo.oem.cta')}
+							</Button>
+						</div>
+					</div>
+
+					<!-- Image Box -->
+					<div class="space-y-4">
+						<div class="aspect-w-3 aspect-h-4 rounded-2xl overflow-hidden bg-white shadow-lg border border-gray-100">
+							<img src="/images/charcoal/briquette.png" alt={t('seo.oem.h1')} class="w-full h-full object-cover" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<Footer />
+</Layout>
