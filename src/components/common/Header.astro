@@ -10,11 +10,11 @@ const translatePath = useTranslatedPath(lang);
 
 <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm" id="main-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
+        <div class="flex justify-between items-center min-h-[5rem] py-2">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
-                <a href={translatePath('/')} class="flex gap-2 items-center py-2">
-                    <img src="/images/logo-king-coco.svg" alt="King Coco Logo" class="h-16 w-auto hidden sm:block brightness-0" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                <a href={translatePath('/')} class="flex gap-2 items-center py-2 overflow-visible">
+                    <img src="/images/logo-king-coco.svg" alt="King Coco Logo" class="h-16 sm:h-20 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
                     <span class="text-3xl font-heading font-bold text-primary-charcoal tracking-tight" style="display: none;">KING<span class="text-accent-gold">COCO</span></span>
                 </a>
             </div>
@@ -31,12 +31,12 @@ const translatePath = useTranslatedPath(lang);
 
             <!-- Desktop CTA & Lang Switcher -->
             <div class="hidden md:flex items-center gap-4">
-                <div class="relative group h-full flex items-center">
-                    <button class="flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8">
-                        <Globe class="w-4 h-4" />
-                        <span class="uppercase">{lang}</span>
+                <div class="relative h-full flex items-center lang-dropdown-container">
+                    <button type="button" class="lang-toggle-btn flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8 cursor-pointer">
+                        <Globe class="w-4 h-4 pointer-events-none" />
+                        <span class="uppercase pointer-events-none">{lang}</span>
                     </button>
-                    <div class="absolute right-0 top-full -mt-2 w-32 pt-2 hidden group-hover:block transition-all opacity-0 group-hover:opacity-100 z-50">
+                    <div class="lang-dropdown-menu absolute right-0 top-full -mt-2 w-32 pt-2 hidden z-50">
                         <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
                             {Object.entries(languages).map(([code, label]) => (
                                 <a href={`/${code}`} class={`block px-4 py-2 text-sm ${lang === code ? 'text-accent-gold font-bold bg-gray-50' : 'text-primary-charcoal hover:bg-gray-50 hover:text-accent-gold'}`}>
@@ -54,11 +54,11 @@ const translatePath = useTranslatedPath(lang);
 
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center gap-4">
-                <div class="relative group h-full flex items-center">
-                    <button class="flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8">
-                        <span class="uppercase">{lang}</span>
+                <div class="relative h-full flex items-center lang-dropdown-container">
+                    <button type="button" class="lang-toggle-btn flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8 cursor-pointer">
+                        <span class="uppercase pointer-events-none">{lang}</span>
                     </button>
-                    <div class="absolute right-0 top-full -mt-2 w-32 pt-2 hidden group-hover:block transition-all opacity-0 group-hover:opacity-100 z-50">
+                    <div class="lang-dropdown-menu absolute right-0 top-full -mt-2 w-32 pt-2 hidden z-50">
                         <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
                             {Object.entries(languages).map(([code, label]) => (
                                 <a href={`/${code}`} class={`block px-4 py-2 text-sm ${lang === code ? 'text-accent-gold font-bold bg-gray-50' : 'text-primary-charcoal hover:bg-gray-50 hover:text-accent-gold'}`}>
@@ -96,27 +96,55 @@ const translatePath = useTranslatedPath(lang);
 </header>
 
 <script>
-    // Mobile menu toggle
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const iconOpen = document.getElementById('menu-icon-open');
-    const iconClose = document.getElementById('menu-icon-close');
-
-    if(btn && menu && iconOpen && iconClose) {
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            iconOpen.classList.toggle('hidden');
-            iconClose.classList.toggle('hidden');
+    document.addEventListener('DOMContentLoaded', () => {
+        // Language Dropdown Toggle Logic
+        const langContainers = document.querySelectorAll('.lang-dropdown-container');
+        
+        langContainers.forEach(container => {
+            const btn = container.querySelector('.lang-toggle-btn');
+            const menu = container.querySelector('.lang-dropdown-menu');
+            
+            btn?.addEventListener('click', (e) => {
+                e.stopPropagation();
+                // Close all other dropdowns before toggling this one
+                langContainers.forEach(c => {
+                    if (c !== container) {
+                        c.querySelector('.lang-dropdown-menu')?.classList.add('hidden');
+                    }
+                });
+                menu?.classList.toggle('hidden');
+            });
         });
-    }
 
-    // Scroll effect
-    const header = document.getElementById('main-header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 10) {
-            header?.classList.add('shadow-md');
-        } else {
-            header?.classList.remove('shadow-md');
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => {
+            langContainers.forEach(container => {
+                container.querySelector('.lang-dropdown-menu')?.classList.add('hidden');
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        if(mobileBtn && mobileMenu && iconOpen && iconClose) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                iconOpen.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
+            });
         }
+
+        // Scroll effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header?.classList.add('shadow-md');
+            } else {
+                header?.classList.remove('shadow-md');
+            }
+        });
     });
 </script>
