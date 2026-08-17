@@ -13,9 +13,25 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const t = useTranslations(lang as keyof typeof languages);
 const translatePath = useTranslatedPath(lang as keyof typeof languages);
+const schema = JSON.stringify({
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets",
+  "image": "https://kingcoco.com/images/cocopeat/image%20copy%204.png",
+  "description": "Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.",
+  "brand": {
+    "@type": "Brand",
+    "name": "King Coco"
+  }
+});
 ---
 
-<Layout title={`${t('seo.coco.h1')} - King Coco`} description={t('seo.coco.h1.sub')}>
+<Layout 
+	title="Cocopeat Supplier Indonesia — Low EC Block Exporter | King Coco" 
+	description={t('seo.coco.h1.sub')}
+	keywords="cocopeat supplier indonesia, cocopeat exporter indonesia, cocopeat block supplier indonesia, low EC cocopeat supplier indonesia"
+	schema={schema}
+>
 	<Header />
 
 	<main class="flex-grow pt-20">

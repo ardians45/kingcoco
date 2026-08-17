@@ -13,9 +13,25 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const t = useTranslations(lang as keyof typeof languages);
 const translatePath = useTranslatedPath(lang as keyof typeof languages);
+const schema = JSON.stringify({
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes",
+  "image": "https://kingcoco.com/images/charcoal/briquette.png",
+  "description": "100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia.",
+  "brand": {
+    "@type": "Brand",
+    "name": "King Coco"
+  }
+});
 ---
 
-<Layout title={`${t('seo.char.h1')} - King Coco`} description={t('seo.char.h1.sub')}>
+<Layout 
+	title="Coconut Shisha Charcoal Manufacturer Indonesia | King Coco" 
+	description={t('seo.char.h1.sub')}
+	keywords="coconut shisha charcoal manufacturer indonesia, coconut shisha charcoal exporter indonesia, coconut charcoal briquettes supplier indonesia, coconut charcoal briquettes manufacturer indonesia, coconut shisha charcoal wholesale"
+	schema={schema}
+>
 	<Header />
 
 	<main class="flex-grow pt-20">

@@ -18,9 +18,29 @@ const waText = lang === 'id'
 	? "Halo King Coco, saya tertarik untuk mendiskusikan kebutuhan produk kelapa premium." 
 	: "Hello King Coco, I am interested in discussing premium coconut products.";
 const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "King Coco",
+  "url": "https://kingcoco.com",
+  "logo": "https://kingcoco.com/images/logo-king-coco.svg",
+  "description": "Leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+6283879099434",
+    "contactType": "sales",
+    "email": "export@kingcoco.com",
+    "areaServed": "Worldwide"
+  }
+});
 ---
 
-<Layout>
+<Layout 
+	title="Coconut Shisha Charcoal Supplier Indonesia | King Coco"
+	description="We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment."
+	keywords="coconut shisha charcoal supplier indonesia, coconut products exporter indonesia, wholesale cocopeat"
+	schema={schema}
+>
 	<Header />
 
 	<main class="flex-grow">
