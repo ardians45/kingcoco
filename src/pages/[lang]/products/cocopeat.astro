@@ -68,42 +68,77 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 
 						<!-- Specifications -->
 						<h2 class="text-2xl font-bold text-primary-charcoal mb-4">{t('seo.coco.spec')}</h2>
-						<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-primary-green mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.coco.spec.ec')}</span>
-									<span class="font-semibold text-primary-charcoal">&lt; 0.5 mS/cm</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-primary-green mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.coco.spec.ph')}</span>
-									<span class="font-semibold text-primary-charcoal">5.5 - 6.8</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.coco.spec.weight')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">[DATA REQUIRED] kg</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.coco.spec.expansion')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">[DATA REQUIRED] Liters</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm sm:col-span-2">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.coco.spec.moisture')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">&lt; [DATA REQUIRED] %</span>
-								</div>
-							</div>
+						<div class="overflow-x-auto bg-white rounded-xl border border-gray-100 shadow-sm mb-8">
+							<table class="w-full text-sm text-left">
+								<thead class="text-xs text-gray-700 uppercase bg-gray-50 border-b border-gray-100">
+									<tr>
+										<th scope="col" class="px-6 py-4">Product Name</th>
+										<th scope="col" class="px-6 py-4 min-w-[300px]">Specifications</th>
+									</tr>
+								</thead>
+								<tbody class="divide-y divide-gray-100">
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-semibold text-primary-green align-top">Cocopeat Block Low EC Grade A</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>EC:</strong> Max 0.6 mS/cm (1:3)</li>
+												<li><strong>Weight:</strong> 4.5 - 5 Kg</li>
+												<li><strong>Expansion Volume:</strong> 60 - 65 L / block</li>
+												<li><strong>Moisture:</strong> &lt; 20%</li>
+												<li><strong>pH:</strong> 5 - 7</li>
+												<li><strong>Dimension:</strong> 30x30x12-15 cm</li>
+												<li><strong>Packing:</strong> Shrink in pallet</li>
+												<li><strong>Loadability:</strong> 4600 blocks / 40ft HC</li>
+											</ul>
+										</td>
+									</tr>
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-semibold text-primary-green align-top">Cocopeat Block Low EC Grade B</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>EC:</strong> Max 0.6 mS/cm (1:3)</li>
+												<li><strong>Weight:</strong> 4.5 - 5 Kg</li>
+												<li><strong>Expansion Volume:</strong> 55 - 60 L / block</li>
+												<li><strong>Moisture:</strong> &lt; 20%</li>
+												<li><strong>pH:</strong> 5 - 7</li>
+												<li><strong>Mesh:</strong> &gt; 1 mm</li>
+												<li><strong>Dimension:</strong> 30x30x12-15 cm</li>
+												<li><strong>Packing:</strong> Shrink in pallet</li>
+												<li><strong>Loadability:</strong> 4600 blocks / 40ft HC</li>
+											</ul>
+										</td>
+									</tr>
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-semibold text-primary-green align-top">Cocopeat Block High EC</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>EC:</strong> &gt; 1 mS/cm (1:3)</li>
+												<li><strong>Weight:</strong> 4.5 - 5 Kg</li>
+												<li><strong>Expansion Volume:</strong> 55 - 60 L / block</li>
+												<li><strong>Moisture:</strong> &lt; 20%</li>
+												<li><strong>pH:</strong> 5 - 7</li>
+												<li><strong>Dimension:</strong> 30x30x12-15 cm</li>
+												<li><strong>Loadability:</strong> 4600 blocks / 40ft HC</li>
+											</ul>
+										</td>
+									</tr>
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-semibold text-primary-green align-top">Cocopeat Polybag Low EC</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>EC:</strong> Max 0.5 ms/cm (ratio 1:3)</li>
+												<li><strong>Weight per bag:</strong> 29 - 30 kgs</li>
+												<li><strong>Moisture:</strong> 40% - 50%</li>
+												<li><strong>pH:</strong> 5 - 7</li>
+												<li><strong>Mesh:</strong> 4 mm</li>
+												<li><strong>Dimension:</strong> 30x40x70 cm</li>
+												<li><strong>Packing:</strong> Polybag packaging</li>
+												<li><strong>Loadability:</strong> 750 - 800 polybags / 40ft HC</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 
 						<!-- Applications & Packaging -->
@@ -111,14 +146,6 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 							<div>
 								<h2 class="text-xl font-bold text-primary-charcoal mb-2">{t('seo.coco.app')}</h2>
 								<p class="text-text-muted">{t('seo.coco.app.desc')}</p>
-							</div>
-							<div>
-								<h2 class="text-xl font-bold text-primary-charcoal mb-2">{t('seo.coco.pack')}</h2>
-								<p class="text-text-muted"><span class="bg-yellow-100 px-2 py-1 rounded inline-block text-red-600 font-semibold">[DATA REQUIRED]</span> (e.g., Palletized, Bare block, Shrink wrap)</p>
-							</div>
-							<div>
-								<h2 class="text-xl font-bold text-primary-charcoal mb-2">{t('seo.coco.moq')}</h2>
-								<p class="text-text-muted"><span class="bg-yellow-100 px-2 py-1 rounded inline-block text-red-600 font-semibold">[DATA REQUIRED]</span> (e.g., 1x20ft or 1x40ft HC container)</p>
 							</div>
 						</div>
 

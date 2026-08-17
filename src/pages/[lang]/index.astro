@@ -58,29 +58,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 				</div>
 			</div>
 
-			<!-- Floating Stats (Absolute positioned to overlap the next section) -->
-			<div class="absolute -bottom-16 left-0 w-full z-20 px-4 sm:px-6 lg:px-8 hidden md:block">
-				<div class="max-w-6xl mx-auto bg-primary-charcoal border border-white/10 rounded-3xl shadow-2xl overflow-hidden">
-					<div class="grid grid-cols-4 gap-0 divide-x divide-white/10">
-						<div class="text-center p-8 hover:bg-white/5 transition-colors">
-							<div class="text-4xl font-bold text-accent-gold mb-2 drop-shadow-md">10+</div>
-							<div class="text-sm text-gray-300 font-medium uppercase tracking-wider">{t('stats.exp')}</div>
-						</div>
-						<div class="text-center p-8 hover:bg-white/5 transition-colors">
-							<div class="text-4xl font-bold text-accent-gold mb-2 drop-shadow-md">500+</div>
-							<div class="text-sm text-gray-300 font-medium uppercase tracking-wider">{t('stats.containers')}</div>
-						</div>
-						<div class="text-center p-8 hover:bg-white/5 transition-colors">
-							<div class="text-4xl font-bold text-accent-gold mb-2 drop-shadow-md">25+</div>
-							<div class="text-sm text-gray-300 font-medium uppercase tracking-wider">{t('stats.countries')}</div>
-						</div>
-						<div class="text-center p-8 hover:bg-white/5 transition-colors">
-							<div class="text-4xl font-bold text-accent-gold mb-2 drop-shadow-md">100%</div>
-							<div class="text-sm text-gray-300 font-medium uppercase tracking-wider">{t('stats.quality')}</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
 		</section>
 
 		<!-- ABOUT SECTION -->
@@ -96,7 +74,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 						<div class="absolute -inset-4 bg-gradient-to-r from-accent-gold/20 to-primary-green/20 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
 						<div class="absolute -inset-4 bg-gradient-to-l from-accent-gold/20 to-primary-green/20 rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 opacity-50"></div>
 						
-						<img loading="lazy" decoding="async" src="/images/dus-rapi.png" alt="Warehouse and Production Capacity" class="relative rounded-3xl shadow-2xl object-cover w-full h-[500px] transition-transform duration-500 group-hover:scale-[1.02]" />
+						<img loading="lazy" decoding="async" src="/images/charcoal briket/image copy 6.png" alt="Warehouse and Production Capacity" class="relative rounded-3xl shadow-2xl object-cover w-full h-[500px] transition-transform duration-500 group-hover:scale-[1.02]" />
 						
 						<!-- Floating badge -->
 						<div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden sm:block border border-gray-100 animate-bounce-slow">
@@ -285,127 +263,272 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 				</div>
 
 				<div class="space-y-32">
-					<!-- Cocopeat Products -->
+					
+					<!-- Cocopeat Category -->
 					<div>
-						<div class="flex items-center justify-between mb-10">
-							<h3 class="text-3xl font-heading font-bold text-primary-charcoal">{t('prod.cat.cocopeat')}</h3>
+						<div class="flex items-center justify-between mb-12">
+							<h3 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal">{t('prod.cat.cocopeat')}</h3>
 							<div class="h-px bg-gray-200 flex-1 ml-8"></div>
 						</div>
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-							<!-- Card 1 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-								<div class="w-full aspect-[4/3] overflow-hidden relative bg-gray-100">
-									<img loading="lazy" decoding="async" src="/images/cocopeat/image copy.png" alt="Polybag" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+						
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+							<!-- Cocopeat Grade A -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-primary-green text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Grade A</div>
+								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
+									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block Low EC Grade A" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
-								<div class="p-8 flex flex-col flex-1">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-6">{t('prod.coco.polybag')}</h4>
-									<div class="mt-auto pt-6 border-t border-gray-50">
-										<a href={translatePath('/products/cocopeat')} class="inline-flex items-center text-primary-green font-semibold hover:text-accent-gold transition-colors group/link">
-											{t('prod.view_spec')}
-											<svg class="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-										</a>
+								<div class="p-6 md:p-8 flex-1 flex flex-col">
+									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">Cocopeat Block Low EC</h4>
+									<ul class="space-y-2 text-sm text-gray-600 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 60 - 65 L</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x30x12-15 cm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Shrink in pallet</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
+									</ul>
+									<div class="mt-auto pt-6 border-t border-gray-100">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
-							<!-- Card 2 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col relative">
-								<div class="w-full aspect-[4/3] overflow-hidden relative bg-gray-100">
-									<div class="absolute top-6 right-6 z-10 bg-white/90 backdrop-blur-md text-primary-charcoal text-xs font-bold px-4 py-2 rounded-full shadow-sm tracking-wider">HOT ITEM</div>
-									<img loading="lazy" decoding="async" src="/images/cocopeat/image.png" alt="Cocopeat Block" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+							<!-- Cocopeat Grade B -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Grade B</div>
+								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
+									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block Low EC Grade B" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
-								<div class="p-8 flex flex-col flex-1">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-6">{t('prod.coco.block.low')}</h4>
-									<div class="mt-auto pt-6 border-t border-gray-50">
-										<a href={translatePath('/products/cocopeat')} class="inline-flex items-center text-primary-green font-semibold hover:text-accent-gold transition-colors group/link">
-											{t('prod.view_spec')}
-											<svg class="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-										</a>
+								<div class="p-6 md:p-8 flex-1 flex flex-col">
+									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">Cocopeat Block Low EC</h4>
+									<ul class="space-y-2 text-sm text-gray-600 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 55 - 60 L</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Mesh:</strong> &gt; 1 mm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Shrink in pallet</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
+									</ul>
+									<div class="mt-auto pt-6 border-t border-gray-100">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Cocopeat High EC -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-gray-600 text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">High EC</div>
+								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
+									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+								</div>
+								<div class="p-6 md:p-8 flex-1 flex flex-col">
+									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">Cocopeat Block High EC</h4>
+									<ul class="space-y-2 text-sm text-gray-600 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> &gt; 1 mS/cm (1:3)</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 55 - 60 L</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x30x12-15 cm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
+									</ul>
+									<div class="mt-auto pt-6 border-t border-gray-100">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Cocopeat Polybag -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
+								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
+									<img src="/images/cocopeat/coco peat polybag.png" alt="Cocopeat Polybag Low EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+								</div>
+								<div class="p-6 md:p-8 flex-1 flex flex-col">
+									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">Cocopeat Polybag Low EC</h4>
+									<ul class="space-y-2 text-sm text-gray-600 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.5 ms/cm (1:3)</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 29 - 30 kgs/bag</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 40% - 50%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Mesh:</strong> 4 mm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x40x70 cm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Polybag</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 750-800 bags/40ft HC</span></li>
+									</ul>
+									<div class="mt-auto pt-6 border-t border-gray-100">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<!-- Coconut Fiber -->
+					<!-- Fiber Category -->
 					<div>
-						<div class="flex items-center justify-between mb-10">
-							<h3 class="text-3xl font-heading font-bold text-primary-charcoal">{t('prod.cat.fiber')}</h3>
+						<div class="flex items-center justify-between mb-12">
+							<h3 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal">{t('prod.cat.fiber')}</h3>
 							<div class="h-px bg-gray-200 flex-1 ml-8"></div>
 						</div>
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-							<!-- Card 1 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-								<div class="w-full aspect-[4/3] overflow-hidden relative bg-gray-100">
-									<img loading="lazy" decoding="async" src="/images/cocopeat/image copy 2.png" alt="Baby Fiber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+						
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+							<!-- Baby Fiber -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col sm:flex-row group hover:shadow-xl transition-all duration-300">
+								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-gray-100 overflow-hidden relative">
+									<img src="/images/cocopeat/image copy 3.png" alt="Baby Fiber High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
-								<div class="p-8 flex flex-col flex-1">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-6">{t('prod.coco.baby')}</h4>
-									<div class="mt-auto pt-6 border-t border-gray-50">
-										<a href={translatePath('/products/cocopeat')} class="inline-flex items-center text-primary-green font-semibold hover:text-accent-gold transition-colors group/link">
-											{t('prod.view_spec')}
-											<svg class="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-										</a>
+								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
+									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">Baby Fiber High EC</h4>
+									<p class="text-sm text-accent-gold font-semibold mb-6">Livestock Bedding</p>
+									<ul class="space-y-3 text-sm text-gray-600 mb-8">
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> +- 250 Kg/Bale</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 40-50%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Jumbo bag</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Loadability:</strong> 80 bales / 40ft HC</span></li>
+									</ul>
+									<div class="mt-auto">
+										<Button href={translatePath('/#contact')} variant="outline">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
-							<!-- Card 2 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-								<div class="w-full aspect-[4/3] overflow-hidden relative bg-gray-100">
-									<img loading="lazy" decoding="async" src="/images/gallery/sabut kelapa.png" alt="Coconut Fiber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+							<!-- Coconut Fiber -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col sm:flex-row group hover:shadow-xl transition-all duration-300">
+								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-gray-100 overflow-hidden relative">
+									<img src="/images/cocopeat/image.png" alt="Coconut Fiber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
-								<div class="p-8 flex flex-col flex-1">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-6">{t('prod.coco.fiber')}</h4>
-									<div class="mt-auto pt-6 border-t border-gray-50">
-										<a href={translatePath('/products/cocopeat')} class="inline-flex items-center text-primary-green font-semibold hover:text-accent-gold transition-colors group/link">
-											{t('prod.view_spec')}
-											<svg class="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-										</a>
+								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
+									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">Coconut Fiber</h4>
+									<p class="text-sm text-accent-gold font-semibold mb-6">Premium Grade</p>
+									<ul class="space-y-3 text-sm text-gray-600 mb-8">
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Color:</strong> Yellow Brownish</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Length:</strong> 10-15 cm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Ash:</strong> &lt; 5%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 105-110 kg/bale</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Loadability:</strong> 18 MT / 40ft HC</span></li>
+									</ul>
+									<div class="mt-auto">
+										<Button href={translatePath('/#contact')} variant="outline">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<!-- Charcoal -->
+					<!-- Charcoal Category -->
 					<div>
-						<div class="flex items-center justify-between mb-10">
-							<h3 class="text-3xl font-heading font-bold text-primary-charcoal">{t('prod.cat.charcoal')}</h3>
+						<div class="flex items-center justify-between mb-12">
+							<h3 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal">{t('prod.cat.charcoal')}</h3>
 							<div class="h-px bg-gray-200 flex-1 ml-8"></div>
 						</div>
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-							<!-- Card 1 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col relative">
-								<div class="w-full aspect-[4/3] overflow-hidden relative bg-gray-100">
-									<div class="absolute top-6 right-6 z-10 bg-white/90 backdrop-blur-md text-primary-charcoal text-xs font-bold px-4 py-2 rounded-full shadow-sm tracking-wider">TOP SELLER</div>
-									<img loading="lazy" decoding="async" src="/images/charcoal briket/image.png" alt="Shisha Charcoal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+						
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+							<!-- Charcoal 1 -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
+								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
+									<img src="/images/charcoal briket/image.png" alt="Shisha Charcoal No 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
-								<div class="p-8 flex flex-col flex-1">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-6">{t('prod.charcoal.shisha')}</h4>
-									<div class="mt-auto pt-6 border-t border-gray-50">
-										<a href={translatePath('/products/charcoal-briquette')} class="inline-flex items-center text-primary-green font-semibold hover:text-accent-gold transition-colors group/link">
-											{t('prod.view_spec')}
-											<svg class="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-										</a>
+								<div class="p-6 md:p-8 flex-1 flex flex-col">
+									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">Shisha Charcoal</h4>
+									<p class="text-sm text-gray-500 mb-6">Specification No. 1</p>
+									<ul class="space-y-2 text-sm text-gray-600 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> &gt; 3%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≤ 75%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 7% Max</span></li>
+									</ul>
+									<div class="mt-auto pt-6 border-t border-gray-100">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
-							<!-- Card 2 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-								<div class="w-full aspect-[4/3] overflow-hidden relative bg-gray-100">
-									<img loading="lazy" decoding="async" src="/images/charcoal briket/image copy.png" alt="BBQ Charcoal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+							<!-- Charcoal 2 -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Popular</div>
+								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
+									<img src="/images/charcoal briket/image copy.png" alt="Shisha Charcoal No 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
-								<div class="p-8 flex flex-col flex-1">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-6">{t('prod.charcoal.bbq')}</h4>
-									<div class="mt-auto pt-6 border-t border-gray-50">
-										<a href={translatePath('/products/charcoal-briquette')} class="inline-flex items-center text-primary-green font-semibold hover:text-accent-gold transition-colors group/link">
-											{t('prod.view_spec')}
-											<svg class="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-										</a>
+								<div class="p-6 md:p-8 flex-1 flex flex-col">
+									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">Shisha Charcoal</h4>
+									<p class="text-sm text-gray-500 mb-6">Specification No. 2</p>
+									<ul class="space-y-2 text-sm text-gray-600 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.5% - 3%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> &gt; 75%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 6% Max</span></li>
+									</ul>
+									<div class="mt-auto pt-6 border-t border-gray-100">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
+							</div>
+
+							<!-- Charcoal 3 -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
+								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
+									<img src="/images/charcoal briket/image copy 4.png" alt="Shisha Charcoal No 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+								</div>
+								<div class="p-6 md:p-8 flex-1 flex flex-col">
+									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">Shisha Charcoal</h4>
+									<p class="text-sm text-gray-500 mb-6">Specification No. 3</p>
+									<ul class="space-y-2 text-sm text-gray-600 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.0-2.5%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≤ 80%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 5% Max</span></li>
+									</ul>
+									<div class="mt-auto pt-6 border-t border-gray-100">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Charcoal 4 -->
+							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-primary-charcoal text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Premium</div>
+								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
+									<img src="/images/charcoal briket/image copy 5.png" alt="Shisha Charcoal No 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+								</div>
+								<div class="p-6 md:p-8 flex-1 flex flex-col">
+									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">Shisha Charcoal</h4>
+									<p class="text-sm text-gray-500 mb-6">Specification No. 4</p>
+									<ul class="space-y-2 text-sm text-gray-600 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2% Max</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≥ 80%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 5% Max</span></li>
+									</ul>
+									<div class="mt-auto pt-6 border-t border-gray-100">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Charcoal Notes & Packaging -->
+						<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+							<div class="lg:col-span-1 bg-gray-100 p-6 rounded-2xl flex items-center justify-center">
+								<p class="text-sm text-gray-600 italic text-center">* Note: Standard 25mm cube shape burning time.</p>
+							</div>
+							<div class="lg:col-span-2 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+								<h4 class="font-bold text-primary-charcoal mb-4 flex items-center"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-2" /> Available Packaging Options:</h4>
+								<ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 text-sm text-gray-600">
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Full Packaging + Full Color Master Box</li>
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Full Packaging + Brown Master Box</li>
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Master Box + Inner Plastics</li>
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Master Box + Single Plastic (Bulk)</li>
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Plastics sacks (25kg)</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -492,26 +615,104 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 						</div>
 					</div>
 
-					<!-- Image 1 -->
+										<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/charcoal briket/image copy 2.png" alt="Charcoal Production" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/angkut_image copy.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
-					<!-- Image 2 -->
+					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery/sabut kelapa.png" alt="Raw Materials" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/angkut_image.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
-					<!-- Video 2 -->
+					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<video loop muted playsinline preload="none" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
-							<source src="/images/charcoal briket/video briket.mp4" type="video/mp4">
-						</video>
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_briket dus.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
-					<!-- Image 3 -->
+					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/angkut/image.png" alt="Logistics" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_dus rapi.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 2.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 3.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 4.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 5.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 6.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_coco blok.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_coco peat polybag.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 2.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 3.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 4.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 5.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+					</div>
+
+					<!-- Image -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/gallery_sabut kelapa.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 
@@ -544,54 +745,6 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 			</div>
 		</section>
 
-		<!-- TESTIMONIALS -->
-		<section class="py-24 bg-bg-light">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center mb-16">
-					<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-4">{t('testi.title')}</h2>
-					<p class="text-text-muted max-w-2xl mx-auto">{t('testi.desc')}</p>
-				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					<!-- Review 1 -->
-					<div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
-						<div class="flex text-accent-gold mb-4 text-xl">★★★★★</div>
-						<p class="text-text-muted mb-6 flex-grow italic">"King Coco has been supplying our shisha charcoal for over 2 years. The quality is incredibly consistent, low ash, and very long burning. Highly recommended partner!"</p>
-						<div class="flex items-center gap-4 border-t border-gray-100 pt-4">
-							<div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-primary-charcoal font-bold">A</div>
-							<div>
-								<p class="font-bold text-primary-charcoal">Ahmed M.</p>
-								<p class="text-sm text-gray-500">Distributor, UAE</p>
-							</div>
-						</div>
-					</div>
-					<!-- Review 2 -->
-					<div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
-						<div class="flex text-accent-gold mb-4 text-xl">★★★★★</div>
-						<p class="text-text-muted mb-6 flex-grow italic">"We switched our cocopeat supply to King Coco for our greenhouse operations. Their Low EC block has perfect water retention. Great service and communication."</p>
-						<div class="flex items-center gap-4 border-t border-gray-100 pt-4">
-							<div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-primary-charcoal font-bold">M</div>
-							<div>
-								<p class="font-bold text-primary-charcoal">Michael T.</p>
-								<p class="text-sm text-gray-500">Agriculture, Netherlands</p>
-							</div>
-						</div>
-					</div>
-					<!-- Review 3 -->
-					<div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
-						<div class="flex text-accent-gold mb-4 text-xl">★★★★★</div>
-						<p class="text-text-muted mb-6 flex-grow italic">"Handling large volumes (FCL) without quality drop is rare. King Coco manages our OEM packaging and ships flawlessly every month."</p>
-						<div class="flex items-center gap-4 border-t border-gray-100 pt-4">
-							<div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-primary-charcoal font-bold">Y</div>
-							<div>
-								<p class="font-bold text-primary-charcoal">Yusuf A.</p>
-								<p class="text-sm text-gray-500">Retail Chain, Turkey</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<!-- CONTACT & RFQ -->
 		<section id="contact" class="py-32 bg-primary-charcoal relative overflow-hidden">
 			<!-- Subtle glow -->
@@ -607,9 +760,9 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 						
 						<div class="space-y-6">
 							<!-- Email Card -->
-							<a href="mailto:export@kingcoco.id" class="block bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 group">
-								<h4 class="font-medium text-gray-400 mb-2">{t('contact.email')}</h4>
-								<p class="text-white text-xl font-bold group-hover:text-accent-gold transition-colors">export@kingcoco.id</p>
+							<a href="mailto:export@kingcoco.com" class="block bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 group">
+								<h3 class="text-gray-400 text-sm font-medium uppercase tracking-wider mb-2">{t('contact.email')}</h3>
+								<p class="text-white text-xl font-bold group-hover:text-accent-gold transition-colors">export@kingcoco.com</p>
 							</a>
 							
 							<!-- WhatsApp Card -->

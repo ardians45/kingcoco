@@ -68,41 +68,72 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 
 						<!-- Specifications -->
 						<h2 class="text-2xl font-bold text-primary-charcoal mb-4">{t('seo.char.spec')}</h2>
-						<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.char.spec.ash')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">&lt; [DATA REQUIRED] %</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.char.spec.moisture')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">&lt; [DATA REQUIRED] %</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.char.spec.carbon')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">&gt; [DATA REQUIRED] %</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.char.spec.burn')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">Up to [DATA REQUIRED] hours</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm sm:col-span-2">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.char.spec.shape')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">[DATA REQUIRED] (e.g. Cube, Hexagonal)</span>
-								</div>
+						<div class="overflow-x-auto bg-white rounded-xl border border-gray-100 shadow-sm mb-8">
+							<table class="w-full text-sm text-left">
+								<thead class="text-xs text-gray-700 uppercase bg-gray-50 border-b border-gray-100">
+									<tr>
+										<th scope="col" class="px-6 py-4">No</th>
+										<th scope="col" class="px-6 py-4">Product</th>
+										<th scope="col" class="px-6 py-4">Description</th>
+									</tr>
+								</thead>
+								<tbody class="divide-y divide-gray-100">
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-medium text-gray-900">1</td>
+										<td class="px-6 py-4 font-semibold text-primary-charcoal">Shisha Charcoal Briquette</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>Ash Content:</strong> &gt; 3%</li>
+												<li><strong>Ash Color:</strong> Natural White</li>
+												<li><strong>Burning Time:</strong> &gt; 2 hours*</li>
+												<li><strong>Fixed Carbon:</strong> ≤ 75%</li>
+												<li><strong>Moisture:</strong> 7% Max</li>
+											</ul>
+										</td>
+									</tr>
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-medium text-gray-900">2</td>
+										<td class="px-6 py-4 font-semibold text-primary-charcoal">Shisha Charcoal Briquette</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>Ash Content:</strong> 2.5% - 3%</li>
+												<li><strong>Ash Color:</strong> Natural White</li>
+												<li><strong>Burning Time:</strong> &gt; 2 hours*</li>
+												<li><strong>Fixed Carbon:</strong> &gt; 75%</li>
+												<li><strong>Moisture:</strong> 6% Max</li>
+											</ul>
+										</td>
+									</tr>
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-medium text-gray-900">3</td>
+										<td class="px-6 py-4 font-semibold text-primary-charcoal">Shisha Charcoal Briquette</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>Ash Content:</strong> 2.0-2.5%</li>
+												<li><strong>Ash Color:</strong> Natural White</li>
+												<li><strong>Burning Time:</strong> &gt; 2 hours*</li>
+												<li><strong>Fixed Carbon:</strong> ≤ 80%</li>
+												<li><strong>Moisture:</strong> 5% Max</li>
+											</ul>
+										</td>
+									</tr>
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-medium text-gray-900">4</td>
+										<td class="px-6 py-4 font-semibold text-primary-charcoal">Shisha Charcoal Briquette</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>Ash Content:</strong> 2% Max</li>
+												<li><strong>Ash Color:</strong> Natural White</li>
+												<li><strong>Burning Time:</strong> &gt; 2 hours*</li>
+												<li><strong>Fixed Carbon:</strong> ≥ 80%</li>
+												<li><strong>Moisture:</strong> 5% Max</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="p-4 bg-gray-50 text-xs text-gray-500 border-t border-gray-100">
+								* standard 25mm cube shape
 							</div>
 						</div>
 
@@ -113,12 +144,14 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 								<p class="text-text-muted">{t('seo.char.app.desc')}</p>
 							</div>
 							<div>
-								<h2 class="text-xl font-bold text-primary-charcoal mb-2">{t('seo.char.pack')}</h2>
-								<p class="text-text-muted">{t('seo.char.pack.desc')}</p>
-							</div>
-							<div>
-								<h2 class="text-xl font-bold text-primary-charcoal mb-2">{t('seo.char.export')}</h2>
-								<p class="text-text-muted font-semibold bg-yellow-100 px-2 py-1 rounded inline-block text-red-600">{t('seo.char.export.desc')}</p>
+								<h2 class="text-xl font-bold text-primary-charcoal mb-4">{t('seo.char.pack')}</h2>
+								<ul class="space-y-2 text-text-muted">
+									<li class="flex items-center"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2" /> Full Packaging + Full Color Master Box</li>
+									<li class="flex items-center"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2" /> Full Packaging + Brown Master Box</li>
+									<li class="flex items-center"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2" /> Master Box + Inner Plastics</li>
+									<li class="flex items-center"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2" /> Master Box + Single Plastic (Bulk)</li>
+									<li class="flex items-center"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2" /> Plastics sacks (25kg)</li>
+								</ul>
 							</div>
 						</div>
 

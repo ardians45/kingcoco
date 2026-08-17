@@ -17,7 +17,7 @@ const translatePath = useTranslatedPath(lang);
             <div class="lg:col-span-1">
                 <a href={translatePath('/')} class="inline-block mb-8">
                     <!-- Added brightness-0 invert to make logo pure white on dark bg -->
-                    <img src="/images/logo-king-coco.svg" alt="King Coco Logo" class="h-16 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                    <img src="/images/logo-king-coco.svg" alt="King Coco Logo" class="h-16 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-transform transform scale-[1.35] origin-left" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
                     <span class="text-2xl font-heading font-bold text-white tracking-tight" style="display: none;">KING<span class="text-accent-gold">COCO</span></span>
                 </a>
                 <p class="text-gray-400 text-sm leading-relaxed mb-8">
@@ -40,7 +40,6 @@ const translatePath = useTranslatedPath(lang);
                 <ul class="space-y-4">
                     <li><a href={translatePath('/#about')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>{t('nav.about')}</a></li>
                     <li><a href={translatePath('/#products')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>{t('nav.products')}</a></li>
-                    <li><a href={translatePath('/oem-private-label')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>OEM / Private Label</a></li>
                     <li><a href={translatePath('/#gallery')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>{t('nav.gallery')}</a></li>
                     <li><a href={translatePath('/#faq')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>{t('nav.faq')}</a></li>
                 </ul>
@@ -50,9 +49,9 @@ const translatePath = useTranslatedPath(lang);
             <div>
                 <h3 class="text-sm font-bold mb-6 text-white tracking-widest uppercase">Our Products</h3>
                 <ul class="space-y-4">
-                    <li><a href={translatePath('/products/cocopeat')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>Premium Cocopeat</a></li>
-                    <li><a href={translatePath('/products/charcoal-briquette')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>Charcoal Briquettes</a></li>
-                    <li><a href={translatePath('/products/coconut-fiber')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>Coconut Fiber</a></li>
+                    <li><a href={translatePath('/#products')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>Premium Cocopeat</a></li>
+                    <li><a href={translatePath('/#products')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>Charcoal Briquettes</a></li>
+                    <li><a href={translatePath('/#products')} class="text-gray-400 hover:text-accent-gold transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold/0 group-hover:bg-accent-gold transition-colors"></span>Coconut Fiber</a></li>
                 </ul>
             </div>
 
@@ -62,11 +61,11 @@ const translatePath = useTranslatedPath(lang);
                 <ul class="space-y-5">
                     <li class="flex items-start gap-4 text-sm text-gray-400">
                         <MapPin class="w-5 h-5 text-accent-gold shrink-0 mt-0.5" />
-                        <span class="leading-relaxed">Jakarta, Indonesia<br />(Head Office)</span>
+                        <a href="https://maps.app.goo.gl/TJqCo2i7k3uESQDk9" target="_blank" rel="noopener noreferrer" class="leading-relaxed hover:text-accent-gold transition-colors">Yogyakarta, Indonesia<br />(Factory)</a>
                     </li>
                     <li class="flex items-center gap-4 text-sm text-gray-400">
                         <Mail class="w-5 h-5 text-accent-gold shrink-0" />
-                        <a href="mailto:export@kingcoco.id" class="hover:text-accent-gold transition-colors">export@kingcoco.id</a>
+                        <a href="mailto:export@kingcoco.com" class="hover:text-accent-gold transition-colors">export@kingcoco.com</a>
                     </li>
                     <li class="flex items-center gap-4 text-sm text-gray-400">
                         <Phone class="w-5 h-5 text-accent-gold shrink-0" />

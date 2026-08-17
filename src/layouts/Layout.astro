@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { getLangFromUrl } from '../i18n/utils';
+import FloatingWhatsApp from '../components/common/FloatingWhatsApp.astro';
 
 interface Props {
 	title?: string;
@@ -31,5 +32,6 @@ const dir = lang === 'ar' ? 'rtl' : 'ltr';
 	</head>
 	<body class="antialiased min-h-screen flex flex-col">
 		<slot />
+		<FloatingWhatsApp />
 	</body>
 </html>

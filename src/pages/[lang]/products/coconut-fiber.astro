@@ -64,28 +64,41 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 
 						<!-- Specifications -->
 						<h2 class="text-2xl font-bold text-primary-charcoal mb-4">{t('seo.fiber.spec')}</h2>
-						<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.fiber.spec.moisture')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">&lt; [DATA REQUIRED] %</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.fiber.spec.impurity')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">&lt; [DATA REQUIRED] %</span>
-								</div>
-							</div>
-							<div class="flex items-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm sm:col-span-2">
-								<CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 flex-shrink-0" />
-								<div>
-									<span class="block text-xs text-gray-500 uppercase tracking-wider">{t('seo.fiber.spec.weight')}</span>
-									<span class="font-semibold text-primary-charcoal bg-yellow-100 px-2 py-0.5 rounded text-red-600">[DATA REQUIRED] kg / bale</span>
-								</div>
-							</div>
+						<div class="overflow-x-auto bg-white rounded-xl border border-gray-100 shadow-sm mb-8">
+							<table class="w-full text-sm text-left">
+								<thead class="text-xs text-gray-700 uppercase bg-gray-50 border-b border-gray-100">
+									<tr>
+										<th scope="col" class="px-6 py-4">Product Name</th>
+										<th scope="col" class="px-6 py-4 min-w-[300px]">Specifications</th>
+									</tr>
+								</thead>
+								<tbody class="divide-y divide-gray-100">
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-semibold text-primary-green align-top">Baby Fiber High EC (Livestock Bedding)</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>Weight:</strong> +- 250 Kg/Bale</li>
+												<li><strong>Moisture:</strong> 40-50%</li>
+												<li><strong>Packing:</strong> Jumbo bag</li>
+												<li><strong>Loadability:</strong> 80 bales / 40ft HC</li>
+											</ul>
+										</td>
+									</tr>
+									<tr class="hover:bg-gray-50/50">
+										<td class="px-6 py-4 font-semibold text-primary-green align-top">Coconut Fiber</td>
+										<td class="px-6 py-4 text-gray-600">
+											<ul class="space-y-1">
+												<li><strong>Color:</strong> Yellow Brownish</li>
+												<li><strong>Fiber Length:</strong> 10-15 cm</li>
+												<li><strong>Moisture Content:</strong> &lt; 20%</li>
+												<li><strong>Ash Content:</strong> &lt; 5%</li>
+												<li><strong>Bale Weight:</strong> 105-110 kg</li>
+												<li><strong>Loadability:</strong> 18 MT / 40ft HC</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 
 						<!-- Actions -->

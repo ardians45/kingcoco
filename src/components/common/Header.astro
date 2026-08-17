@@ -14,7 +14,7 @@ const translatePath = useTranslatedPath(lang);
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
                 <a href={translatePath('/')} class="flex gap-2 items-center py-2 overflow-visible">
-                    <img src="/images/logo-king-coco.svg" alt="King Coco Logo" class="h-16 sm:h-20 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                    <img src="/images/logo-king-coco.svg" alt="King Coco Logo" class="h-16 sm:h-20 w-auto transform scale-[1.35] origin-left" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
                     <span class="text-3xl font-heading font-bold text-primary-charcoal tracking-tight" style="display: none;">KING<span class="text-accent-gold">COCO</span></span>
                 </a>
             </div>
@@ -24,7 +24,6 @@ const translatePath = useTranslatedPath(lang);
                 <a href={translatePath('/')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.home')}</a>
                 <a href={translatePath('/#about')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.about')}</a>
                 <a href={translatePath('/#products')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.products')}</a>
-                <a href={translatePath('/oem-private-label')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide text-primary-green font-bold">OEM / Private Label</a>
                 <a href={translatePath('/#gallery')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.gallery')}</a>
                 <a href={translatePath('/#faq')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.faq')}</a>
             </nav>
@@ -34,13 +33,24 @@ const translatePath = useTranslatedPath(lang);
                 <div class="relative h-full flex items-center lang-dropdown-container">
                     <button type="button" class="lang-toggle-btn flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8 cursor-pointer">
                         <Globe class="w-4 h-4 pointer-events-none" />
-                        <span class="uppercase pointer-events-none">{lang}</span>
+                        <span class="uppercase pointer-events-none">{languages[lang as keyof typeof languages]?.prefix || lang}</span>
                     </button>
-                    <div class="lang-dropdown-menu absolute right-0 top-full -mt-2 w-32 pt-2 hidden z-50">
-                        <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
-                            {Object.entries(languages).map(([code, label]) => (
-                                <a href={`/${code}`} class={`block px-4 py-2 text-sm ${lang === code ? 'text-accent-gold font-bold bg-gray-50' : 'text-primary-charcoal hover:bg-gray-50 hover:text-accent-gold'}`}>
-                                    {label}
+                    <div class="lang-dropdown-menu absolute right-0 top-full -mt-2 w-56 pt-2 hidden z-50">
+                        <div class="bg-[#1A1A1A] rounded-xl shadow-2xl border border-gray-800 py-3">
+                            <div class="px-5 py-2 mb-2">
+                                <span class="text-accent-gold text-xs font-bold tracking-[0.2em] uppercase">BAHASA</span>
+                            </div>
+                            {Object.entries(languages).map(([code, data]) => (
+                                <a href={`/${code}`} class="flex items-center justify-between px-5 py-3 hover:bg-white/5 transition-colors group">
+                                    <div class="flex items-center gap-4">
+                                        <span class="text-[10px] font-bold text-gray-400 group-hover:text-white w-5">{data.prefix}</span>
+                                        <span class={`text-sm ${lang === code ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{data.name}</span>
+                                    </div>
+                                    {lang === code && (
+                                        <svg class="w-4 h-4 text-accent-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    )}
                                 </a>
                             ))}
                         </div>
@@ -56,13 +66,24 @@ const translatePath = useTranslatedPath(lang);
             <div class="md:hidden flex items-center gap-4">
                 <div class="relative h-full flex items-center lang-dropdown-container">
                     <button type="button" class="lang-toggle-btn flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8 cursor-pointer">
-                        <span class="uppercase pointer-events-none">{lang}</span>
+                        <span class="uppercase pointer-events-none">{languages[lang as keyof typeof languages]?.prefix || lang}</span>
                     </button>
-                    <div class="lang-dropdown-menu absolute right-0 top-full -mt-2 w-32 pt-2 hidden z-50">
-                        <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
-                            {Object.entries(languages).map(([code, label]) => (
-                                <a href={`/${code}`} class={`block px-4 py-2 text-sm ${lang === code ? 'text-accent-gold font-bold bg-gray-50' : 'text-primary-charcoal hover:bg-gray-50 hover:text-accent-gold'}`}>
-                                    {label}
+                    <div class="lang-dropdown-menu absolute right-0 top-full -mt-2 w-56 pt-2 hidden z-50">
+                        <div class="bg-[#1A1A1A] rounded-xl shadow-2xl border border-gray-800 py-3">
+                            <div class="px-5 py-2 mb-2">
+                                <span class="text-accent-gold text-xs font-bold tracking-[0.2em] uppercase">BAHASA</span>
+                            </div>
+                            {Object.entries(languages).map(([code, data]) => (
+                                <a href={`/${code}`} class="flex items-center justify-between px-5 py-3 hover:bg-white/5 transition-colors group">
+                                    <div class="flex items-center gap-4">
+                                        <span class="text-[10px] font-bold text-gray-400 group-hover:text-white w-5">{data.prefix}</span>
+                                        <span class={`text-sm ${lang === code ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{data.name}</span>
+                                    </div>
+                                    {lang === code && (
+                                        <svg class="w-4 h-4 text-accent-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    )}
                                 </a>
                             ))}
                         </div>
@@ -83,7 +104,6 @@ const translatePath = useTranslatedPath(lang);
             <a href={translatePath('/')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.home')}</a>
             <a href={translatePath('/#about')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.about')}</a>
             <a href={translatePath('/#products')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.products')}</a>
-            <a href={translatePath('/oem-private-label')} class="block px-3 py-3 text-base font-medium text-primary-green hover:text-accent-gold font-bold">OEM / Private Label</a>
             <a href={translatePath('/#gallery')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.gallery')}</a>
             <a href={translatePath('/#faq')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.faq')}</a>
             <div class="mt-4 w-full px-4">

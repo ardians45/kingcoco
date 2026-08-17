@@ -1,7 +1,14 @@
 export const languages = {
-  en: 'English',
-  id: 'Indonesia',
-  ar: 'العربية',
+  en: { prefix: 'GB', name: 'English' },
+  id: { prefix: 'ID', name: 'Bahasa Indonesia' },
+  ar: { prefix: 'SA', name: 'العربية' },
+  'zh-cn': { prefix: 'CN', name: '简体中文' },
+  'zh-tw': { prefix: 'TW', name: '繁體中文' },
+  ja: { prefix: 'JP', name: '日本語' },
+  ko: { prefix: 'KR', name: '한국어' },
+  de: { prefix: 'DE', name: 'Deutsch' },
+  fr: { prefix: 'FR', name: 'Français' },
+  es: { prefix: 'ES', name: 'Español' },
 };
 
 export const defaultLang = 'en';
@@ -133,6 +140,8 @@ export const ui = {
     'order.step5.desc': 'Your order enters production with strict quality control.',
     'order.step6.title': 'Shipping & Logistics',
     'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
+
+    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
 
   
     // Cocopeat Page SEO
@@ -305,6 +314,8 @@ export const ui = {
     'order.step6.title': 'Pengiriman & Logistik',
     'order.step6.desc': 'Kami menangani semua logistik ekspor dan dokumen hingga sampai ke Anda.',
 
+    'wa.template': 'Halo King Coco, saya tertarik dengan produk Anda dan ingin meminta penawaran harga.',
+
   },
   ar: {
     'nav.home': 'الرئيسية',
@@ -420,6 +431,8 @@ export const ui = {
     'order.step5.desc': 'يدخل طلبك مرحلة الإنتاج مع مراقبة صارمة للجودة.',
     'order.step6.title': 'الشحن والتسليم',
     'order.step6.desc': 'نتعامل مع جميع لوجستيات التصدير والمستندات حتى تصل إليك.',
+
+    'wa.template': 'مرحباً كينغ كوكو، أنا مهتم بمنتجاتكم وأود طلب تسعيرة.',
 
   },
 } as const;
