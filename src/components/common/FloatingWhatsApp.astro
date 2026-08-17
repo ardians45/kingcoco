@@ -5,9 +5,10 @@ import { MessageCircle } from 'lucide-react';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// King Coco WhatsApp Number (example or real if provided)
-const waNumber = "6282226296365"; // As used in contact.astro
-const waTemplate = encodeURIComponent(t('wa.template'));
+// King Coco WhatsApp Number
+const waNumber = "6283879099434"; 
+const defaultMessage = "Hello King Coco, I am interested in your products and would like to request a quotation.";
+const waTemplate = encodeURIComponent(defaultMessage);
 const waLink = `https://wa.me/${waNumber}?text=${waTemplate}`;
 ---
 
