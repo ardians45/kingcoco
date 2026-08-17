@@ -61,7 +61,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 
 		</section>
 
-		<!-- ABOUT SECTION -->
+<!-- ABOUT SECTION -->
 		<section id="about" class="pt-40 pb-24 bg-white relative overflow-hidden">
 			<!-- Decorative background elements -->
 			<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-green/5 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3"></div>
@@ -94,7 +94,8 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 							<span class="w-8 h-px bg-primary-green"></span>
 							{t('about.subtitle')}
 						</h2>
-						<h3 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal mb-6 leading-tight">{t('about.title')}</h3>
+						<h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal mb-6 leading-tight">{t('about.h2')}</h2>
+						<h3 class="text-xl md:text-2xl font-bold text-primary-green mb-4">{t('about.h3')}</h3>
 						<p class="text-text-muted mb-8 text-lg leading-relaxed">
 							{t('about.desc')}
 						</p>
@@ -131,46 +132,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 			</div>
 		</section>
 
-		<!-- VISION & MISSION -->
-		<section class="py-24 bg-bg-light relative">
-			<!-- Decorative grid -->
-			<div class="absolute inset-0 bg-[url('/images/gallery/grid-pattern.svg')] opacity-5"></div>
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-				<div class="text-center mb-16">
-					<h2 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">Core Values</h2>
-					<h3 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal">{t('vm.title')}</h3>
-				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-					<div class="bg-white p-12 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 relative overflow-hidden group hover:-translate-y-2">
-						<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary-green/10 to-transparent rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-700"></div>
-						<div class="w-16 h-16 bg-primary-green/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary-green transition-colors duration-500">
-							<svg class="w-8 h-8 text-primary-green group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-							</svg>
-						</div>
-						<h4 class="text-2xl font-bold text-primary-charcoal mb-4 group-hover:text-primary-green transition-colors">{t('vm.vision.title')}</h4>
-						<p class="text-text-muted leading-relaxed text-lg">
-							{t('vm.vision.desc')}
-						</p>
-					</div>
-					<div class="bg-white p-12 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 relative overflow-hidden group hover:-translate-y-2">
-						<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-accent-gold/15 to-transparent rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-700"></div>
-						<div class="w-16 h-16 bg-accent-gold/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-accent-gold transition-colors duration-500">
-							<svg class="w-8 h-8 text-accent-gold group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-							</svg>
-						</div>
-						<h4 class="text-2xl font-bold text-primary-charcoal mb-4 group-hover:text-accent-gold transition-colors">{t('vm.mission.title')}</h4>
-						<p class="text-text-muted leading-relaxed text-lg">
-							{t('vm.mission.desc')}
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- WHY CHOOSE US -->
+<!-- WHY CHOOSE US -->
 		<section class="py-32 bg-primary-charcoal relative overflow-hidden">
 			<!-- Mesmerizing Animated Glow Background -->
 			<div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
@@ -182,7 +144,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 				<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
 					<div class="max-w-2xl">
 						<h2 class="text-accent-gold font-semibold tracking-widest uppercase text-sm mb-4">{t('why.subtitle') || 'Company Advantages'}</h2>
-						<h3 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight">{t('why.title')}</h3>
+						<h3 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight">{t('why.h2')}</h3>
 					</div>
 					<div class="md:text-right hidden md:block">
 						<div class="inline-flex items-center justify-center w-20 h-20 rounded-full border border-white/10">
@@ -229,7 +191,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 							<div class="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
 								<Ship class="w-8 h-8 text-emerald-400" />
 							</div>
-							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-emerald-400 transition-colors duration-300">{t('why.oem.title')}</h4>
+							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-emerald-400 transition-colors duration-300">{t('why.h3.oem')}</h4>
 							<p class="text-gray-400 text-lg leading-relaxed">{t('why.oem.desc')}</p>
 						</div>
 					</div>
@@ -251,14 +213,14 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 			</div>
 		</section>
 
-		<!-- PRODUCT SHOWCASE -->
+<!-- PRODUCT SHOWCASE -->
 		<section id="products" class="py-32 bg-gray-50 relative">
 			<div class="absolute inset-0 bg-[url('/images/gallery/grid-pattern.svg')] opacity-[0.03]"></div>
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				
 				<div class="text-center max-w-3xl mx-auto mb-20">
 					<h2 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">Premium Collection</h2>
-					<h3 class="text-4xl md:text-5xl font-heading font-bold text-primary-charcoal mb-6">{t('prod.title')}</h3>
+					<h2 class="text-4xl md:text-5xl font-heading font-bold text-primary-charcoal mb-6">{t('products.h2')}</h2>
 					<p class="text-gray-500 text-lg leading-relaxed">{t('prod.desc')}</p>
 				</div>
 
@@ -279,7 +241,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block Low EC Grade A" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">Cocopeat Block Low EC</h4>
+									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.1')}</h4>
 									<ul class="space-y-2 text-sm text-gray-600 mb-6">
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
@@ -303,7 +265,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block Low EC Grade B" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">Cocopeat Block Low EC</h4>
+									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.2')}</h4>
 									<ul class="space-y-2 text-sm text-gray-600 mb-6">
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
@@ -327,7 +289,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">Cocopeat Block High EC</h4>
+									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.3')}</h4>
 									<ul class="space-y-2 text-sm text-gray-600 mb-6">
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> &gt; 1 mS/cm (1:3)</span></li>
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
@@ -349,7 +311,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/cocopeat/coco peat polybag.png" alt="Cocopeat Polybag Low EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">Cocopeat Polybag Low EC</h4>
+									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.polybag')}</h4>
 									<ul class="space-y-2 text-sm text-gray-600 mb-6">
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.5 ms/cm (1:3)</span></li>
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 29 - 30 kgs/bag</span></li>
@@ -382,7 +344,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/cocopeat/image copy 3.png" alt="Baby Fiber High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">Baby Fiber High EC</h4>
+									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">{t('fiber.h4.baby')}</h4>
 									<p class="text-sm text-accent-gold font-semibold mb-6">Livestock Bedding</p>
 									<ul class="space-y-3 text-sm text-gray-600 mb-8">
 										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> +- 250 Kg/Bale</span></li>
@@ -402,7 +364,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/cocopeat/image.png" alt="Coconut Fiber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">Coconut Fiber</h4>
+									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">{t('products.h3.fiber')}</h4>
 									<p class="text-sm text-accent-gold font-semibold mb-6">Premium Grade</p>
 									<ul class="space-y-3 text-sm text-gray-600 mb-8">
 										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Color:</strong> Yellow Brownish</span></li>
@@ -434,7 +396,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/charcoal briket/image.png" alt="Shisha Charcoal No 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">Shisha Charcoal</h4>
+									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.1')}</h4>
 									<p class="text-sm text-gray-500 mb-6">Specification No. 1</p>
 									<ul class="space-y-2 text-sm text-gray-600 mb-6">
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> &gt; 3%</span></li>
@@ -456,7 +418,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/charcoal briket/image copy.png" alt="Shisha Charcoal No 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">Shisha Charcoal</h4>
+									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.2')}</h4>
 									<p class="text-sm text-gray-500 mb-6">Specification No. 2</p>
 									<ul class="space-y-2 text-sm text-gray-600 mb-6">
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.5% - 3%</span></li>
@@ -477,7 +439,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/charcoal briket/image copy 4.png" alt="Shisha Charcoal No 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">Shisha Charcoal</h4>
+									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.3')}</h4>
 									<p class="text-sm text-gray-500 mb-6">Specification No. 3</p>
 									<ul class="space-y-2 text-sm text-gray-600 mb-6">
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.0-2.5%</span></li>
@@ -499,7 +461,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 									<img src="/images/charcoal briket/image copy 5.png" alt="Shisha Charcoal No 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">Shisha Charcoal</h4>
+									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.4')}</h4>
 									<p class="text-sm text-gray-500 mb-6">Specification No. 4</p>
 									<ul class="space-y-2 text-sm text-gray-600 mb-6">
 										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2% Max</span></li>
@@ -536,7 +498,46 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 			</div>
 		</section>
 
-		<!-- HOW TO ORDER -->
+<!-- VISION & MISSION -->
+		<section class="py-24 bg-bg-light relative">
+			<!-- Decorative grid -->
+			<div class="absolute inset-0 bg-[url('/images/gallery/grid-pattern.svg')] opacity-5"></div>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div class="text-center mb-16">
+					<h2 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">Core Values</h2>
+					<h3 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal">{t('values.h2')}</h3>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+					<div class="bg-white p-12 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 relative overflow-hidden group hover:-translate-y-2">
+						<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary-green/10 to-transparent rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-700"></div>
+						<div class="w-16 h-16 bg-primary-green/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary-green transition-colors duration-500">
+							<svg class="w-8 h-8 text-primary-green group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+							</svg>
+						</div>
+						<h4 class="text-2xl font-bold text-primary-charcoal mb-4 group-hover:text-primary-green transition-colors">{t('values.h3.vision')}</h4>
+						<p class="text-text-muted leading-relaxed text-lg">
+							{t('vm.vision.desc')}
+						</p>
+					</div>
+					<div class="bg-white p-12 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 relative overflow-hidden group hover:-translate-y-2">
+						<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-accent-gold/15 to-transparent rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-700"></div>
+						<div class="w-16 h-16 bg-accent-gold/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-accent-gold transition-colors duration-500">
+							<svg class="w-8 h-8 text-accent-gold group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+							</svg>
+						</div>
+						<h4 class="text-2xl font-bold text-primary-charcoal mb-4 group-hover:text-accent-gold transition-colors">{t('values.h3.mission')}</h4>
+						<p class="text-text-muted leading-relaxed text-lg">
+							{t('vm.mission.desc')}
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- HOW TO ORDER -->
 		<section class="py-24 bg-white overflow-hidden">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -544,48 +545,48 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 						<img loading="lazy" decoding="async" src="/images/angkut/image copy.png" alt="Export Logistics" class="rounded-3xl shadow-xl w-full h-[600px] object-cover" />
 					</div>
 					<div class="order-1 lg:order-2">
-						<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-10">{t('order.title')}</h2>
+						<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-10">{t('order.h2')}</h2>
 						
 						<div class="space-y-6">
 							<div class="flex gap-4">
 								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">1</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step1.title')}</h3>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.1')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step1.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
 								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold text-white flex items-center justify-center font-bold text-lg shadow-md">2</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step2.title')}</h3>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.2')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step2.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
 								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">3</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step3.title')}</h3>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.3')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step3.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
 								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-charcoal text-white flex items-center justify-center font-bold text-lg shadow-md">4</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step4.title')}</h3>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.4')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step4.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
 								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold text-white flex items-center justify-center font-bold text-lg shadow-md">5</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step5.title')}</h3>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.5')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step5.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
 								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">6</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.step6.title')}</h3>
+									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.6')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step6.desc')}</p>
 								</div>
 							</div>
@@ -595,11 +596,12 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 			</div>
 		</section>
 
-		<!-- GALLERY & VIDEOS -->
+<!-- GALLERY & VIDEOS -->
 		<section id="gallery" class="py-24 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-4">{t('gallery.subtitle')}</h2>
+					<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-4">{t('gallery.h2')}</h2>
+					<h3 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">{t('gallery.h3.facilities')} | {t('gallery.h3.inspection')}</h3>
 					<h3 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">{t('gallery.title')}</h3>
 					<p class="text-text-muted max-w-2xl mx-auto">{t('gallery.desc')}</p>
 				</div>
@@ -615,20 +617,14 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 						</div>
 					</div>
 
-										<!-- Image -->
-					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/angkut_image copy.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
-					</div>
+					
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
 						<img loading="lazy" decoding="async" src="/images/gallery_assets/angkut_image.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
-					<!-- Image -->
-					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_briket dus.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
-					</div>
+
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
@@ -660,10 +656,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 6.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
-					<!-- Image -->
-					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
-					</div>
+
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
@@ -737,15 +730,12 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 						</div>
 					</div>
 					
-					<!-- Image 5 -->
-					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/charcoal briket/briket dus.png" alt="Briquette Packaging" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
-					</div>
+
 				</div>
 			</div>
 		</section>
 
-		<!-- CONTACT & RFQ -->
+<!-- CONTACT & RFQ -->
 		<section id="contact" class="py-32 bg-primary-charcoal relative overflow-hidden">
 			<!-- Subtle glow -->
 			<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary-green/10 rounded-full blur-[120px] -z-0"></div>
@@ -753,7 +743,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 					<div class="pt-8">
 						<h2 class="text-accent-gold font-semibold tracking-wider uppercase text-sm mb-3">Ready to Source?</h2>
-						<h3 class="text-3xl md:text-5xl font-heading font-bold text-white mb-6">{t('contact.title')}</h3>
+						<h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-6">{t('contact.h2')}</h2>
 						<p class="text-gray-400 mb-12 text-lg leading-relaxed">
 							{t('contact.desc')}
 						</p>
@@ -802,7 +792,7 @@ const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 								<select class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50/50 text-primary-charcoal transition-all" required>
 									<option value="">{lang === 'id' ? '-- Pilih Produk --' : '-- Select Product --'}</option>
 									<option value="cocopeat">Premium Cocopeat</option>
-									<option value="charcoal">Charcoal Briquettes</option>
+									<option value="charcoal">{t('products.h3.charcoal')}</option>
 									<option value="both">{lang === 'id' ? 'Kedua Produk' : 'Both Products'}</option>
 								</select>
 							</div>
