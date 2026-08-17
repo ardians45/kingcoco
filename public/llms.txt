@@ -1,0 +1,22 @@
+# King Coco - AI Agent Guide
+
+Welcome to the King Coco website source code and architecture context.
+This document provides AI agents with context about how this website is structured.
+
+## Architecture
+- Framework: Astro (Static Site Generation)
+- Styling: Tailwind CSS
+- Internationalization: Dynamic `[lang]` routing with custom dictionary in `src/i18n/ui.ts`
+- Target Languages: `en` (English), `id` (Indonesian), `ar` (Arabic), `zh-cn` (Simplified Chinese).
+
+## Important Links
+- [Astro Documentation](https://docs.astro.build/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Home Page](/en/)
+- [Products](/en/products)
+- [Contact Us](/en/#contact)
+
+## Coding Guidelines
+- All images should be optimized in WebP format and responsive.
+- Accessibility is a priority (contrast ratios, aria-labels, form labels, video captions).
+- SEO is managed via `Layout.astro` and page-level variables.
