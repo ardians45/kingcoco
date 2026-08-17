@@ -14,6 +14,2302 @@ export const languages = {
 export const defaultLang = 'en';
 
 export const ui = {
+  'zh-cn': {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.products': 'Products',
+    'nav.gallery': 'Gallery',
+    'nav.faq': 'FAQ',
+    'nav.contact': 'Contact Us',
+    'btn.quote': 'Request a Quote',
+    'btn.explore': 'Explore Products',
+    
+    // Homepage
+    'hero.badge': '100% Premium Indonesian Coconut',
+    'hero.title.1': 'Coconut Shisha Charcoal Supplier Indonesia — Premium Cocopeat & Briquettes',
+    'hero.title.2': 'Solutions',
+    'hero.title.3': 'For A Changing World',
+    'hero.desc': 'We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment.',
+    
+    
+    // SEO Headings & Products
+    'about.h2': 'About King Coco',
+    'about.h3': 'Premium Coconut Products for Global B2B Markets',
+    'why.h2': 'Why Choose King Coco?',
+    'why.h3.quality': 'Consistent Product Quality',
+    'why.h3.capacity': 'Large Production Capacity',
+    'why.h3.oem': 'Custom OEM Solutions',
+    'why.h3.export': 'Export-Ready Supply',
+    'products.h2': 'Premium Coconut Products',
+    'products.h3.charcoal': 'Coconut Charcoal & Briquettes',
+    'products.h3.cocopeat': 'Cocopeat Products',
+    'products.h3.fiber': 'Coconut Fiber Products',
+    'charcoal.h4.1': 'Shisha Charcoal Grade 1',
+    'charcoal.h4.2': 'Shisha Charcoal Grade 2',
+    'charcoal.h4.3': 'Shisha Charcoal Grade 3',
+    'charcoal.h4.4': 'Shisha Charcoal Grade 4',
+    'cocopeat.h4.1': 'Cocopeat Block Low EC Grade A',
+    'cocopeat.h4.2': 'Cocopeat Block Low EC Grade B',
+    'cocopeat.h4.3': 'Cocopeat Block High EC',
+    'cocopeat.h4.polybag': 'Cocopeat Polybag Low EC',
+    'fiber.h4.baby': 'Baby Fiber High EC',
+    'fiber.h4.coconut': 'Coconut Fiber',
+    'values.h2': 'Our Core Values',
+    'values.h3.vision': 'Our Vision',
+    'values.h3.mission': 'Our Mission',
+    'order.h2': 'How to Order',
+    'order.h3.1': 'Consultation',
+    'order.h3.2': 'Request a Quotation',
+    'order.h3.3': 'Sample & Approval',
+    'order.h3.4': 'Agreement & Contract',
+    'order.h3.5': 'Production & Quality Control',
+    'order.h3.6': 'Shipping & Logistics',
+    'gallery.h2': 'Production & Quality Control',
+    'gallery.h3.facilities': 'Our Production Facilities',
+    'gallery.h3.inspection': 'Quality Inspection Process',
+    'contact.h2': 'Ready to Source Premium Coconut Products?',
+    'contact.h3.wa': 'Contact Us via WhatsApp',
+    'contact.h3.rfq': 'Send an RFQ',
+
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    
+    'order.step5.title': 'Production & Quality Control',
+    'order.step5.desc': 'Your order enters production with strict quality control.',
+    'order.step6.title': 'Shipping & Logistics',
+    'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
+
+    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
+
+    // Cocopeat Page SEO
+    'seo.coco.h1': 'Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets',
+    'seo.coco.h1.sub': 'Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.',
+    'seo.coco.spec': 'Product Specifications',
+    'seo.coco.spec.ec': 'EC Level',
+    'seo.coco.spec.ph': 'pH Level',
+    'seo.coco.spec.weight': 'Block Weight',
+    'seo.coco.spec.expansion': 'Expansion Volume',
+    'seo.coco.spec.moisture': 'Moisture Content',
+    'seo.coco.app': 'Applications',
+    'seo.coco.app.desc': 'Hydroponics, Soil Amendment, Animal Bedding',
+    'seo.coco.pack': 'Packaging Options',
+    'seo.coco.moq': 'Minimum Order Quantity (MOQ)',
+    'seo.coco.cta': 'Request a Quote for Cocopeat',
+
+    // Charcoal Page SEO
+    'seo.char.h1': 'Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes',
+    'seo.char.h1.sub': '100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia providing long burning, low ash, sparkless briquettes.',
+    'seo.char.spec': 'Product Specifications (Shisha & BBQ Grades)',
+    'seo.char.spec.ash': 'Ash Content',
+    'seo.char.spec.moisture': 'Moisture Content',
+    'seo.char.spec.carbon': 'Fixed Carbon',
+    'seo.char.spec.burn': 'Burning Time',
+    'seo.char.spec.shape': 'Shapes',
+    'seo.char.app': 'Applications',
+    'seo.char.app.desc': 'Premium Shisha/Hookah, Professional BBQ',
+    'seo.char.pack': 'Custom Packaging & Private Label (OEM)',
+    'seo.char.pack.desc': 'We provide inner boxes (1kg/2kg) and master cartons (10kg/20kg) with your brand design.',
+    'seo.char.export': 'Export & Shipping Terms',
+    'seo.char.export.desc': 'Port of Loading: [DATA REQUIRED]. Lead time: [DATA REQUIRED].',
+    'seo.char.cta': 'Request a Quotation',
+
+    // Fiber Page SEO
+    'seo.fiber.h1': 'Coconut Fiber Bulk Supplier from Indonesia',
+    'seo.fiber.h1.sub': 'High-quality, mature coconut coir fiber for industrial and horticultural applications.',
+    'seo.fiber.spec': 'Product Specifications',
+    'seo.fiber.spec.moisture': 'Moisture Content',
+    'seo.fiber.spec.impurity': 'Impurity',
+    'seo.fiber.spec.weight': 'Bale Weight',
+    'seo.fiber.cta': 'Request Bulk Pricing',
+
+    // OEM Page SEO
+    'seo.oem.h1': 'OEM & Private Label Coconut Products from Indonesia',
+    'seo.oem.h1.sub': 'Build your own brand with our premium coconut charcoal and cocopeat manufacturing capabilities. Fully customizable packaging and specifications.',
+    'seo.oem.why': 'Why Choose Our Private Label Services?',
+    'seo.oem.why.1.title': 'Custom Specifications',
+    'seo.oem.why.1.desc': 'Adjust ash content, shape, and EC levels to meet your market demands.',
+    'seo.oem.why.2.title': 'Flexible Packaging',
+    'seo.oem.why.2.desc': 'From 1kg inner boxes to bulk jumbo bags with full color printing.',
+    'seo.oem.why.3.title': 'Strict Quality Control',
+    'seo.oem.why.3.desc': 'Consistent quality for every batch with rigorous lab testing.',
+    'seo.oem.how': 'How It Works',
+    'seo.oem.how.desc': 'Consultation → Prototyping/Sampling → Production → Shipping',
+    'seo.oem.cta': 'Start Your OEM Project',
+    },
+  'zh-tw': {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.products': 'Products',
+    'nav.gallery': 'Gallery',
+    'nav.faq': 'FAQ',
+    'nav.contact': 'Contact Us',
+    'btn.quote': 'Request a Quote',
+    'btn.explore': 'Explore Products',
+    
+    // Homepage
+    'hero.badge': '100% Premium Indonesian Coconut',
+    'hero.title.1': 'Coconut Shisha Charcoal Supplier Indonesia — Premium Cocopeat & Briquettes',
+    'hero.title.2': 'Solutions',
+    'hero.title.3': 'For A Changing World',
+    'hero.desc': 'We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment.',
+    
+    
+    // SEO Headings & Products
+    'about.h2': 'About King Coco',
+    'about.h3': 'Premium Coconut Products for Global B2B Markets',
+    'why.h2': 'Why Choose King Coco?',
+    'why.h3.quality': 'Consistent Product Quality',
+    'why.h3.capacity': 'Large Production Capacity',
+    'why.h3.oem': 'Custom OEM Solutions',
+    'why.h3.export': 'Export-Ready Supply',
+    'products.h2': 'Premium Coconut Products',
+    'products.h3.charcoal': 'Coconut Charcoal & Briquettes',
+    'products.h3.cocopeat': 'Cocopeat Products',
+    'products.h3.fiber': 'Coconut Fiber Products',
+    'charcoal.h4.1': 'Shisha Charcoal Grade 1',
+    'charcoal.h4.2': 'Shisha Charcoal Grade 2',
+    'charcoal.h4.3': 'Shisha Charcoal Grade 3',
+    'charcoal.h4.4': 'Shisha Charcoal Grade 4',
+    'cocopeat.h4.1': 'Cocopeat Block Low EC Grade A',
+    'cocopeat.h4.2': 'Cocopeat Block Low EC Grade B',
+    'cocopeat.h4.3': 'Cocopeat Block High EC',
+    'cocopeat.h4.polybag': 'Cocopeat Polybag Low EC',
+    'fiber.h4.baby': 'Baby Fiber High EC',
+    'fiber.h4.coconut': 'Coconut Fiber',
+    'values.h2': 'Our Core Values',
+    'values.h3.vision': 'Our Vision',
+    'values.h3.mission': 'Our Mission',
+    'order.h2': 'How to Order',
+    'order.h3.1': 'Consultation',
+    'order.h3.2': 'Request a Quotation',
+    'order.h3.3': 'Sample & Approval',
+    'order.h3.4': 'Agreement & Contract',
+    'order.h3.5': 'Production & Quality Control',
+    'order.h3.6': 'Shipping & Logistics',
+    'gallery.h2': 'Production & Quality Control',
+    'gallery.h3.facilities': 'Our Production Facilities',
+    'gallery.h3.inspection': 'Quality Inspection Process',
+    'contact.h2': 'Ready to Source Premium Coconut Products?',
+    'contact.h3.wa': 'Contact Us via WhatsApp',
+    'contact.h3.rfq': 'Send an RFQ',
+
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    
+    'order.step5.title': 'Production & Quality Control',
+    'order.step5.desc': 'Your order enters production with strict quality control.',
+    'order.step6.title': 'Shipping & Logistics',
+    'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
+
+    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
+
+    // Cocopeat Page SEO
+    'seo.coco.h1': 'Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets',
+    'seo.coco.h1.sub': 'Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.',
+    'seo.coco.spec': 'Product Specifications',
+    'seo.coco.spec.ec': 'EC Level',
+    'seo.coco.spec.ph': 'pH Level',
+    'seo.coco.spec.weight': 'Block Weight',
+    'seo.coco.spec.expansion': 'Expansion Volume',
+    'seo.coco.spec.moisture': 'Moisture Content',
+    'seo.coco.app': 'Applications',
+    'seo.coco.app.desc': 'Hydroponics, Soil Amendment, Animal Bedding',
+    'seo.coco.pack': 'Packaging Options',
+    'seo.coco.moq': 'Minimum Order Quantity (MOQ)',
+    'seo.coco.cta': 'Request a Quote for Cocopeat',
+
+    // Charcoal Page SEO
+    'seo.char.h1': 'Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes',
+    'seo.char.h1.sub': '100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia providing long burning, low ash, sparkless briquettes.',
+    'seo.char.spec': 'Product Specifications (Shisha & BBQ Grades)',
+    'seo.char.spec.ash': 'Ash Content',
+    'seo.char.spec.moisture': 'Moisture Content',
+    'seo.char.spec.carbon': 'Fixed Carbon',
+    'seo.char.spec.burn': 'Burning Time',
+    'seo.char.spec.shape': 'Shapes',
+    'seo.char.app': 'Applications',
+    'seo.char.app.desc': 'Premium Shisha/Hookah, Professional BBQ',
+    'seo.char.pack': 'Custom Packaging & Private Label (OEM)',
+    'seo.char.pack.desc': 'We provide inner boxes (1kg/2kg) and master cartons (10kg/20kg) with your brand design.',
+    'seo.char.export': 'Export & Shipping Terms',
+    'seo.char.export.desc': 'Port of Loading: [DATA REQUIRED]. Lead time: [DATA REQUIRED].',
+    'seo.char.cta': 'Request a Quotation',
+
+    // Fiber Page SEO
+    'seo.fiber.h1': 'Coconut Fiber Bulk Supplier from Indonesia',
+    'seo.fiber.h1.sub': 'High-quality, mature coconut coir fiber for industrial and horticultural applications.',
+    'seo.fiber.spec': 'Product Specifications',
+    'seo.fiber.spec.moisture': 'Moisture Content',
+    'seo.fiber.spec.impurity': 'Impurity',
+    'seo.fiber.spec.weight': 'Bale Weight',
+    'seo.fiber.cta': 'Request Bulk Pricing',
+
+    // OEM Page SEO
+    'seo.oem.h1': 'OEM & Private Label Coconut Products from Indonesia',
+    'seo.oem.h1.sub': 'Build your own brand with our premium coconut charcoal and cocopeat manufacturing capabilities. Fully customizable packaging and specifications.',
+    'seo.oem.why': 'Why Choose Our Private Label Services?',
+    'seo.oem.why.1.title': 'Custom Specifications',
+    'seo.oem.why.1.desc': 'Adjust ash content, shape, and EC levels to meet your market demands.',
+    'seo.oem.why.2.title': 'Flexible Packaging',
+    'seo.oem.why.2.desc': 'From 1kg inner boxes to bulk jumbo bags with full color printing.',
+    'seo.oem.why.3.title': 'Strict Quality Control',
+    'seo.oem.why.3.desc': 'Consistent quality for every batch with rigorous lab testing.',
+    'seo.oem.how': 'How It Works',
+    'seo.oem.how.desc': 'Consultation → Prototyping/Sampling → Production → Shipping',
+    'seo.oem.cta': 'Start Your OEM Project',
+    },
+  'ja': {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.products': 'Products',
+    'nav.gallery': 'Gallery',
+    'nav.faq': 'FAQ',
+    'nav.contact': 'Contact Us',
+    'btn.quote': 'Request a Quote',
+    'btn.explore': 'Explore Products',
+    
+    // Homepage
+    'hero.badge': '100% Premium Indonesian Coconut',
+    'hero.title.1': 'Coconut Shisha Charcoal Supplier Indonesia — Premium Cocopeat & Briquettes',
+    'hero.title.2': 'Solutions',
+    'hero.title.3': 'For A Changing World',
+    'hero.desc': 'We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment.',
+    
+    
+    // SEO Headings & Products
+    'about.h2': 'About King Coco',
+    'about.h3': 'Premium Coconut Products for Global B2B Markets',
+    'why.h2': 'Why Choose King Coco?',
+    'why.h3.quality': 'Consistent Product Quality',
+    'why.h3.capacity': 'Large Production Capacity',
+    'why.h3.oem': 'Custom OEM Solutions',
+    'why.h3.export': 'Export-Ready Supply',
+    'products.h2': 'Premium Coconut Products',
+    'products.h3.charcoal': 'Coconut Charcoal & Briquettes',
+    'products.h3.cocopeat': 'Cocopeat Products',
+    'products.h3.fiber': 'Coconut Fiber Products',
+    'charcoal.h4.1': 'Shisha Charcoal Grade 1',
+    'charcoal.h4.2': 'Shisha Charcoal Grade 2',
+    'charcoal.h4.3': 'Shisha Charcoal Grade 3',
+    'charcoal.h4.4': 'Shisha Charcoal Grade 4',
+    'cocopeat.h4.1': 'Cocopeat Block Low EC Grade A',
+    'cocopeat.h4.2': 'Cocopeat Block Low EC Grade B',
+    'cocopeat.h4.3': 'Cocopeat Block High EC',
+    'cocopeat.h4.polybag': 'Cocopeat Polybag Low EC',
+    'fiber.h4.baby': 'Baby Fiber High EC',
+    'fiber.h4.coconut': 'Coconut Fiber',
+    'values.h2': 'Our Core Values',
+    'values.h3.vision': 'Our Vision',
+    'values.h3.mission': 'Our Mission',
+    'order.h2': 'How to Order',
+    'order.h3.1': 'Consultation',
+    'order.h3.2': 'Request a Quotation',
+    'order.h3.3': 'Sample & Approval',
+    'order.h3.4': 'Agreement & Contract',
+    'order.h3.5': 'Production & Quality Control',
+    'order.h3.6': 'Shipping & Logistics',
+    'gallery.h2': 'Production & Quality Control',
+    'gallery.h3.facilities': 'Our Production Facilities',
+    'gallery.h3.inspection': 'Quality Inspection Process',
+    'contact.h2': 'Ready to Source Premium Coconut Products?',
+    'contact.h3.wa': 'Contact Us via WhatsApp',
+    'contact.h3.rfq': 'Send an RFQ',
+
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    
+    'order.step5.title': 'Production & Quality Control',
+    'order.step5.desc': 'Your order enters production with strict quality control.',
+    'order.step6.title': 'Shipping & Logistics',
+    'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
+
+    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
+
+    // Cocopeat Page SEO
+    'seo.coco.h1': 'Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets',
+    'seo.coco.h1.sub': 'Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.',
+    'seo.coco.spec': 'Product Specifications',
+    'seo.coco.spec.ec': 'EC Level',
+    'seo.coco.spec.ph': 'pH Level',
+    'seo.coco.spec.weight': 'Block Weight',
+    'seo.coco.spec.expansion': 'Expansion Volume',
+    'seo.coco.spec.moisture': 'Moisture Content',
+    'seo.coco.app': 'Applications',
+    'seo.coco.app.desc': 'Hydroponics, Soil Amendment, Animal Bedding',
+    'seo.coco.pack': 'Packaging Options',
+    'seo.coco.moq': 'Minimum Order Quantity (MOQ)',
+    'seo.coco.cta': 'Request a Quote for Cocopeat',
+
+    // Charcoal Page SEO
+    'seo.char.h1': 'Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes',
+    'seo.char.h1.sub': '100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia providing long burning, low ash, sparkless briquettes.',
+    'seo.char.spec': 'Product Specifications (Shisha & BBQ Grades)',
+    'seo.char.spec.ash': 'Ash Content',
+    'seo.char.spec.moisture': 'Moisture Content',
+    'seo.char.spec.carbon': 'Fixed Carbon',
+    'seo.char.spec.burn': 'Burning Time',
+    'seo.char.spec.shape': 'Shapes',
+    'seo.char.app': 'Applications',
+    'seo.char.app.desc': 'Premium Shisha/Hookah, Professional BBQ',
+    'seo.char.pack': 'Custom Packaging & Private Label (OEM)',
+    'seo.char.pack.desc': 'We provide inner boxes (1kg/2kg) and master cartons (10kg/20kg) with your brand design.',
+    'seo.char.export': 'Export & Shipping Terms',
+    'seo.char.export.desc': 'Port of Loading: [DATA REQUIRED]. Lead time: [DATA REQUIRED].',
+    'seo.char.cta': 'Request a Quotation',
+
+    // Fiber Page SEO
+    'seo.fiber.h1': 'Coconut Fiber Bulk Supplier from Indonesia',
+    'seo.fiber.h1.sub': 'High-quality, mature coconut coir fiber for industrial and horticultural applications.',
+    'seo.fiber.spec': 'Product Specifications',
+    'seo.fiber.spec.moisture': 'Moisture Content',
+    'seo.fiber.spec.impurity': 'Impurity',
+    'seo.fiber.spec.weight': 'Bale Weight',
+    'seo.fiber.cta': 'Request Bulk Pricing',
+
+    // OEM Page SEO
+    'seo.oem.h1': 'OEM & Private Label Coconut Products from Indonesia',
+    'seo.oem.h1.sub': 'Build your own brand with our premium coconut charcoal and cocopeat manufacturing capabilities. Fully customizable packaging and specifications.',
+    'seo.oem.why': 'Why Choose Our Private Label Services?',
+    'seo.oem.why.1.title': 'Custom Specifications',
+    'seo.oem.why.1.desc': 'Adjust ash content, shape, and EC levels to meet your market demands.',
+    'seo.oem.why.2.title': 'Flexible Packaging',
+    'seo.oem.why.2.desc': 'From 1kg inner boxes to bulk jumbo bags with full color printing.',
+    'seo.oem.why.3.title': 'Strict Quality Control',
+    'seo.oem.why.3.desc': 'Consistent quality for every batch with rigorous lab testing.',
+    'seo.oem.how': 'How It Works',
+    'seo.oem.how.desc': 'Consultation → Prototyping/Sampling → Production → Shipping',
+    'seo.oem.cta': 'Start Your OEM Project',
+    },
+  'ko': {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.products': 'Products',
+    'nav.gallery': 'Gallery',
+    'nav.faq': 'FAQ',
+    'nav.contact': 'Contact Us',
+    'btn.quote': 'Request a Quote',
+    'btn.explore': 'Explore Products',
+    
+    // Homepage
+    'hero.badge': '100% Premium Indonesian Coconut',
+    'hero.title.1': 'Coconut Shisha Charcoal Supplier Indonesia — Premium Cocopeat & Briquettes',
+    'hero.title.2': 'Solutions',
+    'hero.title.3': 'For A Changing World',
+    'hero.desc': 'We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment.',
+    
+    
+    // SEO Headings & Products
+    'about.h2': 'About King Coco',
+    'about.h3': 'Premium Coconut Products for Global B2B Markets',
+    'why.h2': 'Why Choose King Coco?',
+    'why.h3.quality': 'Consistent Product Quality',
+    'why.h3.capacity': 'Large Production Capacity',
+    'why.h3.oem': 'Custom OEM Solutions',
+    'why.h3.export': 'Export-Ready Supply',
+    'products.h2': 'Premium Coconut Products',
+    'products.h3.charcoal': 'Coconut Charcoal & Briquettes',
+    'products.h3.cocopeat': 'Cocopeat Products',
+    'products.h3.fiber': 'Coconut Fiber Products',
+    'charcoal.h4.1': 'Shisha Charcoal Grade 1',
+    'charcoal.h4.2': 'Shisha Charcoal Grade 2',
+    'charcoal.h4.3': 'Shisha Charcoal Grade 3',
+    'charcoal.h4.4': 'Shisha Charcoal Grade 4',
+    'cocopeat.h4.1': 'Cocopeat Block Low EC Grade A',
+    'cocopeat.h4.2': 'Cocopeat Block Low EC Grade B',
+    'cocopeat.h4.3': 'Cocopeat Block High EC',
+    'cocopeat.h4.polybag': 'Cocopeat Polybag Low EC',
+    'fiber.h4.baby': 'Baby Fiber High EC',
+    'fiber.h4.coconut': 'Coconut Fiber',
+    'values.h2': 'Our Core Values',
+    'values.h3.vision': 'Our Vision',
+    'values.h3.mission': 'Our Mission',
+    'order.h2': 'How to Order',
+    'order.h3.1': 'Consultation',
+    'order.h3.2': 'Request a Quotation',
+    'order.h3.3': 'Sample & Approval',
+    'order.h3.4': 'Agreement & Contract',
+    'order.h3.5': 'Production & Quality Control',
+    'order.h3.6': 'Shipping & Logistics',
+    'gallery.h2': 'Production & Quality Control',
+    'gallery.h3.facilities': 'Our Production Facilities',
+    'gallery.h3.inspection': 'Quality Inspection Process',
+    'contact.h2': 'Ready to Source Premium Coconut Products?',
+    'contact.h3.wa': 'Contact Us via WhatsApp',
+    'contact.h3.rfq': 'Send an RFQ',
+
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    
+    'order.step5.title': 'Production & Quality Control',
+    'order.step5.desc': 'Your order enters production with strict quality control.',
+    'order.step6.title': 'Shipping & Logistics',
+    'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
+
+    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
+
+    // Cocopeat Page SEO
+    'seo.coco.h1': 'Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets',
+    'seo.coco.h1.sub': 'Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.',
+    'seo.coco.spec': 'Product Specifications',
+    'seo.coco.spec.ec': 'EC Level',
+    'seo.coco.spec.ph': 'pH Level',
+    'seo.coco.spec.weight': 'Block Weight',
+    'seo.coco.spec.expansion': 'Expansion Volume',
+    'seo.coco.spec.moisture': 'Moisture Content',
+    'seo.coco.app': 'Applications',
+    'seo.coco.app.desc': 'Hydroponics, Soil Amendment, Animal Bedding',
+    'seo.coco.pack': 'Packaging Options',
+    'seo.coco.moq': 'Minimum Order Quantity (MOQ)',
+    'seo.coco.cta': 'Request a Quote for Cocopeat',
+
+    // Charcoal Page SEO
+    'seo.char.h1': 'Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes',
+    'seo.char.h1.sub': '100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia providing long burning, low ash, sparkless briquettes.',
+    'seo.char.spec': 'Product Specifications (Shisha & BBQ Grades)',
+    'seo.char.spec.ash': 'Ash Content',
+    'seo.char.spec.moisture': 'Moisture Content',
+    'seo.char.spec.carbon': 'Fixed Carbon',
+    'seo.char.spec.burn': 'Burning Time',
+    'seo.char.spec.shape': 'Shapes',
+    'seo.char.app': 'Applications',
+    'seo.char.app.desc': 'Premium Shisha/Hookah, Professional BBQ',
+    'seo.char.pack': 'Custom Packaging & Private Label (OEM)',
+    'seo.char.pack.desc': 'We provide inner boxes (1kg/2kg) and master cartons (10kg/20kg) with your brand design.',
+    'seo.char.export': 'Export & Shipping Terms',
+    'seo.char.export.desc': 'Port of Loading: [DATA REQUIRED]. Lead time: [DATA REQUIRED].',
+    'seo.char.cta': 'Request a Quotation',
+
+    // Fiber Page SEO
+    'seo.fiber.h1': 'Coconut Fiber Bulk Supplier from Indonesia',
+    'seo.fiber.h1.sub': 'High-quality, mature coconut coir fiber for industrial and horticultural applications.',
+    'seo.fiber.spec': 'Product Specifications',
+    'seo.fiber.spec.moisture': 'Moisture Content',
+    'seo.fiber.spec.impurity': 'Impurity',
+    'seo.fiber.spec.weight': 'Bale Weight',
+    'seo.fiber.cta': 'Request Bulk Pricing',
+
+    // OEM Page SEO
+    'seo.oem.h1': 'OEM & Private Label Coconut Products from Indonesia',
+    'seo.oem.h1.sub': 'Build your own brand with our premium coconut charcoal and cocopeat manufacturing capabilities. Fully customizable packaging and specifications.',
+    'seo.oem.why': 'Why Choose Our Private Label Services?',
+    'seo.oem.why.1.title': 'Custom Specifications',
+    'seo.oem.why.1.desc': 'Adjust ash content, shape, and EC levels to meet your market demands.',
+    'seo.oem.why.2.title': 'Flexible Packaging',
+    'seo.oem.why.2.desc': 'From 1kg inner boxes to bulk jumbo bags with full color printing.',
+    'seo.oem.why.3.title': 'Strict Quality Control',
+    'seo.oem.why.3.desc': 'Consistent quality for every batch with rigorous lab testing.',
+    'seo.oem.how': 'How It Works',
+    'seo.oem.how.desc': 'Consultation → Prototyping/Sampling → Production → Shipping',
+    'seo.oem.cta': 'Start Your OEM Project',
+    },
+  'de': {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.products': 'Products',
+    'nav.gallery': 'Gallery',
+    'nav.faq': 'FAQ',
+    'nav.contact': 'Contact Us',
+    'btn.quote': 'Request a Quote',
+    'btn.explore': 'Explore Products',
+    
+    // Homepage
+    'hero.badge': '100% Premium Indonesian Coconut',
+    'hero.title.1': 'Coconut Shisha Charcoal Supplier Indonesia — Premium Cocopeat & Briquettes',
+    'hero.title.2': 'Solutions',
+    'hero.title.3': 'For A Changing World',
+    'hero.desc': 'We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment.',
+    
+    
+    // SEO Headings & Products
+    'about.h2': 'About King Coco',
+    'about.h3': 'Premium Coconut Products for Global B2B Markets',
+    'why.h2': 'Why Choose King Coco?',
+    'why.h3.quality': 'Consistent Product Quality',
+    'why.h3.capacity': 'Large Production Capacity',
+    'why.h3.oem': 'Custom OEM Solutions',
+    'why.h3.export': 'Export-Ready Supply',
+    'products.h2': 'Premium Coconut Products',
+    'products.h3.charcoal': 'Coconut Charcoal & Briquettes',
+    'products.h3.cocopeat': 'Cocopeat Products',
+    'products.h3.fiber': 'Coconut Fiber Products',
+    'charcoal.h4.1': 'Shisha Charcoal Grade 1',
+    'charcoal.h4.2': 'Shisha Charcoal Grade 2',
+    'charcoal.h4.3': 'Shisha Charcoal Grade 3',
+    'charcoal.h4.4': 'Shisha Charcoal Grade 4',
+    'cocopeat.h4.1': 'Cocopeat Block Low EC Grade A',
+    'cocopeat.h4.2': 'Cocopeat Block Low EC Grade B',
+    'cocopeat.h4.3': 'Cocopeat Block High EC',
+    'cocopeat.h4.polybag': 'Cocopeat Polybag Low EC',
+    'fiber.h4.baby': 'Baby Fiber High EC',
+    'fiber.h4.coconut': 'Coconut Fiber',
+    'values.h2': 'Our Core Values',
+    'values.h3.vision': 'Our Vision',
+    'values.h3.mission': 'Our Mission',
+    'order.h2': 'How to Order',
+    'order.h3.1': 'Consultation',
+    'order.h3.2': 'Request a Quotation',
+    'order.h3.3': 'Sample & Approval',
+    'order.h3.4': 'Agreement & Contract',
+    'order.h3.5': 'Production & Quality Control',
+    'order.h3.6': 'Shipping & Logistics',
+    'gallery.h2': 'Production & Quality Control',
+    'gallery.h3.facilities': 'Our Production Facilities',
+    'gallery.h3.inspection': 'Quality Inspection Process',
+    'contact.h2': 'Ready to Source Premium Coconut Products?',
+    'contact.h3.wa': 'Contact Us via WhatsApp',
+    'contact.h3.rfq': 'Send an RFQ',
+
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    
+    'order.step5.title': 'Production & Quality Control',
+    'order.step5.desc': 'Your order enters production with strict quality control.',
+    'order.step6.title': 'Shipping & Logistics',
+    'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
+
+    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
+
+    // Cocopeat Page SEO
+    'seo.coco.h1': 'Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets',
+    'seo.coco.h1.sub': 'Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.',
+    'seo.coco.spec': 'Product Specifications',
+    'seo.coco.spec.ec': 'EC Level',
+    'seo.coco.spec.ph': 'pH Level',
+    'seo.coco.spec.weight': 'Block Weight',
+    'seo.coco.spec.expansion': 'Expansion Volume',
+    'seo.coco.spec.moisture': 'Moisture Content',
+    'seo.coco.app': 'Applications',
+    'seo.coco.app.desc': 'Hydroponics, Soil Amendment, Animal Bedding',
+    'seo.coco.pack': 'Packaging Options',
+    'seo.coco.moq': 'Minimum Order Quantity (MOQ)',
+    'seo.coco.cta': 'Request a Quote for Cocopeat',
+
+    // Charcoal Page SEO
+    'seo.char.h1': 'Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes',
+    'seo.char.h1.sub': '100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia providing long burning, low ash, sparkless briquettes.',
+    'seo.char.spec': 'Product Specifications (Shisha & BBQ Grades)',
+    'seo.char.spec.ash': 'Ash Content',
+    'seo.char.spec.moisture': 'Moisture Content',
+    'seo.char.spec.carbon': 'Fixed Carbon',
+    'seo.char.spec.burn': 'Burning Time',
+    'seo.char.spec.shape': 'Shapes',
+    'seo.char.app': 'Applications',
+    'seo.char.app.desc': 'Premium Shisha/Hookah, Professional BBQ',
+    'seo.char.pack': 'Custom Packaging & Private Label (OEM)',
+    'seo.char.pack.desc': 'We provide inner boxes (1kg/2kg) and master cartons (10kg/20kg) with your brand design.',
+    'seo.char.export': 'Export & Shipping Terms',
+    'seo.char.export.desc': 'Port of Loading: [DATA REQUIRED]. Lead time: [DATA REQUIRED].',
+    'seo.char.cta': 'Request a Quotation',
+
+    // Fiber Page SEO
+    'seo.fiber.h1': 'Coconut Fiber Bulk Supplier from Indonesia',
+    'seo.fiber.h1.sub': 'High-quality, mature coconut coir fiber for industrial and horticultural applications.',
+    'seo.fiber.spec': 'Product Specifications',
+    'seo.fiber.spec.moisture': 'Moisture Content',
+    'seo.fiber.spec.impurity': 'Impurity',
+    'seo.fiber.spec.weight': 'Bale Weight',
+    'seo.fiber.cta': 'Request Bulk Pricing',
+
+    // OEM Page SEO
+    'seo.oem.h1': 'OEM & Private Label Coconut Products from Indonesia',
+    'seo.oem.h1.sub': 'Build your own brand with our premium coconut charcoal and cocopeat manufacturing capabilities. Fully customizable packaging and specifications.',
+    'seo.oem.why': 'Why Choose Our Private Label Services?',
+    'seo.oem.why.1.title': 'Custom Specifications',
+    'seo.oem.why.1.desc': 'Adjust ash content, shape, and EC levels to meet your market demands.',
+    'seo.oem.why.2.title': 'Flexible Packaging',
+    'seo.oem.why.2.desc': 'From 1kg inner boxes to bulk jumbo bags with full color printing.',
+    'seo.oem.why.3.title': 'Strict Quality Control',
+    'seo.oem.why.3.desc': 'Consistent quality for every batch with rigorous lab testing.',
+    'seo.oem.how': 'How It Works',
+    'seo.oem.how.desc': 'Consultation → Prototyping/Sampling → Production → Shipping',
+    'seo.oem.cta': 'Start Your OEM Project',
+    },
+  'fr': {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.products': 'Products',
+    'nav.gallery': 'Gallery',
+    'nav.faq': 'FAQ',
+    'nav.contact': 'Contact Us',
+    'btn.quote': 'Request a Quote',
+    'btn.explore': 'Explore Products',
+    
+    // Homepage
+    'hero.badge': '100% Premium Indonesian Coconut',
+    'hero.title.1': 'Coconut Shisha Charcoal Supplier Indonesia — Premium Cocopeat & Briquettes',
+    'hero.title.2': 'Solutions',
+    'hero.title.3': 'For A Changing World',
+    'hero.desc': 'We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment.',
+    
+    
+    // SEO Headings & Products
+    'about.h2': 'About King Coco',
+    'about.h3': 'Premium Coconut Products for Global B2B Markets',
+    'why.h2': 'Why Choose King Coco?',
+    'why.h3.quality': 'Consistent Product Quality',
+    'why.h3.capacity': 'Large Production Capacity',
+    'why.h3.oem': 'Custom OEM Solutions',
+    'why.h3.export': 'Export-Ready Supply',
+    'products.h2': 'Premium Coconut Products',
+    'products.h3.charcoal': 'Coconut Charcoal & Briquettes',
+    'products.h3.cocopeat': 'Cocopeat Products',
+    'products.h3.fiber': 'Coconut Fiber Products',
+    'charcoal.h4.1': 'Shisha Charcoal Grade 1',
+    'charcoal.h4.2': 'Shisha Charcoal Grade 2',
+    'charcoal.h4.3': 'Shisha Charcoal Grade 3',
+    'charcoal.h4.4': 'Shisha Charcoal Grade 4',
+    'cocopeat.h4.1': 'Cocopeat Block Low EC Grade A',
+    'cocopeat.h4.2': 'Cocopeat Block Low EC Grade B',
+    'cocopeat.h4.3': 'Cocopeat Block High EC',
+    'cocopeat.h4.polybag': 'Cocopeat Polybag Low EC',
+    'fiber.h4.baby': 'Baby Fiber High EC',
+    'fiber.h4.coconut': 'Coconut Fiber',
+    'values.h2': 'Our Core Values',
+    'values.h3.vision': 'Our Vision',
+    'values.h3.mission': 'Our Mission',
+    'order.h2': 'How to Order',
+    'order.h3.1': 'Consultation',
+    'order.h3.2': 'Request a Quotation',
+    'order.h3.3': 'Sample & Approval',
+    'order.h3.4': 'Agreement & Contract',
+    'order.h3.5': 'Production & Quality Control',
+    'order.h3.6': 'Shipping & Logistics',
+    'gallery.h2': 'Production & Quality Control',
+    'gallery.h3.facilities': 'Our Production Facilities',
+    'gallery.h3.inspection': 'Quality Inspection Process',
+    'contact.h2': 'Ready to Source Premium Coconut Products?',
+    'contact.h3.wa': 'Contact Us via WhatsApp',
+    'contact.h3.rfq': 'Send an RFQ',
+
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    
+    'order.step5.title': 'Production & Quality Control',
+    'order.step5.desc': 'Your order enters production with strict quality control.',
+    'order.step6.title': 'Shipping & Logistics',
+    'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
+
+    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
+
+    // Cocopeat Page SEO
+    'seo.coco.h1': 'Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets',
+    'seo.coco.h1.sub': 'Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.',
+    'seo.coco.spec': 'Product Specifications',
+    'seo.coco.spec.ec': 'EC Level',
+    'seo.coco.spec.ph': 'pH Level',
+    'seo.coco.spec.weight': 'Block Weight',
+    'seo.coco.spec.expansion': 'Expansion Volume',
+    'seo.coco.spec.moisture': 'Moisture Content',
+    'seo.coco.app': 'Applications',
+    'seo.coco.app.desc': 'Hydroponics, Soil Amendment, Animal Bedding',
+    'seo.coco.pack': 'Packaging Options',
+    'seo.coco.moq': 'Minimum Order Quantity (MOQ)',
+    'seo.coco.cta': 'Request a Quote for Cocopeat',
+
+    // Charcoal Page SEO
+    'seo.char.h1': 'Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes',
+    'seo.char.h1.sub': '100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia providing long burning, low ash, sparkless briquettes.',
+    'seo.char.spec': 'Product Specifications (Shisha & BBQ Grades)',
+    'seo.char.spec.ash': 'Ash Content',
+    'seo.char.spec.moisture': 'Moisture Content',
+    'seo.char.spec.carbon': 'Fixed Carbon',
+    'seo.char.spec.burn': 'Burning Time',
+    'seo.char.spec.shape': 'Shapes',
+    'seo.char.app': 'Applications',
+    'seo.char.app.desc': 'Premium Shisha/Hookah, Professional BBQ',
+    'seo.char.pack': 'Custom Packaging & Private Label (OEM)',
+    'seo.char.pack.desc': 'We provide inner boxes (1kg/2kg) and master cartons (10kg/20kg) with your brand design.',
+    'seo.char.export': 'Export & Shipping Terms',
+    'seo.char.export.desc': 'Port of Loading: [DATA REQUIRED]. Lead time: [DATA REQUIRED].',
+    'seo.char.cta': 'Request a Quotation',
+
+    // Fiber Page SEO
+    'seo.fiber.h1': 'Coconut Fiber Bulk Supplier from Indonesia',
+    'seo.fiber.h1.sub': 'High-quality, mature coconut coir fiber for industrial and horticultural applications.',
+    'seo.fiber.spec': 'Product Specifications',
+    'seo.fiber.spec.moisture': 'Moisture Content',
+    'seo.fiber.spec.impurity': 'Impurity',
+    'seo.fiber.spec.weight': 'Bale Weight',
+    'seo.fiber.cta': 'Request Bulk Pricing',
+
+    // OEM Page SEO
+    'seo.oem.h1': 'OEM & Private Label Coconut Products from Indonesia',
+    'seo.oem.h1.sub': 'Build your own brand with our premium coconut charcoal and cocopeat manufacturing capabilities. Fully customizable packaging and specifications.',
+    'seo.oem.why': 'Why Choose Our Private Label Services?',
+    'seo.oem.why.1.title': 'Custom Specifications',
+    'seo.oem.why.1.desc': 'Adjust ash content, shape, and EC levels to meet your market demands.',
+    'seo.oem.why.2.title': 'Flexible Packaging',
+    'seo.oem.why.2.desc': 'From 1kg inner boxes to bulk jumbo bags with full color printing.',
+    'seo.oem.why.3.title': 'Strict Quality Control',
+    'seo.oem.why.3.desc': 'Consistent quality for every batch with rigorous lab testing.',
+    'seo.oem.how': 'How It Works',
+    'seo.oem.how.desc': 'Consultation → Prototyping/Sampling → Production → Shipping',
+    'seo.oem.cta': 'Start Your OEM Project',
+    },
+  'es': {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.products': 'Products',
+    'nav.gallery': 'Gallery',
+    'nav.faq': 'FAQ',
+    'nav.contact': 'Contact Us',
+    'btn.quote': 'Request a Quote',
+    'btn.explore': 'Explore Products',
+    
+    // Homepage
+    'hero.badge': '100% Premium Indonesian Coconut',
+    'hero.title.1': 'Coconut Shisha Charcoal Supplier Indonesia — Premium Cocopeat & Briquettes',
+    'hero.title.2': 'Solutions',
+    'hero.title.3': 'For A Changing World',
+    'hero.desc': 'We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment.',
+    
+    
+    // SEO Headings & Products
+    'about.h2': 'About King Coco',
+    'about.h3': 'Premium Coconut Products for Global B2B Markets',
+    'why.h2': 'Why Choose King Coco?',
+    'why.h3.quality': 'Consistent Product Quality',
+    'why.h3.capacity': 'Large Production Capacity',
+    'why.h3.oem': 'Custom OEM Solutions',
+    'why.h3.export': 'Export-Ready Supply',
+    'products.h2': 'Premium Coconut Products',
+    'products.h3.charcoal': 'Coconut Charcoal & Briquettes',
+    'products.h3.cocopeat': 'Cocopeat Products',
+    'products.h3.fiber': 'Coconut Fiber Products',
+    'charcoal.h4.1': 'Shisha Charcoal Grade 1',
+    'charcoal.h4.2': 'Shisha Charcoal Grade 2',
+    'charcoal.h4.3': 'Shisha Charcoal Grade 3',
+    'charcoal.h4.4': 'Shisha Charcoal Grade 4',
+    'cocopeat.h4.1': 'Cocopeat Block Low EC Grade A',
+    'cocopeat.h4.2': 'Cocopeat Block Low EC Grade B',
+    'cocopeat.h4.3': 'Cocopeat Block High EC',
+    'cocopeat.h4.polybag': 'Cocopeat Polybag Low EC',
+    'fiber.h4.baby': 'Baby Fiber High EC',
+    'fiber.h4.coconut': 'Coconut Fiber',
+    'values.h2': 'Our Core Values',
+    'values.h3.vision': 'Our Vision',
+    'values.h3.mission': 'Our Mission',
+    'order.h2': 'How to Order',
+    'order.h3.1': 'Consultation',
+    'order.h3.2': 'Request a Quotation',
+    'order.h3.3': 'Sample & Approval',
+    'order.h3.4': 'Agreement & Contract',
+    'order.h3.5': 'Production & Quality Control',
+    'order.h3.6': 'Shipping & Logistics',
+    'gallery.h2': 'Production & Quality Control',
+    'gallery.h3.facilities': 'Our Production Facilities',
+    'gallery.h3.inspection': 'Quality Inspection Process',
+    'contact.h2': 'Ready to Source Premium Coconut Products?',
+    'contact.h3.wa': 'Contact Us via WhatsApp',
+    'contact.h3.rfq': 'Send an RFQ',
+
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    // Stats
+    'stats.exp': 'Years Experience',
+    'stats.containers': 'Containers Shipped',
+    'stats.countries': 'Export Countries',
+    'stats.quality': 'Quality Guarantee',
+    
+    // About
+    'about.subtitle': 'About King Coco',
+    'about.title': 'Quality Coconut Products Provider for Global Markets',
+    'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
+    'about.point1': 'Direct Manufacturer & Exporter',
+    'about.point2': 'Customizable Packaging Solutions',
+    'about.point3': 'Consistent Supply for Large Volumes',
+    'about.btn': 'Learn More About Us',
+
+    // Vision Mission
+    'vm.title': 'Vision & Mission',
+    'vm.vision.title': 'Our Vision',
+    'vm.vision.desc': 'To become the world\'s most reliable and sustainable supplier of coconut-derived products, driving eco-friendly agricultural and energy solutions globally.',
+    'vm.mission.title': 'Our Mission',
+    'vm.mission.desc': 'Delivering top-tier quality through rigorous standardization, empowering local farmers, and ensuring seamless international trade experiences for our B2B partners.',
+
+    // Why Choose Us
+    'why.subtitle': 'Why Choose Us',
+    'why.title': 'Why Choose King Coco?',
+    'why.q.title': 'Consistent Product Quality',
+    'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
+    'why.c.title': 'Large Production Capacity',
+    'why.c.desc': 'Capable of fulfilling massive FCL (Full Container Load) orders consistently and on time.',
+    'why.oem.title': 'OEM & Custom Solutions',
+    'why.oem.desc': 'Flexible packaging options and custom specifications tailored to your brand and market needs.',
+
+    // Products
+    'prod.subtitle': 'Our Core Offerings',
+    'prod.title': 'Premium Coconut Products',
+    'prod.desc': 'Sustainably sourced, meticulously processed, and ready for export.',
+    'prod.btn': 'View Full Specifications',
+
+    // How to order
+    'order.subtitle': 'Simple Process',
+    'order.title': 'Our Export Process',
+    'order.step1.title': 'Consultation',
+    'order.step1.desc': 'Discuss your product needs, specifications, and volume requirements.',
+    'order.step2.title': 'Request a Quotation',
+    'order.step2.desc': 'Get our best FOB or CIF pricing based on your destination.',
+    'order.step3.title': 'Sample Shipment',
+    'order.step3.desc': 'We can send product samples to your location for quality check.',
+    'order.step4.title': 'Agreement & Contract',
+    'order.step4.desc': 'Sign the sales contract and finalize payment terms (TT/LC).',
+
+    // Gallery
+    'gallery.subtitle': 'Production & Quality Control',
+    'gallery.title': 'Our Production Facility',
+    'gallery.desc': 'Take a look inside our manufacturing process, from raw materials to final packaging and export logistics.',
+    'gallery.cat.all': 'All',
+    'gallery.cat.cocopeat': 'Cocopeat',
+    'gallery.cat.charcoal': 'Charcoal',
+    'gallery.cat.logistics': 'Logistics',
+
+    // Contact
+    'contact.title': 'Ready to Source Premium Coconut Products?',
+    'contact.desc': 'Get in touch with our sales team today to discuss your requirements, request specifications, and get the best FOB/CIF pricing.',
+    'contact.email': 'Contact Us',
+    'contact.wa': 'WhatsApp',
+    'contact.btn.wa': 'Chat on WhatsApp',
+    'contact.form.title': 'Request a Quote',
+    'contact.form.name': 'Full Name *',
+    'contact.form.company': 'Company Name *',
+    'contact.form.email': 'Email Address *',
+    'contact.form.product': 'Interested Product *',
+    'contact.form.msg': 'Message & Requirements',
+    'contact.form.send': 'Send Inquiry',
+
+    // Promo
+    'promo.title': 'Looking for a reliable supplier for your business?',
+    'promo.desc': 'We provide export quality coconut products with large production capacity.',
+    'promo.btn': 'Contact Us Now',
+    
+    'why.export.title': 'Export-Ready Solutions',
+    'why.export.desc': 'Familiar with international shipping, custom clearance, and export documentation to ensure safe delivery.',
+    'prod.cat.cocopeat': 'Cocopeat Products',
+    'prod.cat.fiber': 'Coconut Fiber Products',
+    'prod.cat.charcoal': 'Coconut Charcoal & Briquettes',
+
+    // Products Grid Additions
+    'prod.coco.polybag': 'Cocopeat Polybag',
+    'prod.coco.baby': 'Baby Fiber',
+    'prod.coco.fiber': 'Coconut Fiber',
+    'prod.coco.block.low': 'Low EC Cocopeat Block',
+    'prod.coco.block.high': 'Cocopeat Block High EC',
+    'prod.charcoal.shisha': 'Premium Shisha Charcoal',
+    'prod.charcoal.bbq': 'BBQ Briquettes',
+    'prod.view_spec': 'View Specifications',
+
+    // Testimonials
+    'testi.subtitle': 'Client Testimonials',
+    'testi.title': 'What Our Clients Say',
+    'testi.desc': 'Trusted by importers and distributors across the globe.',
+
+    // Newsletter
+    'news.title': 'Subscribe to Our Newsletter',
+    'news.desc': 'Get the latest updates on our products, pricing, and export logistics.',
+    'news.placeholder': 'Your email address',
+    'news.btn': 'Subscribe',
+    
+    'order.step5.title': 'Production & Quality Control',
+    'order.step5.desc': 'Your order enters production with strict quality control.',
+    'order.step6.title': 'Shipping & Logistics',
+    'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
+
+    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
+
+    // Cocopeat Page SEO
+    'seo.coco.h1': 'Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets',
+    'seo.coco.h1.sub': 'Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.',
+    'seo.coco.spec': 'Product Specifications',
+    'seo.coco.spec.ec': 'EC Level',
+    'seo.coco.spec.ph': 'pH Level',
+    'seo.coco.spec.weight': 'Block Weight',
+    'seo.coco.spec.expansion': 'Expansion Volume',
+    'seo.coco.spec.moisture': 'Moisture Content',
+    'seo.coco.app': 'Applications',
+    'seo.coco.app.desc': 'Hydroponics, Soil Amendment, Animal Bedding',
+    'seo.coco.pack': 'Packaging Options',
+    'seo.coco.moq': 'Minimum Order Quantity (MOQ)',
+    'seo.coco.cta': 'Request a Quote for Cocopeat',
+
+    // Charcoal Page SEO
+    'seo.char.h1': 'Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes',
+    'seo.char.h1.sub': '100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia providing long burning, low ash, sparkless briquettes.',
+    'seo.char.spec': 'Product Specifications (Shisha & BBQ Grades)',
+    'seo.char.spec.ash': 'Ash Content',
+    'seo.char.spec.moisture': 'Moisture Content',
+    'seo.char.spec.carbon': 'Fixed Carbon',
+    'seo.char.spec.burn': 'Burning Time',
+    'seo.char.spec.shape': 'Shapes',
+    'seo.char.app': 'Applications',
+    'seo.char.app.desc': 'Premium Shisha/Hookah, Professional BBQ',
+    'seo.char.pack': 'Custom Packaging & Private Label (OEM)',
+    'seo.char.pack.desc': 'We provide inner boxes (1kg/2kg) and master cartons (10kg/20kg) with your brand design.',
+    'seo.char.export': 'Export & Shipping Terms',
+    'seo.char.export.desc': 'Port of Loading: [DATA REQUIRED]. Lead time: [DATA REQUIRED].',
+    'seo.char.cta': 'Request a Quotation',
+
+    // Fiber Page SEO
+    'seo.fiber.h1': 'Coconut Fiber Bulk Supplier from Indonesia',
+    'seo.fiber.h1.sub': 'High-quality, mature coconut coir fiber for industrial and horticultural applications.',
+    'seo.fiber.spec': 'Product Specifications',
+    'seo.fiber.spec.moisture': 'Moisture Content',
+    'seo.fiber.spec.impurity': 'Impurity',
+    'seo.fiber.spec.weight': 'Bale Weight',
+    'seo.fiber.cta': 'Request Bulk Pricing',
+
+    // OEM Page SEO
+    'seo.oem.h1': 'OEM & Private Label Coconut Products from Indonesia',
+    'seo.oem.h1.sub': 'Build your own brand with our premium coconut charcoal and cocopeat manufacturing capabilities. Fully customizable packaging and specifications.',
+    'seo.oem.why': 'Why Choose Our Private Label Services?',
+    'seo.oem.why.1.title': 'Custom Specifications',
+    'seo.oem.why.1.desc': 'Adjust ash content, shape, and EC levels to meet your market demands.',
+    'seo.oem.why.2.title': 'Flexible Packaging',
+    'seo.oem.why.2.desc': 'From 1kg inner boxes to bulk jumbo bags with full color printing.',
+    'seo.oem.why.3.title': 'Strict Quality Control',
+    'seo.oem.why.3.desc': 'Consistent quality for every batch with rigorous lab testing.',
+    'seo.oem.how': 'How It Works',
+    'seo.oem.how.desc': 'Consultation → Prototyping/Sampling → Production → Shipping',
+    'seo.oem.cta': 'Start Your OEM Project',
+  },
   en: {
     'nav.home': 'Home',
     'nav.about': 'About',
@@ -24,6 +2320,7 @@ export const ui = {
     'btn.quote': 'Request a Quote',
     'btn.explore': 'Explore Products',
     
+
     // Homepage
     'hero.badge': '100% Premium Indonesian Coconut',
     'hero.title.1': 'Coconut Shisha Charcoal Supplier Indonesia — Premium Cocopeat & Briquettes',
