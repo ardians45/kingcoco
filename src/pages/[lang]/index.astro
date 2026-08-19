@@ -15,28 +15,28 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 
 const waText = lang === 'id' 
-	? "Halo King Coco, saya tertarik untuk mendiskusikan kebutuhan produk kelapa premium." 
-	: "Hello King Coco, I am interested in discussing premium coconut products.";
+	? "Halo King Cocondo, saya tertarik untuk mendiskusikan kebutuhan produk kelapa premium." 
+	: "Hello King Cocondo, I am interested in discussing premium coconut products.";
 const waLink = `https://wa.me/6283879099434?text=${encodeURIComponent(waText)}`;
 const schema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "King Coco",
-  "url": "https://kingcoco.com",
-  "logo": "https://kingcoco.com/images/logo-king-coco.svg",
+  "name": "King Cocondo",
+  "url": "https://kingcocondo.com",
+  "logo": "https://kingcocondo.com/images/logo-king-cocondo.webp",
   "description": "Leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes.",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+6283879099434",
     "contactType": "sales",
-    "email": "export@kingcoco.com",
+    "email": "export@kingcocondo.com",
     "areaServed": "Worldwide"
   }
 });
 ---
 
 <Layout 
-	title="Coconut Shisha Charcoal Supplier Indonesia | King Coco"
+	title="Coconut Shisha Charcoal Supplier Indonesia | King Cocondo"
 	description="We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment."
 	keywords="coconut shisha charcoal supplier indonesia, coconut products exporter indonesia, wholesale cocopeat"
 	schema={schema}
@@ -47,7 +47,7 @@ const schema = JSON.stringify({
 		<!-- HERO SECTION -->
 		<section class="relative min-h-[90vh] flex items-center pt-20 overflow-visible bg-primary-charcoal pb-32">
 			<div class="absolute inset-0 z-0">
-				<img loading="lazy" decoding="async" src="/images/gallery/sabut-kelapa.webp" alt="Coconut Plantation" class="w-full h-full object-cover opacity-50" />
+				<img loading="lazy" decoding="async" src="/images/gallery/sabut-kelapa.webp" width="1200" height="670" alt="Coconut Plantation" class="w-full h-full object-cover opacity-50" />
 				<!-- Modern dark gradient with a hint of green, adjusted for better image visibility -->
 				<div class="absolute inset-0 bg-gradient-to-tr from-primary-charcoal/90 via-primary-charcoal/60 to-primary-green/40"></div>
 			</div>
@@ -94,7 +94,7 @@ const schema = JSON.stringify({
 						<div class="absolute -inset-4 bg-gradient-to-r from-accent-gold/20 to-primary-green/20 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
 						<div class="absolute -inset-4 bg-gradient-to-l from-accent-gold/20 to-primary-green/20 rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 opacity-50"></div>
 						
-						<img loading="lazy" decoding="async" src="/images/charcoal briket/warehouse.webp" alt="Warehouse and Production Capacity" class="relative rounded-3xl shadow-2xl object-cover w-full h-[500px] transition-transform duration-500 group-hover:scale-[1.02]" />
+						<img loading="lazy" decoding="async" src="/images/charcoal briket/warehouse.webp" width="768" height="1024" alt="Warehouse and Production Capacity" class="relative rounded-3xl shadow-2xl object-cover w-full h-[500px] transition-transform duration-500 group-hover:scale-[1.02]" />
 						
 						<!-- Floating badge -->
 						<div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden sm:block border border-gray-100 animate-bounce-slow">
@@ -184,7 +184,7 @@ const schema = JSON.stringify({
 								<PackageCheck class="w-8 h-8 text-emerald-400" />
 							</div>
 							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-emerald-400 transition-colors duration-300">{t('why.q.title')}</h4>
-							<p class="text-gray-400 text-lg leading-relaxed">{t('why.q.desc')}</p>
+							<p class="text-gray-300 text-lg leading-relaxed">{t('why.q.desc')}</p>
 						</div>
 					</div>
 
@@ -198,7 +198,7 @@ const schema = JSON.stringify({
 								<Factory class="w-8 h-8 text-accent-gold" />
 							</div>
 							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-accent-gold transition-colors duration-300">{t('why.c.title')}</h4>
-							<p class="text-gray-400 text-lg leading-relaxed">{t('why.c.desc')}</p>
+							<p class="text-gray-300 text-lg leading-relaxed">{t('why.c.desc')}</p>
 						</div>
 					</div>
 
@@ -212,7 +212,7 @@ const schema = JSON.stringify({
 								<Ship class="w-8 h-8 text-emerald-400" />
 							</div>
 							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-emerald-400 transition-colors duration-300">{t('why.h3.oem')}</h4>
-							<p class="text-gray-400 text-lg leading-relaxed">{t('why.oem.desc')}</p>
+							<p class="text-gray-300 text-lg leading-relaxed">{t('why.oem.desc')}</p>
 						</div>
 					</div>
 
@@ -226,7 +226,7 @@ const schema = JSON.stringify({
 								<Globe class="w-8 h-8 text-accent-gold" />
 							</div>
 							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-accent-gold transition-colors duration-300">{t('why.export.title') || 'Ready for Export'}</h4>
-							<p class="text-gray-400 text-lg leading-relaxed">{t('why.export.desc') || 'Experienced in international shipping, permits, and export documentation.'}</p>
+							<p class="text-gray-300 text-lg leading-relaxed">{t('why.export.desc') || 'Experienced in international shipping, permits, and export documentation.'}</p>
 						</div>
 					</div>
 				</div>
@@ -258,7 +258,7 @@ const schema = JSON.stringify({
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
 								<div class="absolute top-4 right-4 z-10 bg-primary-green text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Grade A</div>
 								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block Low EC Grade A" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/cocopeat/coco blok.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade A" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
 									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.1')}</h4>
@@ -282,7 +282,7 @@ const schema = JSON.stringify({
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
 								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-gray-900 text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Grade B</div>
 								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block Low EC Grade B" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/cocopeat/coco blok.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade B" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
 									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.2')}</h4>
@@ -306,7 +306,7 @@ const schema = JSON.stringify({
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
 								<div class="absolute top-4 right-4 z-10 bg-gray-600 text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">High EC</div>
 								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/coco blok.png" alt="Cocopeat Block High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/cocopeat/coco blok.webp" width="554" height="554" alt="Cocopeat Block High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
 									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.3')}</h4>
@@ -328,7 +328,7 @@ const schema = JSON.stringify({
 							<!-- Cocopeat Polybag -->
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
 								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/coco peat polybag.png" alt="Cocopeat Polybag Low EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/cocopeat/coco peat polybag.webp" width="1013" height="565" alt="Cocopeat Polybag Low EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
 									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.polybag')}</h4>
@@ -361,7 +361,7 @@ const schema = JSON.stringify({
 							<!-- Baby Fiber -->
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col sm:flex-row group hover:shadow-xl transition-all duration-300">
 								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/image copy 3.png" alt="Baby Fiber High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/cocopeat/image copy 3.webp" width="720" height="540" alt="Baby Fiber High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
 									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">{t('fiber.h4.baby')}</h4>
@@ -381,7 +381,7 @@ const schema = JSON.stringify({
 							<!-- Coconut Fiber -->
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col sm:flex-row group hover:shadow-xl transition-all duration-300">
 								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/image.png" alt="Coconut Fiber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/cocopeat/image.webp" width="720" height="520" alt="Coconut Fiber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
 									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">{t('products.h3.fiber')}</h4>
@@ -413,7 +413,7 @@ const schema = JSON.stringify({
 							<!-- Charcoal 1 -->
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
 								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/charcoal briket/image.png" alt="Shisha Charcoal No 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/charcoal briket/image.webp" width="720" height="756" alt="Shisha Charcoal No 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
 									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.1')}</h4>
@@ -435,7 +435,7 @@ const schema = JSON.stringify({
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
 								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-gray-900 text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Popular</div>
 								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/charcoal briket/image copy.png" alt="Shisha Charcoal No 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/charcoal briket/image copy.webp" width="720" height="936" alt="Shisha Charcoal No 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
 									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.2')}</h4>
@@ -456,7 +456,7 @@ const schema = JSON.stringify({
 							<!-- Charcoal 3 -->
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
 								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/charcoal briket/image copy 4.png" alt="Shisha Charcoal No 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/charcoal briket/image copy 4.webp" width="720" height="916" alt="Shisha Charcoal No 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
 									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.3')}</h4>
@@ -478,7 +478,7 @@ const schema = JSON.stringify({
 							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
 								<div class="absolute top-4 right-4 z-10 bg-primary-charcoal text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Premium</div>
 								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/charcoal briket/image copy 5.png" alt="Shisha Charcoal No 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+									<img src="/images/charcoal briket/image copy 5.webp" width="720" height="888" alt="Shisha Charcoal No 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
 									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.4')}</h4>
@@ -562,7 +562,7 @@ const schema = JSON.stringify({
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 					<div class="order-2 lg:order-1">
-						<img loading="lazy" decoding="async" src="/images/angkut/image copy.png" alt="Export Logistics" class="rounded-3xl shadow-xl w-full h-[600px] object-cover" />
+						<img loading="lazy" decoding="async" src="/images/angkut/image copy.webp" width="720" height="924" alt="Export Logistics" class="rounded-3xl shadow-xl w-full h-[600px] object-cover" />
 					</div>
 					<div class="order-1 lg:order-2">
 						<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-10">{t('order.h2')}</h2>
@@ -642,91 +642,91 @@ const schema = JSON.stringify({
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/angkut_image.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/angkut_image.webp" width="720" height="528" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_dus rapi.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_dus rapi.webp" width="816" height="1024" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 2.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 2.webp" width="720" height="516" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 3.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 3.webp" width="720" height="716" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 4.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 4.webp" width="720" height="916" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 5.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 5.webp" width="720" height="888" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 6.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 6.webp" width="768" height="1024" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image.webp" width="720" height="756" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_coco blok.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_coco blok.webp" width="554" height="554" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_coco peat polybag.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_coco peat polybag.webp" width="1013" height="565" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 2.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 2.webp" width="720" height="516" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 3.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 3.webp" width="720" height="540" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 4.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 4.webp" width="720" height="296" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 5.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 5.webp" width="720" height="316" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy.webp" width="720" height="688" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image.webp" width="720" height="520" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/gallery_sabut kelapa.png" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/gallery_assets/sabut kelapa.webp" width="2752" height="1536" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 
@@ -767,20 +767,20 @@ const schema = JSON.stringify({
 					<div class="pt-8">
 						<h2 class="text-accent-gold font-semibold tracking-wider uppercase text-sm mb-3">Ready to Source?</h2>
 						<h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-6">{t('contact.h2')}</h2>
-						<p class="text-gray-400 mb-12 text-lg leading-relaxed">
+						<p class="text-gray-300 mb-12 text-lg leading-relaxed">
 							{t('contact.desc')}
 						</p>
 						
 						<div class="space-y-6">
 							<!-- Email Card -->
-							<a href="mailto:export@kingcoco.com" class="block bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 group">
-								<h3 class="text-gray-400 text-sm font-medium uppercase tracking-wider mb-2">{t('contact.email')}</h3>
-								<p class="text-white text-xl font-bold group-hover:text-accent-gold transition-colors">export@kingcoco.com</p>
+							<a href="mailto:export@kingcocondo.com" class="block bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 group">
+								<h3 class="text-gray-300 text-sm font-medium uppercase tracking-wider mb-2">{t('contact.email')}</h3>
+								<p class="text-white text-xl font-bold group-hover:text-accent-gold transition-colors">export@kingcocondo.com</p>
 							</a>
 							
 							<!-- WhatsApp Card -->
 							<a href={waLink} target="_blank" rel="noopener noreferrer" class="block bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 group">
-								<h4 class="font-medium text-gray-400 mb-2">{t('contact.wa')}</h4>
+								<h4 class="font-medium text-gray-300 mb-2">{t('contact.wa')}</h4>
 								<div class="flex items-center justify-between">
 									<p class="text-white text-xl font-bold group-hover:text-emerald-400 transition-colors">+62 838 7909 9434</p>
 									<span class="text-sm font-semibold text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-2">
@@ -823,7 +823,7 @@ const schema = JSON.stringify({
 								<label for="contact-message" class="block text-sm font-semibold text-gray-700 mb-2">{t('contact.form.msg')}</label>
 								<textarea id="contact-message" rows="4" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50/50 text-primary-charcoal transition-all"></textarea>
 							</div>
-							<Button type="submit" variant="primary" class="w-full justify-center py-4 text-lg font-bold rounded-xl bg-primary-charcoal hover:bg-primary-charcoal/90 text-accent-gold mt-4 shadow-lg shadow-primary-charcoal/20">
+							<Button type="submit" variant="primary" class="w-full justify-center py-4 text-lg font-bold rounded-xl mt-4">
 								{t('contact.form.send')}
 							</Button>
 						</form>

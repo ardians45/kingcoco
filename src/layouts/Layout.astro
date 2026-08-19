@@ -13,10 +13,10 @@ interface Props {
 }
 
 const { 
-	title = "King Coco | Premium Cocopeat & Coconut Charcoal Exporter", 
+	title = "King Cocondo | Premium Cocopeat & Coconut Charcoal Exporter", 
 	description = "Premium cocopeat and coconut charcoal products from Indonesia for global B2B buyers. OEM, bulk supply, and export-ready solutions.",
 	keywords = "",
-	image = "/images/logo-king-coco.svg",
+	image = "/images/logo-king-cocondo.webp",
 	type = "website",
 	schema
 } = Astro.props;
@@ -32,7 +32,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/images/logo-king-coco.svg" />
+		<link rel="icon" type="image/webp" href="/images/logo-king-cocondo.webp" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		{keywords && <meta name="keywords" content={keywords} />}
@@ -68,7 +68,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+		<noscript>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" />
+		</noscript>
 	</head>
 	<body class="antialiased min-h-screen flex flex-col">
 		<slot />

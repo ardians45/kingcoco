@@ -22,9 +22,9 @@ export const ui = {
     'hero.title.2': '解决方案',
     'hero.title.3': '为了一个不断变化的世界',
     'hero.desc': '我们是印尼领先的椰壳水烟炭供应商，以及优质椰糠和炭块的出口商。高品质、可持续且准备好全球发货。',
-    'about.h2': '关于 King Coco',
+    'about.h2': '关于 King Cocondo',
     'about.h3': '面向全球 B2B 市场的优质椰子产品',
-    'why.h2': '为什么选择 King Coco？',
+    'why.h2': '为什么选择 King Cocondo？',
     'why.h3.quality': '一致的产品质量',
     'why.h3.capacity': '大规模生产能力',
     'why.h3.oem': '定制 OEM 解决方案',
@@ -63,7 +63,7 @@ export const ui = {
     'stats.containers': '已发货集装箱',
     'stats.countries': '出口国家',
     'stats.quality': '质量保证',
-    'about.subtitle': '关于 King Coco',
+    'about.subtitle': '关于 King Cocondo',
     'about.title': '面向全球市场的优质椰子产品供应商',
     'about.desc': '位于印尼中心地带，我们利用天然椰子资源提供卓越的农业和能源解决方案。我们对可持续性、严格的质量控制和国际出口标准的承诺，使我们成为全球 B2B 买家值得信赖的合作伙伴。',
     'about.point1': '直接制造商和出口商',
@@ -76,7 +76,7 @@ export const ui = {
     'vm.mission.title': '我们的使命',
     'vm.mission.desc': '通过严格的标准化提供顶级质量，赋能当地农民，并确保为我们的 B2B 合作伙伴提供无缝的国际贸易体验。',
     'why.subtitle': '为什么选择我们',
-    'why.title': '为什么选择 King Coco？',
+    'why.title': '为什么选择 King Cocondo？',
     'why.q.title': '一致的产品质量',
     'why.q.desc': '严格的实验室测试和质量控制流程，确保每批货物均符合国际标准。',
     'why.c.title': '大规模生产能力',
@@ -143,7 +143,7 @@ export const ui = {
     'order.step5.desc': '您的订单进入具有严格质量控制的生产阶段。',
     'order.step6.title': '运输与交付',
     'order.step6.desc': '我们处理所有的出口物流和文件，直到货物送达给您。',
-    'wa.template': '你好 King Coco，我对你们的产品感兴趣，想要索取报价。',
+    'wa.template': '你好 King Cocondo，我对你们的产品感兴趣，想要索取报价。',
     'seo.shisha.h1': '优质椰壳水烟炭批发供应商',
     'seo.shisha.h1.sub': '100% 天然椰壳水烟/阿拉伯水烟炭块。白灰，燃烧时间长，无异味。印尼制造。',
     'seo.shisha.spec': '产品规格',
@@ -201,9 +201,9 @@ export const ui = {
     
     
     // SEO Headings & Products
-    'about.h2': 'About King Coco',
+    'about.h2': 'About King Cocondo',
     'about.h3': 'Premium Coconut Products for Global B2B Markets',
-    'why.h2': 'Why Choose King Coco?',
+    'why.h2': 'Why Choose King Cocondo?',
     'why.h3.quality': 'Consistent Product Quality',
     'why.h3.capacity': 'Large Production Capacity',
     'why.h3.oem': 'Custom OEM Solutions',
@@ -246,7 +246,7 @@ export const ui = {
     'stats.quality': 'Quality Guarantee',
     
     // About
-    'about.subtitle': 'About King Coco',
+    'about.subtitle': 'About King Cocondo',
     'about.title': 'Quality Coconut Products Provider for Global Markets',
     'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
     'about.point1': 'Direct Manufacturer & Exporter',
@@ -263,7 +263,7 @@ export const ui = {
 
     // Why Choose Us
     'why.subtitle': 'Why Choose Us',
-    'why.title': 'Why Choose King Coco?',
+    'why.title': 'Why Choose King Cocondo?',
     'why.q.title': 'Consistent Product Quality',
     'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
     'why.c.title': 'Large Production Capacity',
@@ -350,7 +350,7 @@ export const ui = {
     'stats.quality': 'Quality Guarantee',
     
     // About
-    'about.subtitle': 'About King Coco',
+    'about.subtitle': 'About King Cocondo',
     'about.title': 'Quality Coconut Products Provider for Global Markets',
     'about.desc': 'Located in the heart of Indonesia, we harness the power of natural coconut resources to deliver exceptional agricultural and energy solutions. Our commitment to sustainability, rigorous quality control, and international export standards makes us the trusted partner for global B2B buyers.',
     'about.point1': 'Direct Manufacturer & Exporter',
@@ -367,7 +367,7 @@ export const ui = {
 
     // Why Choose Us
     'why.subtitle': 'Why Choose Us',
-    'why.title': 'Why Choose King Coco?',
+    'why.title': 'Why Choose King Cocondo?',
     'why.q.title': 'Consistent Product Quality',
     'why.q.desc': 'Rigorous lab testing and quality control processes to ensure every shipment meets international standards.',
     'why.c.title': 'Large Production Capacity',
@@ -453,7 +453,7 @@ export const ui = {
     'order.step6.title': 'Shipping & Logistics',
     'order.step6.desc': 'We handle all export logistics and documents until it reaches you.',
 
-    'wa.template': 'Hello King Coco, I am interested in your products and would like to request a quotation.',
+    'wa.template': 'Hello King Cocondo, I am interested in your products and would like to request a quotation.',
 
     // Cocopeat Page SEO
     'seo.coco.h1': 'Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets',
@@ -531,7 +531,7 @@ export const ui = {
     'stats.countries': 'Negara Tujuan',
     'stats.quality': 'Jaminan Mutu',
 
-    'about.subtitle': 'Tentang King Coco',
+    'about.subtitle': 'Tentang King Cocondo',
     'about.title': 'Penyedia Produk Kelapa Berkualitas untuk Pasar Global',
     'about.desc': 'Berlokasi di pusat Indonesia, kami memanfaatkan sumber daya kelapa alami untuk menghadirkan solusi pertanian dan energi yang luar biasa. Komitmen kami pada keberlanjutan, kontrol kualitas yang ketat, dan standar ekspor menjadikan kami mitra tepercaya bagi pembeli B2B global.',
     'about.point1': 'Produsen & Eksportir Langsung',
@@ -546,7 +546,7 @@ export const ui = {
     'vm.mission.desc': 'Menghadirkan kualitas terbaik melalui standardisasi yang ketat, memberdayakan petani lokal, dan memastikan pengalaman perdagangan internasional yang mulus bagi mitra B2B kami.',
 
     'why.subtitle': 'Mengapa Memilih Kami',
-    'why.title': 'Mengapa Memilih King Coco?',
+    'why.title': 'Mengapa Memilih King Cocondo?',
     'why.q.title': 'Kualitas Tanpa Kompromi',
     'why.q.desc': 'Pengujian lab dan proses kontrol kualitas yang ketat untuk memastikan setiap pengiriman memenuhi standar internasional.',
     'why.c.title': 'Kapasitas Produksi Besar',
@@ -625,7 +625,7 @@ export const ui = {
     'order.step6.title': 'Pengiriman & Logistik',
     'order.step6.desc': 'Kami menangani semua logistik ekspor dan dokumen hingga sampai ke Anda.',
 
-    'wa.template': 'Halo King Coco, saya tertarik dengan produk Anda dan ingin meminta penawaran harga.',
+    'wa.template': 'Halo King Cocondo, saya tertarik dengan produk Anda dan ingin meminta penawaran harga.',
 
   },
   ar: {
