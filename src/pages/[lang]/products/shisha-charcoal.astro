@@ -14,22 +14,65 @@ const { lang } = Astro.params;
 const t = useTranslations(lang as keyof typeof languages);
 const translatePath = useTranslatedPath(lang as keyof typeof languages);
 const schema = JSON.stringify({
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Coconut Shisha Charcoal Manufacturer Indonesia — Premium Hookah Briquettes",
-  "image": "https://kingcocondo.com/images/charcoal/briquette.png",
-  "description": "100% natural coconut shell charcoal for Shisha/Hookah and BBQ. We are a trusted coconut shisha charcoal exporter and wholesale supplier in Indonesia.",
-  "brand": {
-    "@type": "Brand",
-    "name": "King Cocondo"
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Coconut Shisha Charcoal Briquettes — King Cocondo",
+      "image": "https://kingcocondo.com/images/spesifikasi/briket.webp",
+      "description": "Premium 100% natural coconut shell shisha charcoal briquettes from Indonesia. Low ash content (<2.2%), long burning time (>2 hours), no odor, and customizable OEM packaging for global wholesale.",
+      "brand": {
+        "@type": "Brand",
+        "name": "King Cocondo"
+      },
+      "category": "Shisha Charcoal / Hookah Briquettes",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "King Cocondo"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the ash content of your coconut shisha charcoal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer premium grades ranging from Ultra Low Ash (< 2.0% natural white ash) to Premium Grade (2.0% - 3.0%), providing clean burning without odor or chemical additives."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Minimum Order Quantity (MOQ) for shisha charcoal export?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our standard MOQ is 1 FCL 20ft container (approx 18-20 Metric Tons). Custom OEM inner box and master carton packaging are fully supported."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What sizes and shapes of charcoal briquettes are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We produce standard Cube sizes (25x25x25mm, 26x26x26mm, 27x27x27mm), Flat, Hexagonal, and Finger shapes as per client requirements."
+          }
+        }
+      ]
+    }
+  ]
 });
 ---
 
 <Layout 
-	title="Coconut Shisha Charcoal Manufacturer Indonesia | King Cocondo" 
-	description={t('seo.char.h1.sub')}
-	keywords="coconut shisha charcoal manufacturer indonesia, coconut shisha charcoal exporter indonesia, coconut charcoal briquettes supplier indonesia, coconut charcoal briquettes manufacturer indonesia, coconut shisha charcoal wholesale"
+	title="Coconut Shisha Charcoal Supplier & Exporter Indonesia | King Cocondo" 
+	description="Leading supplier & exporter of premium coconut shisha charcoal briquettes from Indonesia. Low ash (<2%), long burning time, white ash, OEM custom packaging."
+	keywords="Shisha Charcoal, Coconut Charcoal, Charcoal Briquettes, Hookah Charcoal, Charcoal Supplier, Coconut Charcoal Supplier, Shisha Charcoal Indonesia, Coconut Charcoal Exporter, Wholesale Hookah Briquettes, Low Ash Charcoal, Coconut Charcoal Briquettes Manufacturer"
 	schema={schema}
 >
 	<Header />
@@ -168,6 +211,25 @@ const schema = JSON.stringify({
 									<li class="flex items-center"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2" /> Master Box + Single Plastic (Bulk)</li>
 									<li class="flex items-center"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2" /> Plastics sacks (25kg)</li>
 								</ul>
+							</div>
+						</div>
+
+						<!-- Frequently Asked Questions (FAQ) Section for B2B Buyers -->
+						<div class="mt-12 mb-10 pt-8 border-t border-gray-200">
+							<h2 class="text-2xl font-bold text-primary-charcoal mb-6">Frequently Asked Questions (FAQ) — Shisha Charcoal Wholesale</h2>
+							<div class="space-y-4">
+								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+									<h3 class="font-bold text-gray-900 text-base mb-2">What is your Minimum Order Quantity (MOQ) for Charcoal Export?</h3>
+									<p class="text-sm text-gray-600 leading-relaxed">Our standard MOQ is 1x20ft Container (approx 18-20 Metric Tons). We also support sample orders for quality testing before mass production.</p>
+								</div>
+								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+									<h3 class="font-bold text-gray-900 text-base mb-2">Do you provide OEM Custom Brand Inner Box and Master Box packaging?</h3>
+									<p class="text-sm text-gray-600 leading-relaxed">Yes! We provide complete OEM & Private Label services, including 1kg inner box printing, inner plastic wrapping, and branded master cartons according to your design specifications.</p>
+								</div>
+								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+									<h3 class="font-bold text-gray-900 text-base mb-2">Which Indonesian ports do you ship from?</h3>
+									<p class="text-sm text-gray-600 leading-relaxed">We ship primarily from Tanjung Perak Port (Surabaya) and Tanjung Priok Port (Jakarta), with FOB, CFR, or CIF delivery terms available globally.</p>
+								</div>
 							</div>
 						</div>
 

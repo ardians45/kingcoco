@@ -14,22 +14,65 @@ const { lang } = Astro.params;
 const t = useTranslations(lang as keyof typeof languages);
 const translatePath = useTranslatedPath(lang as keyof typeof languages);
 const schema = JSON.stringify({
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Cocopeat Supplier Indonesia — Low EC Block Exporter for Global Markets",
-  "image": "https://kingcocondo.com/images/cocopeat/image%20copy%204.png",
-  "description": "Premium washed and buffered cocopeat blocks. As a leading cocopeat exporter in Indonesia, we supply bulk low EC cocopeat blocks for hydroponics, nurseries, and greenhouses.",
-  "brand": {
-    "@type": "Brand",
-    "name": "King Cocondo"
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "5kg Low EC Cocopeat Block Substrate — King Cocondo",
+      "image": "https://kingcocondo.com/images/cocopeat/image%20copy%204.webp",
+      "description": "Premium 5kg Low EC washed cocopeat blocks for hydroponics, horticulture, and commercial nurseries. Trusted bulk cocopeat supplier & exporter from Indonesia.",
+      "brand": {
+        "@type": "Brand",
+        "name": "King Cocondo"
+      },
+      "category": "Organic Growing Medium / Coco Coir Substrate",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "King Cocondo"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between Low EC and High EC Cocopeat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Low EC cocopeat (<0.6 mS/cm) is thoroughly washed with fresh water to remove excess sodium and potassium, making it ideal for direct plant rooting and hydroponics. High EC cocopeat is unwashed and commonly used for animal bedding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the expansion volume of a 5kg Cocopeat block?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our premium 5kg Low EC blocks expand to 60 - 65 liters of organic substrate when hydrated with water."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many 5kg cocopeat blocks fit in a 40ft High Cube container?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard 40ft HC container can hold up to 4,600 blocks (approx 22 - 24 Metric Tons) stacked on palletized shrink wrap."
+          }
+        }
+      ]
+    }
+  ]
 });
 ---
 
 <Layout 
-	title="Cocopeat Supplier Indonesia — Low EC Block Exporter | King Cocondo" 
-	description={t('seo.coco.h1.sub')}
-	keywords="cocopeat supplier indonesia, cocopeat exporter indonesia, cocopeat block supplier indonesia, low EC cocopeat supplier indonesia"
+	title="Bulk Cocopeat Block Exporter & Supplier Indonesia | King Cocondo" 
+	description="Leading exporter of 5kg Low EC washed cocopeat blocks & polybags from Indonesia. Ideal for hydroponics, horticulture, and commercial nurseries worldwide."
+	keywords="Cocopeat, Cocopeat Block, Coco Coir, Cocopeat Exporter, Cocopeat Supplier, Hydroponic Substrate, Cocopeat Block 5kg, Low EC Cocopeat, Bulk Cocopeat Substrate, Indonesia Cocopeat Exporter"
 	schema={schema}
 >
 	<Header />
@@ -162,6 +205,25 @@ const schema = JSON.stringify({
 							<div>
 								<h2 class="text-xl font-bold text-primary-charcoal mb-2">{t('seo.coco.app')}</h2>
 								<p class="text-text-muted">{t('seo.coco.app.desc')}</p>
+							</div>
+						</div>
+
+						<!-- Frequently Asked Questions (FAQ) Section for B2B Buyers -->
+						<div class="mt-12 mb-10 pt-8 border-t border-gray-200">
+							<h2 class="text-2xl font-bold text-primary-charcoal mb-6">Frequently Asked Questions (FAQ) — Cocopeat Wholesale & Export</h2>
+							<div class="space-y-4">
+								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+									<h3 class="font-bold text-gray-900 text-base mb-2">What is the difference between Low EC and High EC Cocopeat?</h3>
+									<p class="text-sm text-gray-600 leading-relaxed">Low EC cocopeat (&lt;0.6 mS/cm) is thoroughly washed with fresh water to remove salts, making it optimal for direct seed germination, hydroponics, and greenhouses. High EC is unwashed and used for animal bedding.</p>
+								</div>
+								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+									<h3 class="font-bold text-gray-900 text-base mb-2">What is the expansion ratio of 5kg cocopeat blocks?</h3>
+									<p class="text-sm text-gray-600 leading-relaxed">Each 5kg block expands to approximately 60 to 65 liters of fluffy organic substrate upon hydration.</p>
+								</div>
+								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+									<h3 class="font-bold text-gray-900 text-base mb-2">How are cocopeat blocks packaged for international container shipping?</h3>
+									<p class="text-sm text-gray-600 leading-relaxed">Blocks are individually shrink-wrapped or naked-packed on wooden pallets with protective corner boards and stretch wrapping (4,600 blocks per 40ft HC container).</p>
+								</div>
 							</div>
 						</div>
 

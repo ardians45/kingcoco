@@ -13,9 +13,60 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const t = useTranslations(lang as keyof typeof languages);
 const translatePath = useTranslatedPath(lang as keyof typeof languages);
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "High Quality Coconut Coir Fiber — King Cocondo",
+      "image": "https://kingcocondo.com/images/cocopeat/image.webp",
+      "description": "Golden yellow brownish coconut coir fiber from Indonesia. High tensile strength, low moisture (<20%), tightly baled for industrial mattress, rope, and upholstery manufacturing.",
+      "brand": {
+        "@type": "Brand",
+        "name": "King Cocondo"
+      },
+      "category": "Industrial Raw Material / Coir Fiber",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "King Cocondo"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the primary industrial applications of Coconut Coir Fiber?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Coconut coir fiber is widely used for manufacturing eco-friendly mattresses, car seats, door mats, erosion control blankets (geotextiles), ropes, and livestock bedding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the standard bale weight and loadability of Coconut Fiber?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard bales weigh 105 - 110 kg each. A 40ft High Cube container loads up to 18 Metric Tons (approx 160-170 bales)."
+          }
+        }
+      ]
+    }
+  ]
+});
 ---
 
-<Layout title={`${t('seo.fiber.h1')} - King Cocondo`} description={t('seo.fiber.h1.sub')}>
+<Layout 
+	title="High Quality Coconut Coir Fiber Supplier & Exporter | King Cocondo" 
+	description="Leading supplier of golden coconut coir fiber & baby fiber from Indonesia. Ideal for industrial mattresses, geotextile, ropes, and livestock bedding."
+	keywords="Coconut Fiber, Coco Fiber, Coir Fiber, Coconut Coir, Fiber Supplier, Mattress Fiber, Golden Coco Fiber, Baled Coconut Fiber, Industrial Coir Fiber, Coconut Fiber Exporter"
+	schema={schema}
+>
 	<Header />
 
 	<main class="flex-grow pt-20">
@@ -99,6 +150,21 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 									</tr>
 								</tbody>
 							</table>
+						</div>
+
+						<!-- Frequently Asked Questions (FAQ) Section for B2B Buyers -->
+						<div class="mt-12 mb-10 pt-8 border-t border-gray-200">
+							<h2 class="text-2xl font-bold text-primary-charcoal mb-6">Frequently Asked Questions (FAQ) — Coconut Fiber Supply</h2>
+							<div class="space-y-4">
+								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+									<h3 class="font-bold text-gray-900 text-base mb-2">What are the main specifications of your Baled Coconut Fiber?</h3>
+									<p class="text-sm text-gray-600 leading-relaxed">Our golden coir fiber features 10-15cm average fiber length, low moisture content (&lt;20%), low impurity ash (&lt;5%), and high tensile strength for industrial processing.</p>
+								</div>
+								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+									<h3 class="font-bold text-gray-900 text-base mb-2">What is the container loading capacity for Coconut Fiber bales?</h3>
+									<p class="text-sm text-gray-600 leading-relaxed">A standard 40ft High Cube container carries approximately 18 Metric Tons of tightly strapped 105-110kg bales.</p>
+								</div>
+							</div>
 						</div>
 
 						<!-- Actions -->
