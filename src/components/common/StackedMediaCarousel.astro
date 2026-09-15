@@ -51,7 +51,7 @@ const items = [
   <div class="absolute -inset-4 bg-gradient-to-r from-accent-gold/20 via-primary-green/25 to-accent-gold/20 rounded-3xl transform rotate-2 group-hover:rotate-4 transition-transform duration-700 blur-xl opacity-70"></div>
 
   <!-- Stack Container -->
-  <div class="relative w-full aspect-[4/3] sm:aspect-[1/1] max-h-[500px]">
+  <div class="relative w-full aspect-square max-h-[480px]">
     {items.map((item, index) => (
       <div
         data-index={index}
@@ -65,7 +65,7 @@ const items = [
               loop
               muted
               playsinline
-              class="video-element w-full h-full object-cover object-center"
+              class="video-element w-full h-full object-cover object-bottom"
             ></video>
           ) : (
             <img

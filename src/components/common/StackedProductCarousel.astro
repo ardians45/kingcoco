@@ -46,7 +46,7 @@ const items = [
   <div class="absolute -inset-4 bg-gradient-to-r from-accent-gold/20 via-primary-green/20 to-accent-gold/20 rounded-3xl transform rotate-2 group-hover:rotate-4 transition-transform duration-700 blur-xl opacity-70"></div>
 
   <!-- Stack Container -->
-  <div class="relative w-full aspect-[4/3] sm:aspect-[1/1] max-h-[480px]">
+  <div class="relative w-full aspect-square max-h-[480px]">
     {items.map((item, index) => (
       <div
         data-index={index}
@@ -58,7 +58,7 @@ const items = [
             alt={item.alt}
             loading={index === 0 ? "eager" : "lazy"}
             decoding="async"
-            class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+            class="w-full h-full object-cover object-bottom transition-transform duration-700 group-hover:scale-105"
           />
           
           <!-- Top-Left Title Badge (Leaves bottom watermark 100% clear) -->
