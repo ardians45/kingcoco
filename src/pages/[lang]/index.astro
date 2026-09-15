@@ -50,31 +50,31 @@ const schema = JSON.stringify({
 				<!-- Desktop Hero Image -->
 				<img loading="eager" decoding="async" src="/images/new_assets/hero.webp" width="2752" height="1536" alt="Premium Coconut Products" class="hidden md:block w-full h-full object-cover object-bottom opacity-60" />
 				<!-- Mobile Hero Image (Portrait) -->
-				<img loading="eager" decoding="async" src="/images/new_assets/hero-mobile.webp" width="1536" height="2752" alt="Premium Coconut Products Mobile" class="block md:hidden w-full h-full object-cover object-bottom opacity-75" />
-				<!-- Modern dark gradient with a hint of green, adjusted for better image visibility -->
-				<div class="absolute inset-0 bg-gradient-to-tr from-primary-charcoal/90 via-primary-charcoal/60 to-primary-green/40 pointer-events-none"></div>
+				<img loading="eager" decoding="async" src="/images/new_assets/hero-mobile.webp" width="1536" height="2752" alt="Premium Coconut Products Mobile" class="block md:hidden w-full h-full object-cover object-bottom opacity-65" />
+				<!-- Modern dark gradient: top-down vignette on mobile for maximum text contrast while keeping bottom watermark clear -->
+				<div class="absolute inset-0 bg-gradient-to-b from-primary-charcoal/95 via-primary-charcoal/80 to-primary-charcoal/30 md:bg-gradient-to-tr md:from-primary-charcoal/90 md:via-primary-charcoal/60 md:to-primary-green/40 pointer-events-none"></div>
 			</div>
 			
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-16 pb-12">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-12 md:pt-16 pb-12">
 				<div class="max-w-3xl">
-					<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 border border-white/10 backdrop-blur-md mb-8 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 transition-colors shadow-[0_0_25px_rgba(212,175,55,0.15)]">
+					<div class="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-primary-charcoal/80 backdrop-blur-md border border-white/15 mb-6 md:mb-8 shadow-[0_0_25px_rgba(212,175,55,0.15)]">
 						<span class="w-2.5 h-2.5 rounded-full bg-accent-gold shadow-[0_0_10px_rgba(212,154,55,0.8)] animate-pulse"></span>
-						<span class="text-sm font-semibold text-gray-200 tracking-wide uppercase">{t('hero.badge')}</span>
+						<span class="text-xs sm:text-sm font-semibold text-gray-200 tracking-wide uppercase">{t('hero.badge')}</span>
 					</div>
 					
-					<h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6 drop-shadow-2xl">
+					<h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-snug md:leading-tight mb-4 md:mb-6 [text-shadow:_0_4px_20px_rgb(0_0_0_/_95%)]">
 						{t('hero.title.1')}
 					</h1>
 					
-					<p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed text-shadow-sm font-light">
+					<p class="text-base sm:text-lg md:text-xl text-gray-200 mb-8 md:mb-10 max-w-2xl leading-relaxed [text-shadow:_0_2px_12px_rgb(0_0_0_/_95%)] font-normal">
 						{t('hero.desc')}
 					</p>
 					
-					<div class="flex flex-col sm:flex-row gap-5">
-						<Button href={translatePath('/#contact')} variant="primary" class="py-4 px-10 text-lg w-full sm:w-auto justify-center shadow-[0_0_20px_rgba(27,59,43,0.5)] hover:shadow-[0_0_30px_rgba(27,59,43,0.8)] transition-all hover:-translate-y-1">
+					<div class="flex flex-col sm:flex-row gap-4 sm:gap-5">
+						<Button href={translatePath('/#contact')} variant="primary" class="py-3.5 sm:py-4 px-8 sm:px-10 text-base sm:text-lg w-full sm:w-auto justify-center shadow-[0_0_20px_rgba(27,59,43,0.5)] hover:shadow-[0_0_30px_rgba(27,59,43,0.8)] transition-all hover:-translate-y-1">
 							{t('btn.quote')}
 						</Button>
-						<Button href={translatePath('/#products')} variant="outline" class="py-4 px-10 text-lg w-full sm:w-auto justify-center bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/15 text-white border-white/20 backdrop-blur-sm transition-all hover:-translate-y-1">
+						<Button href={translatePath('/#products')} variant="outline" class="py-3.5 sm:py-4 px-8 sm:px-10 text-base sm:text-lg w-full sm:w-auto justify-center bg-primary-charcoal/80 backdrop-blur-md hover:bg-primary-charcoal text-white border-white/20 transition-all hover:-translate-y-1">
 							{t('btn.explore')}
 						</Button>
 					</div>
