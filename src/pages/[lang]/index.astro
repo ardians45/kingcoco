@@ -253,97 +253,103 @@ const schema = JSON.stringify({
 							<div class="h-px bg-gray-200 flex-1 ml-8"></div>
 						</div>
 						
-						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 							<!-- Cocopeat Grade A -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-gradient-gold text-primary-dark text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">Grade A</div>
-								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade A" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col justify-between group relative">
+								<span class="absolute top-3 right-3 z-10 bg-accent-gold/20 backdrop-blur-md text-accent-gold border border-accent-gold/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Grade A</span>
+								<div class="relative w-full aspect-[4/3] bg-surface-dark/80 overflow-hidden flex items-center justify-center p-3 border-b border-white/5">
+									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade A" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-white mb-4 leading-tight">{t('cocopeat.h4.1')}</h4>
-									<ul class="space-y-2 text-sm text-gray-400 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 60 - 65 L</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x30x12-15 cm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Shrink in pallet</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
-									</ul>
-									<div class="mt-auto pt-6 border-t border-surface-dark">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+								<div class="p-6 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-lg font-heading font-bold text-white mb-4 leading-tight group-hover:text-accent-gold transition-colors">{t('cocopeat.h4.1')}</h4>
+										<ul class="space-y-1.5 text-xs mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">EC</span><span class="font-bold text-accent-gold">Max 0.6 mS/cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Weight</span><span class="font-medium text-white">4.5 - 5 Kg</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Expansion</span><span class="font-medium text-white">60 - 65 L</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Moisture</span><span class="font-medium text-white">&lt; 20%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">pH Level</span><span class="font-medium text-white">5 - 7</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Dimension</span><span class="font-mono text-gray-200">30×30×15 cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Load (40FT)</span><span class="font-medium text-white">4600 blocks</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Cocopeat Grade B -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">Grade B</div>
-								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade B" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col justify-between group relative">
+								<span class="absolute top-3 right-3 z-10 bg-yellow-500/20 backdrop-blur-md text-yellow-400 border border-yellow-500/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Grade B</span>
+								<div class="relative w-full aspect-[4/3] bg-surface-dark/80 overflow-hidden flex items-center justify-center p-3 border-b border-white/5">
+									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade B" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-white mb-4 leading-tight">{t('cocopeat.h4.2')}</h4>
-									<ul class="space-y-2 text-sm text-gray-400 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 55 - 60 L</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Mesh:</strong> &gt; 1 mm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Shrink in pallet</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
-									</ul>
-									<div class="mt-auto pt-6 border-t border-surface-dark">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+								<div class="p-6 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-lg font-heading font-bold text-white mb-4 leading-tight group-hover:text-accent-gold transition-colors">{t('cocopeat.h4.2')}</h4>
+										<ul class="space-y-1.5 text-xs mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">EC</span><span class="font-bold text-accent-gold">Max 0.6 mS/cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Weight</span><span class="font-medium text-white">4.5 - 5 Kg</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Expansion</span><span class="font-medium text-white">55 - 60 L</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Moisture</span><span class="font-medium text-white">&lt; 20%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">pH Level</span><span class="font-medium text-white">5 - 7</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Dimension</span><span class="font-mono text-gray-200">30×30×15 cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Load (40FT)</span><span class="font-medium text-white">4600 blocks</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Cocopeat High EC -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-gray-600 text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">High EC</div>
-								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block High EC" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col justify-between group relative">
+								<span class="absolute top-3 right-3 z-10 bg-gray-500/20 backdrop-blur-md text-gray-300 border border-gray-500/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">High EC</span>
+								<div class="relative w-full aspect-[4/3] bg-surface-dark/80 overflow-hidden flex items-center justify-center p-3 border-b border-white/5">
+									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block High EC" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-white mb-4 leading-tight">{t('cocopeat.h4.3')}</h4>
-									<ul class="space-y-2 text-sm text-gray-400 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> &gt; 1 mS/cm (1:3)</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 55 - 60 L</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x30x12-15 cm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
-									</ul>
-									<div class="mt-auto pt-6 border-t border-surface-dark">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+								<div class="p-6 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-lg font-heading font-bold text-white mb-4 leading-tight group-hover:text-accent-gold transition-colors">{t('cocopeat.h4.3')}</h4>
+										<ul class="space-y-1.5 text-xs mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">EC</span><span class="font-bold text-white">&gt; 1 mS/cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Weight</span><span class="font-medium text-white">4.5 - 5 Kg</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Expansion</span><span class="font-medium text-white">55 - 60 L</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Moisture</span><span class="font-medium text-white">&lt; 20%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">pH Level</span><span class="font-medium text-white">5 - 7</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Dimension</span><span class="font-mono text-gray-200">30×30×15 cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Load (40FT)</span><span class="font-medium text-white">4600 blocks</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Cocopeat Polybag -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
-								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/warehouse-cocopeat-blocks.webp" width="1013" height="565" alt="Cocopeat Polybag Low EC" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col justify-between group relative">
+								<span class="absolute top-3 right-3 z-10 bg-accent-gold/20 backdrop-blur-md text-accent-gold border border-accent-gold/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Polybag</span>
+								<div class="relative w-full aspect-[4/3] bg-surface-dark/80 overflow-hidden flex items-center justify-center p-3 border-b border-white/5">
+									<img src="/images/new_assets/warehouse-cocopeat-blocks.webp" width="1013" height="565" alt="Cocopeat Polybag Low EC" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-white mb-4 leading-tight">{t('cocopeat.h4.polybag')}</h4>
-									<ul class="space-y-2 text-sm text-gray-400 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.5 ms/cm (1:3)</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 29 - 30 kgs/bag</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 40% - 50%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Mesh:</strong> 4 mm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x40x70 cm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Polybag</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 750-800 bags/40ft HC</span></li>
-									</ul>
-									<div class="mt-auto pt-6 border-t border-surface-dark">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+								<div class="p-6 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-lg font-heading font-bold text-white mb-4 leading-tight group-hover:text-accent-gold transition-colors">{t('cocopeat.h4.polybag')}</h4>
+										<ul class="space-y-1.5 text-xs mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">EC</span><span class="font-bold text-accent-gold">Max 0.5 mS/cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Weight</span><span class="font-medium text-white">29 - 30 Kg/bag</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Moisture</span><span class="font-medium text-white">40% - 50%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">pH Level</span><span class="font-medium text-white">5 - 7</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Mesh</span><span class="font-medium text-white">4 mm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Dimension</span><span class="font-mono text-gray-200">30×40×70 cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400 font-medium">Load (40FT)</span><span class="font-medium text-white">750-800 bags</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -359,43 +365,43 @@ const schema = JSON.stringify({
 						
 						<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 							<!-- Baby Fiber -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col sm:flex-row group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
-								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/coconut-fiber-bale.webp" width="720" height="540" alt="Baby Fiber High EC" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col sm:flex-row group">
+								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-surface-dark/80 overflow-hidden relative flex items-center justify-center p-3">
+									<img src="/images/new_assets/coconut-fiber-bale.webp" width="720" height="540" alt="Baby Fiber High EC" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
-									<h4 class="text-2xl font-bold text-white mb-2 leading-tight">{t('fiber.h4.baby')}</h4>
-									<p class="text-sm text-yellow-700 font-semibold mb-6">Livestock Bedding</p>
-									<ul class="space-y-3 text-sm text-gray-400 mb-8">
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> +- 250 Kg/Bale</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 40-50%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Jumbo bag</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Loadability:</strong> 80 bales / 40ft HC</span></li>
-									</ul>
-									<div class="mt-auto">
-										<Button href={translatePath('/#contact')} variant="outline">Request Quote</Button>
+								<div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-2xl font-heading font-bold text-white mb-2 leading-tight group-hover:text-accent-gold transition-colors">{t('fiber.h4.baby')}</h4>
+										<p class="text-xs text-accent-gold font-semibold mb-6 uppercase tracking-wider">Livestock Bedding</p>
+										<ul class="space-y-2 text-xs text-gray-300 mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Weight</span><span class="font-medium text-white">+- 250 Kg/Bale</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Moisture</span><span class="font-medium text-white">&lt; 15%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Dimension</span><span class="font-mono text-gray-200">110×70×50 cm</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center text-xs py-2">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Coconut Fiber -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col sm:flex-row group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
-								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/raw-coconut-fiber.webp" width="720" height="520" alt="Coconut Fiber" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col sm:flex-row group">
+								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-surface-dark/80 overflow-hidden relative flex items-center justify-center p-3">
+									<img src="/images/new_assets/raw-coconut-fiber.webp" width="720" height="520" alt="Coconut Fiber" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
-									<h4 class="text-2xl font-bold text-white mb-2 leading-tight">{t('products.h3.fiber')}</h4>
-									<p class="text-sm text-yellow-700 font-semibold mb-6">Premium Grade</p>
-									<ul class="space-y-3 text-sm text-gray-400 mb-8">
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Color:</strong> Yellow Brownish</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Length:</strong> 10-15 cm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Ash:</strong> &lt; 5%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 105-110 kg/bale</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Loadability:</strong> 18 MT / 40ft HC</span></li>
-									</ul>
-									<div class="mt-auto">
-										<Button href={translatePath('/#contact')} variant="outline">Request Quote</Button>
+								<div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-2xl font-heading font-bold text-white mb-2 leading-tight group-hover:text-accent-gold transition-colors">{t('fiber.h4.coconut')}</h4>
+										<p class="text-xs text-accent-gold font-semibold mb-6 uppercase tracking-wider">Industrial Raw Fiber</p>
+										<ul class="space-y-2 text-xs text-gray-300 mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Length</span><span class="font-medium text-white">5 - 25 cm</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Weight</span><span class="font-medium text-white">90 - 100 Kg/Bale</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Impurities</span><span class="font-medium text-white">&lt; 3%</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center text-xs py-2">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -409,89 +415,99 @@ const schema = JSON.stringify({
 							<div class="h-px bg-gray-200 flex-1 ml-8"></div>
 						</div>
 						
-						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 							<!-- Charcoal 1 -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
-								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/burning-hexagon-briquettes.webp" width="720" height="756" alt="Shisha Charcoal No 1" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col justify-between group relative">
+								<span class="absolute top-3 right-3 z-10 bg-white/10 backdrop-blur-md text-gray-200 border border-white/20 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Grade 1</span>
+								<div class="relative w-full aspect-[4/3] bg-surface-dark/80 overflow-hidden flex items-center justify-center p-3 border-b border-white/5">
+									<img src="/images/new_assets/burning-hexagon-briquettes.webp" width="720" height="756" alt="Shisha Charcoal No 1" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-white mb-1 leading-tight">{t('charcoal.h4.1')}</h4>
-									<p class="text-sm text-gray-400 mb-6">Specification No. 1</p>
-									<ul class="space-y-2 text-sm text-gray-400 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> &gt; 3%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≤ 75%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 7% Max</span></li>
-									</ul>
-									<div class="mt-auto pt-6 border-t border-surface-dark">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+								<div class="p-6 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-lg font-heading font-bold text-white mb-1 leading-tight group-hover:text-accent-gold transition-colors">{t('charcoal.h4.1')}</h4>
+										<p class="text-xs text-gray-400 mb-4">Standard Spec No. 1</p>
+										<ul class="space-y-1.5 text-xs mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Ash Content</span><span class="font-medium text-white">&gt; 3%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Ash Color</span><span class="font-medium text-white">Natural White</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Burn Time</span><span class="font-medium text-white">&gt; 2 Hours</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Fixed Carbon</span><span class="font-medium text-white">≤ 75%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Moisture</span><span class="font-medium text-white">7% Max</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Charcoal 2 -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">Popular</div>
-								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/stacked-hexagon-briquettes.webp" width="720" height="936" alt="Shisha Charcoal No 2" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col justify-between group relative">
+								<span class="absolute top-3 right-3 z-10 bg-accent-gold/20 backdrop-blur-md text-accent-gold border border-accent-gold/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Popular</span>
+								<div class="relative w-full aspect-[4/3] bg-surface-dark/80 overflow-hidden flex items-center justify-center p-3 border-b border-white/5">
+									<img src="/images/new_assets/stacked-hexagon-briquettes.webp" width="720" height="936" alt="Shisha Charcoal No 2" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-white mb-1 leading-tight">{t('charcoal.h4.2')}</h4>
-									<p class="text-sm text-gray-400 mb-6">Specification No. 2</p>
-									<ul class="space-y-2 text-sm text-gray-400 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.5% - 3%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> &gt; 75%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 6% Max</span></li>
-									</ul>
-									<div class="mt-auto pt-6 border-t border-surface-dark">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+								<div class="p-6 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-lg font-heading font-bold text-white mb-1 leading-tight group-hover:text-accent-gold transition-colors">{t('charcoal.h4.2')}</h4>
+										<p class="text-xs text-gray-400 mb-4">Standard Spec No. 2</p>
+										<ul class="space-y-1.5 text-xs mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Ash Content</span><span class="font-bold text-accent-gold">2.5% - 3%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Ash Color</span><span class="font-medium text-white">Natural White</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Burn Time</span><span class="font-medium text-white">&gt; 2 Hours</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Fixed Carbon</span><span class="font-medium text-white">&gt; 75%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Moisture</span><span class="font-medium text-white">6% Max</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Charcoal 3 -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
-								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/hexagon-briquettes-in-box.webp" width="720" height="916" alt="Shisha Charcoal No 3" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col justify-between group relative">
+								<span class="absolute top-3 right-3 z-10 bg-yellow-500/20 backdrop-blur-md text-yellow-400 border border-yellow-500/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Grade 3</span>
+								<div class="relative w-full aspect-[4/3] bg-surface-dark/80 overflow-hidden flex items-center justify-center p-3 border-b border-white/5">
+									<img src="/images/new_assets/hexagon-briquettes-in-box.webp" width="720" height="916" alt="Shisha Charcoal No 3" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-white mb-1 leading-tight">{t('charcoal.h4.3')}</h4>
-									<p class="text-sm text-gray-400 mb-6">Specification No. 3</p>
-									<ul class="space-y-2 text-sm text-gray-400 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.0-2.5%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≤ 80%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 5% Max</span></li>
-									</ul>
-									<div class="mt-auto pt-6 border-t border-surface-dark">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+								<div class="p-6 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-lg font-heading font-bold text-white mb-1 leading-tight group-hover:text-accent-gold transition-colors">{t('charcoal.h4.3')}</h4>
+										<p class="text-xs text-gray-400 mb-4">Standard Spec No. 3</p>
+										<ul class="space-y-1.5 text-xs mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Ash Content</span><span class="font-bold text-accent-gold">2.0% - 2.5%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Ash Color</span><span class="font-medium text-white">Natural White</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Burn Time</span><span class="font-medium text-white">&gt; 2 Hours</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Fixed Carbon</span><span class="font-medium text-white">≤ 80%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Moisture</span><span class="font-medium text-white">5% Max</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Charcoal 4 -->
-							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-primary-charcoal text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">Premium</div>
-								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
-									<img src="/images/new_assets/burning-cube-briquettes.webp" width="720" height="888" alt="Shisha Charcoal No 4" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/60 backdrop-blur-xl border border-accent-gold/15 rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:border-accent-gold/40 transition-all duration-500 flex flex-col justify-between group relative">
+								<span class="absolute top-3 right-3 z-10 bg-accent-gold/20 backdrop-blur-md text-accent-gold border border-accent-gold/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Ultra Low Ash</span>
+								<div class="relative w-full aspect-[4/3] bg-surface-dark/80 overflow-hidden flex items-center justify-center p-3 border-b border-white/5">
+									<img src="/images/new_assets/burning-cube-briquettes.webp" width="720" height="888" alt="Shisha Charcoal No 4" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
 								</div>
-								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-white mb-1 leading-tight">{t('charcoal.h4.4')}</h4>
-									<p class="text-sm text-gray-400 mb-6">Specification No. 4</p>
-									<ul class="space-y-2 text-sm text-gray-400 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2% Max</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≥ 80%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 5% Max</span></li>
-									</ul>
-									<div class="mt-auto pt-6 border-t border-surface-dark">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
+								<div class="p-6 flex-1 flex flex-col justify-between">
+									<div>
+										<h4 class="text-lg font-heading font-bold text-white mb-1 leading-tight group-hover:text-accent-gold transition-colors">{t('charcoal.h4.4')}</h4>
+										<p class="text-xs text-gray-400 mb-4">Ultra Low Ash Spec No. 4</p>
+										<ul class="space-y-1.5 text-xs mb-6">
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Ash Content</span><span class="font-bold text-accent-gold">2% Max</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Ash Color</span><span class="font-medium text-white">Natural White</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Burn Time</span><span class="font-medium text-white">&gt; 2.5 Hours</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Fixed Carbon</span><span class="font-medium text-white">≥ 80%</span></li>
+											<li class="flex items-center justify-between py-1 border-b border-white/5"><span class="text-gray-400">Moisture</span><span class="font-medium text-white">5% Max</span></li>
+										</ul>
+									</div>
+									<div class="pt-4 border-t border-white/10">
+										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
