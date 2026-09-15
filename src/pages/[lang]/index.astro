@@ -47,9 +47,12 @@ const schema = JSON.stringify({
 		<!-- HERO SECTION -->
 		<section class="relative min-h-[90vh] flex items-center pt-20 overflow-visible bg-primary-charcoal pb-32">
 			<div class="absolute inset-0 z-0">
-				<img loading="lazy" decoding="async" src="/images/new_assets/hero.webp" width="2752" height="1536" alt="Premium Coconut Products" class="w-full h-full object-cover object-bottom opacity-60" />
+				<!-- Desktop Hero Image -->
+				<img loading="eager" decoding="async" src="/images/new_assets/hero.webp" width="2752" height="1536" alt="Premium Coconut Products" class="hidden md:block w-full h-full object-cover object-bottom opacity-60" />
+				<!-- Mobile Hero Image (Portrait) -->
+				<img loading="eager" decoding="async" src="/images/new_assets/hero-mobile.webp" width="1536" height="2752" alt="Premium Coconut Products Mobile" class="block md:hidden w-full h-full object-cover object-bottom opacity-75" />
 				<!-- Modern dark gradient with a hint of green, adjusted for better image visibility -->
-				<div class="absolute inset-0 bg-gradient-to-tr from-primary-charcoal/90 via-primary-charcoal/60 to-primary-green/40"></div>
+				<div class="absolute inset-0 bg-gradient-to-tr from-primary-charcoal/90 via-primary-charcoal/60 to-primary-green/40 pointer-events-none"></div>
 			</div>
 			
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-16 pb-12">
