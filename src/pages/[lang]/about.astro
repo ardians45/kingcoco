@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/common/Header.astro';
 import Footer from '../../components/common/Footer.astro';
 import Button from '../../components/common/Button.astro';
+import StackedProductCarousel from '../../components/common/StackedProductCarousel.astro';
 import { Building2, Target, HeartHandshake, CheckCircle2, ShieldCheck, Award, MapPin } from 'lucide-astro';
 import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
 
@@ -79,10 +80,8 @@ const values = [
 					</div>
 				</div>
 
-				<div class="relative">
-					<div class="rounded-2xl overflow-hidden bg-surface-dark/60 border border-accent-gold/20 shadow-2xl flex items-center justify-center p-2">
-						<img src="/images/new_assets/burning-cube-briquettes.webp" alt="Burning Cube Briquettes - King Cocondo" class="w-full h-auto max-h-[450px] object-contain rounded-xl" />
-					</div>
+				<div>
+					<StackedProductCarousel />
 				</div>
 			</section>
 
