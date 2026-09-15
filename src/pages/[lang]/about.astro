@@ -1,0 +1,165 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+import Button from '../../components/common/Button.astro';
+import { Building2, Target, HeartHandshake, CheckCircle2, ShieldCheck, Award, MapPin } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as keyof typeof languages);
+const translatePath = useTranslatedPath(lang as keyof typeof languages);
+
+const values = [
+  {
+    title: "Direct Factory Manufacturer",
+    desc: "We own and operate integrated manufacturing and drying facilities in Central Java and Yogyakarta, eliminating middleman markups for B2B buyers.",
+    icon: Building2
+  },
+  {
+    title: "100% Sustainable Upcycling",
+    desc: "Our production utilizes 100% natural agricultural waste coconut shells, converting discarded biomass into clean energy and eco-friendly soil media.",
+    icon: Target
+  },
+  {
+    title: "Global Export Experience",
+    desc: "With hundreds of shipping containers delivered across 30+ countries, our team understands international customs, phytosanitary requirements, and port logistics.",
+    icon: HeartHandshake
+  }
+];
+---
+
+<Layout 
+	title="ABOUT KING COCONDO | Premium Indonesian Coconut Manufacturer & Exporter" 
+	description="Learn about King Cocondo Indonesia — premier manufacturer and exporter of coconut charcoal briquettes, cocopeat, and raw coconut fiber."
+>
+	<Header />
+
+	<main class="flex-grow pt-24 pb-20 bg-primary-dark min-h-screen text-white">
+		<!-- Hero Section -->
+		<section class="relative py-16 bg-gradient-to-b from-surface-dark via-primary-dark to-primary-dark border-b border-white/5 overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+				<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-gold/10 text-accent-gold font-semibold text-xs tracking-widest uppercase mb-4 border border-accent-gold/20">
+					<Building2 class="w-4 h-4" /> Established Indonesian Exporter
+				</span>
+				<h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 tracking-tight">
+					ABOUT <span class="text-accent-gold">KING COCONDO</span>
+				</h1>
+				<p class="text-gray-300 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+					Empowering global B2B partners with standardized, high-performance coconut products harvested directly from Indonesia's rich tropical coconut groves.
+				</p>
+			</div>
+		</section>
+
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+
+			<!-- Company Overview & Image -->
+			<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+				<div class="space-y-6">
+					<span class="text-accent-gold font-semibold text-sm uppercase tracking-widest">Our Heritage & Mission</span>
+					<h2 class="text-3xl md:text-4xl font-heading font-bold text-white leading-tight">
+						Indonesia's Premier Coconut Derivatives Supplier
+					</h2>
+					<p class="text-gray-300 text-base leading-relaxed">
+						Located in Yogyakarta, Indonesia, King Cocondo was founded with a singular commitment: to deliver uncompromised quality in natural energy and agricultural substrates to the international market.
+					</p>
+					<p class="text-gray-300 text-base leading-relaxed">
+						By maintaining direct partnerships with local farming communities in Java, Sumatra, and Sulawesi, we ensure a sustainable supply of premium aged coconut shells, while uplifting local agrarian economies.
+					</p>
+					
+					<div class="pt-2 flex flex-col sm:flex-row gap-4">
+						<div class="flex items-center gap-3 text-sm text-gray-200">
+							<MapPin class="w-5 h-5 text-accent-gold shrink-0" />
+							<span>Factory: Yogyakarta & Central Java, Indonesia</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="relative">
+					<div class="aspect-w-16 aspect-h-10 rounded-2xl overflow-hidden bg-surface-dark border border-accent-gold/20 shadow-2xl">
+						<img src="/images/new_assets/hero.webp" alt="King Cocondo Production Hub" class="w-full h-80 md:h-96 object-cover object-bottom" />
+					</div>
+				</div>
+			</section>
+
+			<!-- Vision & Mission Cards -->
+			<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div class="bg-surface-dark/60 border border-accent-gold/15 rounded-2xl p-8 space-y-4">
+					<span class="text-xs font-bold uppercase tracking-widest px-3 py-1 bg-accent-gold/10 text-accent-gold rounded-full border border-accent-gold/20">
+						Our Vision
+					</span>
+					<h3 class="text-2xl font-bold text-white">Global Sustainable Energy Leadership</h3>
+					<p class="text-gray-300 text-sm leading-relaxed">
+						To be the world’s most trusted and sustainable supplier of coconut-derived products, driving eco-friendly agricultural substrate and clean energy solutions worldwide.
+					</p>
+				</div>
+
+				<div class="bg-surface-dark/60 border border-accent-gold/15 rounded-2xl p-8 space-y-4">
+					<span class="text-xs font-bold uppercase tracking-widest px-3 py-1 bg-accent-gold/10 text-accent-gold rounded-full border border-accent-gold/20">
+						Our Mission
+					</span>
+					<h3 class="text-2xl font-bold text-white">Standardized Excellence & Fair Trade</h3>
+					<p class="text-gray-300 text-sm leading-relaxed">
+						To deliver top-tier quality through strict lab testing, empower local Indonesian farmers, and provide seamless, transparent maritime trade for our global partners.
+					</p>
+				</div>
+			</section>
+
+			<!-- Core Strengths -->
+			<section>
+				<div class="text-center max-w-3xl mx-auto mb-12">
+					<h2 class="text-3xl font-heading font-bold text-white mb-3">Why B2B Importers Choose Us</h2>
+					<p class="text-gray-400 text-sm">Key pillars that make King Cocondo a dependable supply chain partner</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					{values.map((v) => {
+						const IconComp = v.icon;
+						return (
+							<div class="bg-surface-dark/60 border border-accent-gold/15 rounded-2xl p-8 space-y-4 hover:border-accent-gold/40 transition-colors shadow-lg">
+								<div class="w-12 h-12 rounded-xl bg-accent-gold/10 text-accent-gold flex items-center justify-center">
+									<IconComp class="w-6 h-6" />
+								</div>
+								<h3 class="text-xl font-bold text-white">{v.title}</h3>
+								<p class="text-sm text-gray-300 leading-relaxed">{v.desc}</p>
+							</div>
+						);
+					})}
+				</div>
+			</section>
+
+			<!-- Factory Images Gallery Grid -->
+			<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+					<img src="/images/new_assets/warehouse-cocopeat-blocks.webp" alt="Warehouse Cocopeat Blocks Storage" class="w-full h-64 object-cover object-bottom" />
+				</div>
+				<div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+					<img src="/images/new_assets/warehouse-wrapped-pallets.webp" alt="Warehouse Wrapped Pallets Storage" class="w-full h-64 object-cover object-bottom" />
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="bg-gradient-to-r from-surface-dark via-primary-charcoal to-surface-dark border border-accent-gold/30 rounded-3xl p-8 md:p-12 text-center shadow-2xl">
+				<div class="max-w-3xl mx-auto space-y-6">
+					<Award class="w-12 h-12 text-accent-gold mx-auto" />
+					<h3 class="text-3xl font-heading font-bold text-white">Ready to Partner with King Cocondo?</h3>
+					<p class="text-gray-300 text-base">
+						Contact our export sales team today to discuss product samples, contract pricing, or OEM branding requirements.
+					</p>
+					<div class="pt-4 flex flex-wrap justify-center gap-4">
+						<Button href="https://wa.me/6285719619013?text=Hello%20King%20Cocondo,%20I%20want%20to%20discuss%20a%20B2B%20Partnership." variant="primary" class="py-3 px-8 text-base">
+							Start B2B Discussion
+						</Button>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<Footer />
+</Layout>

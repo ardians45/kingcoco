@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+import Button from '../../components/common/Button.astro';
+import { Factory, Cpu, ShieldCheck, Flame, Sun, Sparkles, CheckCircle2 } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as keyof typeof languages);
+const translatePath = useTranslatedPath(lang as keyof typeof languages);
+
+const steps = [
+  {
+    num: "01",
+    title: "Raw Material Selection",
+    subtitle: "100% Aged Indonesian Coconut Shells",
+    desc: "We exclusively source mature, high-density coconut shells from trusted local farmers in Java, Sulawesi, and Sumatra. Shells are thoroughly cleaned to remove husk fiber and soil before processing.",
+    image: "/images/new_assets/raw-coconut-fiber.webp",
+    points: ["100% Natural Aged Shells", "Zero Chemical Additives", "Strict Foreign Matter Filtering"]
+  },
+  {
+    num: "02",
+    title: "Carbonization Process",
+    subtitle: "Controlled High-Temperature Pyrolysis",
+    desc: "Coconut shells undergo traditional and kiln carbonization at controlled temperatures. This process yields charcoal with high fixed carbon (>80%) and low volatile organic compounds.",
+    image: "/images/new_assets/stacked-hexagon-briquettes.webp",
+    points: ["High Carbon Density", "Low Smoke & Volatile Yield", "Uniform Charring Quality"]
+  },
+  {
+    num: "03",
+    title: "Crushing, Sieving & Briquetting",
+    subtitle: "High-Pressure Hydraulic Extrusion",
+    desc: "Charcoal is ground into fine powder and passed through multi-stage mesh sieves. Mixed with 100% organic tapioca binder, the paste is extruded under high pressure to guarantee compact density and non-sparking performance.",
+    image: "/images/new_assets/drying-hexagon-briquettes.webp",
+    points: ["High Density Compression", "Organic Tapioca Binder", "Precision Cube & Hexagonal Dies"]
+  },
+  {
+    num: "04",
+    title: "Oven Drying & Curing",
+    subtitle: "Slow Drying for Moisture Elimination",
+    desc: "Extruded briquettes spend 24 to 48 hours in specialized hot-air ovens to dry evenly. This crucial step reduces internal moisture to below 5%, ensuring instant ignition and long-lasting heat.",
+    image: "/images/new_assets/measuring-burning-charcoal-temp.webp",
+    points: ["Moisture < 5%", "Consistent Heat Output", "Prevents Cracking & Crumbles"]
+  },
+  {
+    num: "05",
+    title: "Quality Inspection & Packaging",
+    subtitle: "Lab Testing & Inner Box Sealing",
+    desc: "Before packing, random samples from every batch undergo lab pyrometer temperature tests, drop tests, and ash color checks. Briquettes are sealed in plastic foil inner bags and master cartons.",
+    image: "/images/new_assets/wrapping-charcoal-pallet.webp",
+    points: ["Drop Test & Ash Color Check", "Moisture-Proof Plastic Wrapping", "Custom OEM Brand Inner Box"]
+  }
+];
+---
+
+<Layout 
+	title="MANUFACTURING & PRODUCTION PROCESS | King Cocondo" 
+	description="Discover King Cocondo's 5-stage manufacturing process for premium coconut charcoal briquettes, from raw shell sourcing to oven drying and quality control."
+>
+	<Header />
+
+	<main class="flex-grow pt-24 pb-20 bg-primary-dark min-h-screen text-white">
+		<!-- Hero Section -->
+		<section class="relative py-16 bg-gradient-to-b from-surface-dark via-primary-dark to-primary-dark border-b border-white/5 overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+				<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-gold/10 text-accent-gold font-semibold text-xs tracking-widest uppercase mb-4 border border-accent-gold/20">
+					<Factory class="w-4 h-4" /> Sustainable Industrial Excellence
+				</span>
+				<h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 tracking-tight">
+					OUR <span class="text-accent-gold">PRODUCTION PROCESS</span>
+				</h1>
+				<p class="text-gray-300 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+					From raw Indonesian coconut shell sourcing to high-pressure extrusion and oven curing — explore how we craft world-class shisha briquettes.
+				</p>
+			</div>
+		</section>
+
+		<!-- Steps Timeline -->
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+			{steps.map((step, idx) => (
+				<div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+					<div class={`space-y-6 ${idx % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}>
+						<div class="flex items-center gap-4">
+							<span class="text-4xl font-heading font-extrabold text-accent-gold/40 border-b-2 border-accent-gold/20 pb-1">
+								{step.num}
+							</span>
+							<span class="text-xs font-bold uppercase tracking-widest px-3 py-1 bg-white/5 rounded-full text-accent-gold">
+								Phase {idx + 1}
+							</span>
+						</div>
+						<h2 class="text-3xl font-heading font-bold text-white leading-tight">
+							{step.title}
+						</h2>
+						<p class="text-accent-gold font-medium text-sm">
+							{step.subtitle}
+						</p>
+						<p class="text-gray-300 text-base leading-relaxed">
+							{step.desc}
+						</p>
+						
+						<ul class="space-y-2 pt-2">
+							{step.points.map((pt) => (
+								<li class="flex items-center gap-3 text-sm text-gray-200">
+									<CheckCircle2 class="w-4 h-4 text-accent-gold shrink-0" />
+									<span>{pt}</span>
+								</li>
+							))}
+						</ul>
+					</div>
+
+					<div class={`relative ${idx % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
+						<div class="aspect-w-16 aspect-h-10 rounded-2xl overflow-hidden bg-surface-dark border border-accent-gold/20 shadow-2xl group">
+							<img 
+								src={step.image} 
+								alt={step.title} 
+								class="w-full h-80 md:h-96 object-cover object-bottom group-hover:scale-105 transition-transform duration-500" 
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-transparent to-transparent"></div>
+						</div>
+					</div>
+				</div>
+			))}
+
+			<!-- Capacity Highlight Section -->
+			<section class="bg-surface-dark/60 border border-accent-gold/20 rounded-3xl p-8 md:p-12">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+					<div class="pt-4 md:pt-0">
+						<span class="block text-4xl font-heading font-extrabold text-accent-gold mb-2">500+ MT</span>
+						<span class="text-sm text-gray-300 uppercase tracking-wider font-semibold">Monthly Production Capacity</span>
+					</div>
+					<div class="pt-4 md:pt-0">
+						<span class="block text-4xl font-heading font-extrabold text-accent-gold mb-2">24 - 48 Hrs</span>
+						<span class="text-sm text-gray-300 uppercase tracking-wider font-semibold">Controlled Oven Drying Cycle</span>
+					</div>
+					<div class="pt-4 md:pt-0">
+						<span class="block text-4xl font-heading font-extrabold text-accent-gold mb-2">100%</span>
+						<span class="text-sm text-gray-300 uppercase tracking-wider font-semibold">Natural Organic Tapioca Binder</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="bg-gradient-to-r from-surface-dark via-primary-charcoal to-surface-dark border border-accent-gold/30 rounded-3xl p-8 md:p-12 text-center shadow-2xl">
+				<div class="max-w-3xl mx-auto space-y-6">
+					<Sparkles class="w-12 h-12 text-accent-gold mx-auto" />
+					<h3 class="text-3xl font-heading font-bold text-white">Interested in Factory Inspection or Custom OEM Batching?</h3>
+					<p class="text-gray-300 text-base">
+						We welcome international buyers to audit our manufacturing facility in Indonesia or request sample batches.
+					</p>
+					<div class="pt-4">
+						<Button href="https://wa.me/6285719619013?text=Hello%20King%20Cocondo,%20I%20want%20to%20inquire%20about%20Factory%20Visit%20and%20Production%20Capacity." variant="primary" class="py-3 px-8 text-base">
+							Contact Production Manager
+						</Button>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<Footer />
+</Layout>

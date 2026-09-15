@@ -1,0 +1,222 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+import Button from '../../components/common/Button.astro';
+import { Globe2, Ship, Package, Anchor, CheckCircle2, Box } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as keyof typeof languages);
+const translatePath = useTranslatedPath(lang as keyof typeof languages);
+
+const regions = [
+  { region: "Middle East", countries: "UAE, Saudi Arabia, Kuwait, Qatar, Jordan, Lebanon, Iraq, Turkey" },
+  { region: "Europe", countries: "Germany, Netherlands, France, UK, Poland, Czech Republic, Greece, Spain" },
+  { region: "North America", countries: "United States (USA), Canada" },
+  { region: "Asia & Oceania", countries: "Australia, South Korea, Japan, Malaysia" }
+];
+
+const containerSpecs = [
+  {
+    type: "20FT FCL Container",
+    briquetteCap: "14 – 15 Metric Tons",
+    cocopeatCap: "11 – 12 Metric Tons (Unpalletized)",
+    fiberCap: "10 – 11 Metric Tons (Bales)",
+    bestFor: "Trial shipments & regional distributors"
+  },
+  {
+    type: "40FT HC FCL Container",
+    briquetteCap: "25 – 26 Metric Tons",
+    cocopeatCap: "21 – 22 Metric Tons (22 Pallets)",
+    fiberCap: "18 – 19 Metric Tons (200 Bales)",
+    bestFor: "Full wholesale bulk orders (Maximum Freight Efficiency)"
+  }
+];
+
+const packagings = [
+  {
+    title: "1 Kg Inner Box + Sealed Foil Bag",
+    desc: "100% custom full-color offset printed inner boxes with protective plastic foil wrap to prevent moisture absorption during maritime transit.",
+    icon: Box
+  },
+  {
+    title: "10 Kg / 20 Kg Master Carton",
+    desc: "Double-wall heavy duty corrugated export cartons designed to withstand stacking inside shipping containers without crushing.",
+    icon: Package
+  },
+  {
+    title: "Foil Wrapped Palletizing",
+    desc: "Briquettes or cocopeat blocks loaded onto wooden pallets, strapped, corner-protected, and tightly shrink-wrapped for easy forklift unloading.",
+    icon: Ship
+  }
+];
+---
+
+<Layout 
+	title="GLOBAL EXPORT & LOGISTICS | King Cocondo Shipping Standards" 
+	description="Global shipping logistics, container loadability, custom OEM packaging options, and shipping ports for King Cocondo coconut products."
+>
+	<Header />
+
+	<main class="flex-grow pt-24 pb-20 bg-primary-dark min-h-screen text-white">
+		<!-- Hero Section -->
+		<section class="relative py-16 bg-gradient-to-b from-surface-dark via-primary-dark to-primary-dark border-b border-white/5 overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+				<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-gold/10 text-accent-gold font-semibold text-xs tracking-widest uppercase mb-4 border border-accent-gold/20">
+					<Globe2 class="w-4 h-4" /> Worldwide Maritime Freight
+				</span>
+				<h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 tracking-tight">
+					EXPORT & <span class="text-accent-gold">LOGISTICS</span>
+				</h1>
+				<p class="text-gray-300 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+					Seamless container shipping from major Indonesian ports to ports worldwide. Verified loadability, heavy-duty export packaging, and flexible trade terms (FOB & CIF).
+				</p>
+			</div>
+		</section>
+
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+
+			<!-- Global Destinations Grid -->
+			<section>
+				<div class="text-center max-w-3xl mx-auto mb-12">
+					<h2 class="text-3xl font-heading font-bold text-white mb-3">Global Export Destination Network</h2>
+					<p class="text-gray-400 text-sm">We regularly export to over 30+ countries across major international trade corridors</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+					{regions.map((r) => (
+						<div class="bg-surface-dark/60 border border-accent-gold/15 rounded-2xl p-6 hover:border-accent-gold/40 transition-colors shadow-lg">
+							<div class="w-10 h-10 rounded-xl bg-accent-gold/10 text-accent-gold flex items-center justify-center mb-4">
+								<Globe2 class="w-5 h-5" />
+							</div>
+							<h3 class="text-xl font-bold text-white mb-3">{r.region}</h3>
+							<p class="text-sm text-gray-300 leading-relaxed">{r.countries}</p>
+						</div>
+					))}
+				</div>
+			</section>
+
+			<!-- Container Loadability Table -->
+			<section class="bg-surface-dark/40 border border-white/10 rounded-3xl p-8 md:p-12">
+				<div class="flex items-center gap-3 mb-8">
+					<div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold">
+						<Ship class="w-6 h-6" />
+					</div>
+					<div>
+						<h2 class="text-2xl md:text-3xl font-heading font-bold text-white">Container Loading Capacity (FCL)</h2>
+						<p class="text-gray-400 text-sm">Maximum weight specs per container type for freight cost optimization</p>
+					</div>
+				</div>
+
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+					{containerSpecs.map((c) => (
+						<div class="bg-primary-dark/80 border border-accent-gold/20 rounded-2xl p-8 space-y-4">
+							<div class="flex justify-between items-center border-b border-white/10 pb-4">
+								<h3 class="text-2xl font-bold text-accent-gold">{c.type}</h3>
+								<span class="text-xs bg-accent-gold/10 text-accent-gold px-3 py-1 rounded-full border border-accent-gold/20">FCL Container</span>
+							</div>
+							
+							<div class="space-y-3 text-sm">
+								<div class="flex justify-between py-1 border-b border-white/5">
+									<span class="text-gray-400">Charcoal Briquettes</span>
+									<span class="font-bold text-white">{c.briquetteCap}</span>
+								</div>
+								<div class="flex justify-between py-1 border-b border-white/5">
+									<span class="text-gray-400">Cocopeat 5kg Blocks</span>
+									<span class="font-bold text-white">{c.cocopeatCap}</span>
+								</div>
+								<div class="flex justify-between py-1 border-b border-white/5">
+									<span class="text-gray-400">Coconut Fiber Bales</span>
+									<span class="font-bold text-white">{c.fiberCap}</span>
+								</div>
+							</div>
+							<p class="text-xs text-gray-400 pt-2"><strong class="text-gray-300">Recommended For:</strong> {c.bestFor}</p>
+						</div>
+					))}
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<img src="/images/new_assets/container-loaded-pallets.webp" alt="Container Loaded Pallets" class="w-full h-64 object-cover object-bottom rounded-2xl border border-white/10 shadow-md" />
+					<img src="/images/new_assets/loading-shipping-container.webp" alt="Loading Shipping Container" class="w-full h-64 object-cover object-bottom rounded-2xl border border-white/10 shadow-md" />
+				</div>
+			</section>
+
+			<!-- Export Packaging Options -->
+			<section>
+				<div class="text-center max-w-3xl mx-auto mb-12">
+					<h2 class="text-3xl font-heading font-bold text-white mb-3">OEM Export Packaging & Branding</h2>
+					<p class="text-gray-400 text-sm">Custom inner boxes, master cartons, and moisture-sealed plastic liners</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+					{packagings.map((p) => {
+						const IconComp = p.icon;
+						return (
+							<div class="bg-surface-dark/60 border border-accent-gold/15 rounded-2xl p-6 space-y-4">
+								<div class="w-12 h-12 rounded-xl bg-accent-gold/10 text-accent-gold flex items-center justify-center">
+									<IconComp class="w-6 h-6" />
+								</div>
+								<h3 class="text-xl font-bold text-white">{p.title}</h3>
+								<p class="text-sm text-gray-300 leading-relaxed">{p.desc}</p>
+							</div>
+						);
+					})}
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<img src="/images/new_assets/hexagon-briquettes-in-box.webp" alt="Hexagon Briquette Inner Box" class="w-full h-64 object-cover object-bottom rounded-2xl border border-white/10 shadow-md" />
+					<img src="/images/new_assets/loading-foil-wrapped-pallets.webp" alt="Foil Wrapped Pallets" class="w-full h-64 object-cover object-bottom rounded-2xl border border-white/10 shadow-md" />
+				</div>
+			</section>
+
+			<!-- Shipping Ports & Terms -->
+			<section class="bg-surface-dark/60 border border-accent-gold/20 rounded-3xl p-8 md:p-12">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+					<div class="space-y-6">
+						<div class="flex items-center gap-3">
+							<Anchor class="w-8 h-8 text-accent-gold" />
+							<h3 class="text-2xl font-bold text-white">Ports of Origin & Trade Terms</h3>
+						</div>
+						<p class="text-gray-300 text-sm leading-relaxed">
+							Our strategically located manufacturing hubs in Central Java and Yogyakarta allow fast dispatch to major container ports in Indonesia.
+						</p>
+						<ul class="space-y-3 text-sm text-gray-200">
+							<li class="flex items-center gap-3">
+								<CheckCircle2 class="w-4 h-4 text-accent-gold shrink-0" />
+								<span><strong>Tanjung Perak Port (Surabaya - SUB)</strong> — Primary Container Terminal</span>
+							</li>
+							<li class="flex items-center gap-3">
+								<CheckCircle2 class="w-4 h-4 text-accent-gold shrink-0" />
+								<span><strong>Tanjung Emas Port (Semarang - SRG)</strong> — Central Java Freight Terminal</span>
+							</li>
+							<li class="flex items-center gap-3">
+								<CheckCircle2 class="w-4 h-4 text-accent-gold shrink-0" />
+								<span><strong>Trade Terms Supported:</strong> FOB (Free on Board), CFR, CIF</span>
+							</li>
+							<li class="flex items-center gap-3">
+								<CheckCircle2 class="w-4 h-4 text-accent-gold shrink-0" />
+								<span><strong>Payment Terms:</strong> T/T (Telegraphic Transfer), L/C at sight</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-primary-dark/90 border border-white/10 rounded-2xl p-6 text-center space-y-4">
+						<h4 class="text-xl font-bold text-accent-gold">Request Freight & CIF Quote</h4>
+						<p class="text-xs text-gray-300">Get an instant container shipping calculation to your destination seaport.</p>
+						<Button href="https://wa.me/6285719619013?text=Hello%20King%20Cocondo,%20I%20want%20to%20request%20a%20FOB%20/%20CIF%20Shipping%20Quote." variant="primary" class="w-full py-3 text-sm">
+							Calculate Freight Quote
+						</Button>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<Footer />
+</Layout>

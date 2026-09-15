@@ -25,12 +25,12 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 				<nav class="flex mb-8 text-sm" aria-label="Breadcrumb">
 					<ol class="inline-flex items-center space-x-1 md:space-x-3">
 						<li class="inline-flex items-center">
-							<a href={translatePath('/')} class="text-gray-500 hover:text-primary-green transition-colors">{t('nav.home')}</a>
+							<a href={translatePath('/')} class="text-gray-400 hover:text-accent-gold transition-colors">{t('nav.home')}</a>
 						</li>
 						<li>
 							<div class="flex items-center">
 								<ChevronRight class="w-4 h-4 text-gray-400 mx-1" />
-								<span class="text-gray-900 font-medium">OEM & Private Label</span>
+								<span class="text-white font-medium">OEM & Private Label</span>
 							</div>
 						</li>
 					</ol>
@@ -43,7 +43,7 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 							B2B Services
 						</span>
 						
-						<h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal mb-6 leading-tight">
+						<h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
 							{t('seo.oem.h1')}
 						</h1>
 						
@@ -52,40 +52,40 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 						</p>
 
 						<!-- Why Choose Us -->
-						<h2 class="text-2xl font-bold text-primary-charcoal mb-6">{t('seo.oem.why')}</h2>
+						<h2 class="text-2xl font-bold text-white mb-6">{t('seo.oem.why')}</h2>
 						<div class="space-y-6 mb-10">
-							<div class="flex items-start bg-white p-5 rounded-xl shadow-sm border border-gray-100">
-								<CheckCircle2 class="w-6 h-6 text-primary-green mr-4 flex-shrink-0 mt-1" />
+							<div class="flex items-start bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-5 rounded-xl shadow-sm border border-surface-dark">
+								<CheckCircle2 class="w-6 h-6 text-accent-gold mr-4 flex-shrink-0 mt-1" />
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('seo.oem.why.1.title')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('seo.oem.why.1.title')}</h3>
 									<p class="text-text-muted text-sm">{t('seo.oem.why.1.desc')}</p>
 								</div>
 							</div>
-							<div class="flex items-start bg-white p-5 rounded-xl shadow-sm border border-gray-100">
-								<CheckCircle2 class="w-6 h-6 text-primary-green mr-4 flex-shrink-0 mt-1" />
+							<div class="flex items-start bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-5 rounded-xl shadow-sm border border-surface-dark">
+								<CheckCircle2 class="w-6 h-6 text-accent-gold mr-4 flex-shrink-0 mt-1" />
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('seo.oem.why.2.title')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('seo.oem.why.2.title')}</h3>
 									<p class="text-text-muted text-sm">{t('seo.oem.why.2.desc')}</p>
 								</div>
 							</div>
-							<div class="flex items-start bg-white p-5 rounded-xl shadow-sm border border-gray-100">
-								<CheckCircle2 class="w-6 h-6 text-primary-green mr-4 flex-shrink-0 mt-1" />
+							<div class="flex items-start bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-5 rounded-xl shadow-sm border border-surface-dark">
+								<CheckCircle2 class="w-6 h-6 text-accent-gold mr-4 flex-shrink-0 mt-1" />
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('seo.oem.why.3.title')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('seo.oem.why.3.title')}</h3>
 									<p class="text-text-muted text-sm">{t('seo.oem.why.3.desc')}</p>
 								</div>
 							</div>
 						</div>
 
 						<!-- How it works -->
-						<h2 class="text-2xl font-bold text-primary-charcoal mb-4">{t('seo.oem.how')}</h2>
+						<h2 class="text-2xl font-bold text-white mb-4">{t('seo.oem.how')}</h2>
 						<div class="p-6 bg-primary-charcoal text-white rounded-xl mb-10">
 							<p class="font-medium text-center text-lg">{t('seo.oem.how.desc')}</p>
 						</div>
 
 						<!-- Actions -->
 						<div class="flex flex-col sm:flex-row gap-4">
-							<Button href={translatePath('/#contact')} variant="primary" class="flex-1 justify-center py-4 text-lg shadow-lg shadow-primary-green/20">
+							<Button href={translatePath('/#contact')} variant="primary" class="flex-1 justify-center py-4 text-lg shadow-[0_0_15px_rgba(212,175,55,0.1)] shadow-primary-green/20">
 								{t('seo.oem.cta')}
 							</Button>
 						</div>
@@ -93,8 +93,8 @@ const translatePath = useTranslatedPath(lang as keyof typeof languages);
 
 					<!-- Image Box -->
 					<div class="space-y-4">
-						<div class="aspect-w-3 aspect-h-4 rounded-2xl overflow-hidden bg-white shadow-lg border border-gray-100">
-							<img src="/images/spesifikasi/briket.webp" width="600" height="414" alt={t('seo.oem.h1')} class="w-full h-full object-cover" />
+						<div class="aspect-w-3 aspect-h-4 rounded-2xl overflow-hidden bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-surface-dark">
+							<img src="/images/new_assets/burning-cube-briquettes.webp" width="600" height="414" alt={t('seo.oem.h1')} class="w-full h-full object-cover object-bottom" />
 						</div>
 					</div>
 				</div>

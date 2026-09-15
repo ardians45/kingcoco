@@ -29,16 +29,16 @@ const schema = JSON.stringify({
     "@type": "ContactPoint",
     "telephone": "+6285719619013",
     "contactType": "sales",
-    "email": "export@kingcocondo.com",
+    "email": "ahmad@kingcocondo.com",
     "areaServed": "Worldwide"
   }
 });
 ---
 
 <Layout 
-	title="Coconut Shisha Charcoal Supplier Indonesia | King Cocondo"
-	description="We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment."
-	keywords="coconut shisha charcoal supplier indonesia, coconut products exporter indonesia, wholesale cocopeat"
+	title={t('seo.home.title') || "Coconut Shisha Charcoal Supplier Indonesia | King Cocondo"}
+	description={t('seo.home.desc') || "We are the leading coconut shisha charcoal supplier indonesia and exporter of premium Cocopeat and Briquettes. High-quality, sustainable, and ready for global shipment."}
+	keywords={t('seo.home.keywords') || "coconut shisha charcoal supplier indonesia, coconut products exporter indonesia, wholesale cocopeat"}
 	schema={schema}
 >
 	<Header />
@@ -47,14 +47,14 @@ const schema = JSON.stringify({
 		<!-- HERO SECTION -->
 		<section class="relative min-h-[90vh] flex items-center pt-20 overflow-visible bg-primary-charcoal pb-32">
 			<div class="absolute inset-0 z-0">
-				<img loading="lazy" decoding="async" src="/images/gallery/sabut-kelapa.webp" width="1200" height="670" alt="Coconut Plantation" class="w-full h-full object-cover opacity-50" />
+				<img loading="lazy" decoding="async" src="/images/new_assets/hero.webp" width="2752" height="1536" alt="Premium Coconut Products" class="w-full h-full object-cover object-bottom opacity-60" />
 				<!-- Modern dark gradient with a hint of green, adjusted for better image visibility -->
 				<div class="absolute inset-0 bg-gradient-to-tr from-primary-charcoal/90 via-primary-charcoal/60 to-primary-green/40"></div>
 			</div>
 			
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-16 pb-12">
 				<div class="max-w-3xl">
-					<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 hover:bg-white/10 transition-colors shadow-xl">
+					<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 border border-white/10 backdrop-blur-md mb-8 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 transition-colors shadow-[0_0_25px_rgba(212,175,55,0.15)]">
 						<span class="w-2.5 h-2.5 rounded-full bg-accent-gold shadow-[0_0_10px_rgba(212,154,55,0.8)] animate-pulse"></span>
 						<span class="text-sm font-semibold text-gray-200 tracking-wide uppercase">{t('hero.badge')}</span>
 					</div>
@@ -71,7 +71,7 @@ const schema = JSON.stringify({
 						<Button href={translatePath('/#contact')} variant="primary" class="py-4 px-10 text-lg w-full sm:w-auto justify-center shadow-[0_0_20px_rgba(27,59,43,0.5)] hover:shadow-[0_0_30px_rgba(27,59,43,0.8)] transition-all hover:-translate-y-1">
 							{t('btn.quote')}
 						</Button>
-						<Button href={translatePath('/#products')} variant="outline" class="py-4 px-10 text-lg w-full sm:w-auto justify-center bg-white/5 hover:bg-white/15 text-white border-white/20 backdrop-blur-sm transition-all hover:-translate-y-1">
+						<Button href={translatePath('/#products')} variant="outline" class="py-4 px-10 text-lg w-full sm:w-auto justify-center bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/15 text-white border-white/20 backdrop-blur-sm transition-all hover:-translate-y-1">
 							{t('btn.explore')}
 						</Button>
 					</div>
@@ -82,9 +82,9 @@ const schema = JSON.stringify({
 		</section>
 
 <!-- ABOUT SECTION -->
-		<section id="about" class="pt-40 pb-24 bg-white relative overflow-hidden">
+		<section id="about" class="pt-40 pb-24 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 relative overflow-hidden">
 			<!-- Decorative background elements -->
-			<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-green/5 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3"></div>
+			<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-gold text-primary-dark/5 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3"></div>
 			<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent-gold/5 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3"></div>
 
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,52 +94,52 @@ const schema = JSON.stringify({
 						<div class="absolute -inset-4 bg-gradient-to-r from-accent-gold/20 to-primary-green/20 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
 						<div class="absolute -inset-4 bg-gradient-to-l from-accent-gold/20 to-primary-green/20 rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 opacity-50"></div>
 						
-						<img loading="lazy" decoding="async" src="/images/charcoal briket/warehouse.webp" width="768" height="1024" alt="Warehouse and Production Capacity" class="relative rounded-3xl shadow-2xl object-cover w-full h-[500px] transition-transform duration-500 group-hover:scale-[1.02]" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/warehouse-wrapped-pallets.webp" width="768" height="1024" alt="Warehouse and Production Capacity" class="relative rounded-3xl shadow-2xl object-cover object-bottom w-full h-[500px] transition-transform duration-500 group-hover:scale-[1.02]" />
 						
 						<!-- Floating badge -->
-						<div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden sm:block border border-gray-100 animate-bounce-slow">
+						<div class="absolute -bottom-6 -right-6 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-6 rounded-2xl shadow-[0_0_25px_rgba(212,175,55,0.15)] hidden sm:block border border-surface-dark animate-bounce-slow">
 							<div class="flex items-center gap-4">
-								<div class="w-12 h-12 bg-primary-green/10 rounded-full flex items-center justify-center">
-									<CheckCircle2 class="text-primary-green w-6 h-6" />
+								<div class="w-12 h-12 bg-gradient-gold text-primary-dark/10 rounded-full flex items-center justify-center">
+									<CheckCircle2 class="text-accent-gold w-6 h-6" />
 								</div>
 								<div>
-									<div class="text-2xl font-bold text-primary-charcoal">100%</div>
+									<div class="text-2xl font-bold text-white">100%</div>
 									<div class="text-sm text-text-muted">Premium Quality</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div>
-						<h2 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3 flex items-center gap-2">
-							<span class="w-8 h-px bg-primary-green"></span>
+						<h2 class="text-accent-gold font-semibold tracking-wider uppercase text-sm mb-3 flex items-center gap-2">
+							<span class="w-8 h-px bg-gradient-gold text-primary-dark"></span>
 							{t('about.subtitle')}
 						</h2>
-						<h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal mb-6 leading-tight">{t('about.h2')}</h2>
-						<h3 class="text-xl md:text-2xl font-bold text-primary-green mb-4">{t('about.h3')}</h3>
+						<h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">{t('about.h2')}</h2>
+						<h3 class="text-xl md:text-2xl font-bold text-accent-gold mb-4">{t('about.h3')}</h3>
 						<p class="text-text-muted mb-8 text-lg leading-relaxed">
 							{t('about.desc')}
 						</p>
 						<ul class="space-y-5 mb-10">
-							<li class="flex items-center gap-4 text-primary-charcoal font-medium bg-gray-50/50 p-3 rounded-xl border border-gray-100/50 hover:bg-white hover:shadow-md transition-all">
+							<li class="flex items-center gap-4 text-white font-medium bg-primary-dark/50 p-3 rounded-xl border border-surface-dark/50 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 hover:shadow-md transition-all">
 								<div class="bg-accent-gold/20 p-2 rounded-lg">
 									<CheckCircle2 class="text-accent-gold w-5 h-5 shrink-0" />
 								</div>
 								<span>{t('about.point1')}</span>
 							</li>
-							<li class="flex items-center gap-4 text-primary-charcoal font-medium bg-gray-50/50 p-3 rounded-xl border border-gray-100/50 hover:bg-white hover:shadow-md transition-all">
+							<li class="flex items-center gap-4 text-white font-medium bg-primary-dark/50 p-3 rounded-xl border border-surface-dark/50 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 hover:shadow-md transition-all">
 								<div class="bg-accent-gold/20 p-2 rounded-lg">
 									<CheckCircle2 class="text-accent-gold w-5 h-5 shrink-0" />
 								</div>
 								<span>{t('about.point2')}</span>
 							</li>
-							<li class="flex items-center gap-4 text-primary-charcoal font-medium bg-gray-50/50 p-3 rounded-xl border border-gray-100/50 hover:bg-white hover:shadow-md transition-all">
+							<li class="flex items-center gap-4 text-white font-medium bg-primary-dark/50 p-3 rounded-xl border border-surface-dark/50 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 hover:shadow-md transition-all">
 								<div class="bg-accent-gold/20 p-2 rounded-lg">
 									<CheckCircle2 class="text-accent-gold w-5 h-5 shrink-0" />
 								</div>
 								<span>{t('about.point3')}</span>
 							</li>
 						</ul>
-						<Button href={translatePath('/#contact')} variant="primary" class="shadow-lg shadow-primary-green/20 py-4 px-8 group">
+						<Button href={translatePath('/#contact')} variant="primary" class="shadow-[0_0_15px_rgba(212,175,55,0.1)] shadow-primary-green/20 py-4 px-8 group">
 							<span class="flex items-center gap-2">
 								{t('about.btn')}
 								<svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -156,7 +156,7 @@ const schema = JSON.stringify({
 		<section class="py-32 bg-primary-charcoal relative overflow-hidden">
 			<!-- Mesmerizing Animated Glow Background -->
 			<div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-				<div class="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-primary-green/10 blur-[150px]"></div>
+				<div class="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-gradient-gold text-primary-dark/10 blur-[150px]"></div>
 				<div class="absolute top-[40%] -right-[10%] w-[50%] h-[50%] rounded-full bg-accent-gold/5 blur-[150px]"></div>
 			</div>
 
@@ -175,12 +175,12 @@ const schema = JSON.stringify({
 
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
 					<!-- Card 1 -->
-					<div class="relative group rounded-[2.5rem] bg-white/5 backdrop-blur-md border border-white/10 p-10 hover:bg-white/10 transition-all duration-500 overflow-hidden">
+					<div class="relative group rounded-[2.5rem] bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 backdrop-blur-md border border-white/10 p-10 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 transition-all duration-500 overflow-hidden">
 						<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-emerald-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 						<div class="absolute -right-10 -top-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-[50px] group-hover:bg-emerald-500/20 transition-colors duration-500"></div>
 						
 						<div class="relative z-10 flex flex-col h-full">
-							<div class="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
+							<div class="w-16 h-16 rounded-2xl bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 border border-white/20 flex items-center justify-center mb-8 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:scale-110 transition-transform duration-500">
 								<PackageCheck class="w-8 h-8 text-emerald-400" />
 							</div>
 							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-emerald-400 transition-colors duration-300">{t('why.q.title')}</h4>
@@ -189,12 +189,12 @@ const schema = JSON.stringify({
 					</div>
 
 					<!-- Card 2 -->
-					<div class="relative group rounded-[2.5rem] bg-white/5 backdrop-blur-md border border-white/10 p-10 hover:bg-white/10 transition-all duration-500 overflow-hidden">
+					<div class="relative group rounded-[2.5rem] bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 backdrop-blur-md border border-white/10 p-10 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 transition-all duration-500 overflow-hidden">
 						<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-gold to-yellow-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 						<div class="absolute -right-10 -top-10 w-40 h-40 bg-accent-gold/10 rounded-full blur-[50px] group-hover:bg-accent-gold/20 transition-colors duration-500"></div>
 						
 						<div class="relative z-10 flex flex-col h-full">
-							<div class="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
+							<div class="w-16 h-16 rounded-2xl bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 border border-white/20 flex items-center justify-center mb-8 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:scale-110 transition-transform duration-500">
 								<Factory class="w-8 h-8 text-accent-gold" />
 							</div>
 							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-accent-gold transition-colors duration-300">{t('why.c.title')}</h4>
@@ -203,12 +203,12 @@ const schema = JSON.stringify({
 					</div>
 
 					<!-- Card 3 -->
-					<div class="relative group rounded-[2.5rem] bg-white/5 backdrop-blur-md border border-white/10 p-10 hover:bg-white/10 transition-all duration-500 overflow-hidden">
+					<div class="relative group rounded-[2.5rem] bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 backdrop-blur-md border border-white/10 p-10 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 transition-all duration-500 overflow-hidden">
 						<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-emerald-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 						<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-[50px] group-hover:bg-emerald-500/20 transition-colors duration-500"></div>
 						
 						<div class="relative z-10 flex flex-col h-full">
-							<div class="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
+							<div class="w-16 h-16 rounded-2xl bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 border border-white/20 flex items-center justify-center mb-8 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:scale-110 transition-transform duration-500">
 								<Ship class="w-8 h-8 text-emerald-400" />
 							</div>
 							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-emerald-400 transition-colors duration-300">{t('why.h3.oem')}</h4>
@@ -217,12 +217,12 @@ const schema = JSON.stringify({
 					</div>
 
 					<!-- Card 4 -->
-					<div class="relative group rounded-[2.5rem] bg-white/5 backdrop-blur-md border border-white/10 p-10 hover:bg-white/10 transition-all duration-500 overflow-hidden">
+					<div class="relative group rounded-[2.5rem] bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 backdrop-blur-md border border-white/10 p-10 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 transition-all duration-500 overflow-hidden">
 						<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-gold to-yellow-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 						<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-accent-gold/10 rounded-full blur-[50px] group-hover:bg-accent-gold/20 transition-colors duration-500"></div>
 						
 						<div class="relative z-10 flex flex-col h-full">
-							<div class="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
+							<div class="w-16 h-16 rounded-2xl bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 border border-white/20 flex items-center justify-center mb-8 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:scale-110 transition-transform duration-500">
 								<Globe class="w-8 h-8 text-accent-gold" />
 							</div>
 							<h4 class="text-2xl font-bold mb-4 text-white group-hover:text-accent-gold transition-colors duration-300">{t('why.export.title') || 'Ready for Export'}</h4>
@@ -234,14 +234,14 @@ const schema = JSON.stringify({
 		</section>
 
 <!-- PRODUCT SHOWCASE -->
-		<section id="products" class="py-32 bg-gray-50 relative">
+		<section id="products" class="py-32 bg-primary-dark relative">
 			<div class="absolute inset-0 bg-[url('/images/gallery/grid-pattern.svg')] opacity-[0.03]"></div>
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				
 				<div class="text-center max-w-3xl mx-auto mb-20">
-					<h2 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">Premium Collection</h2>
-					<h2 class="text-4xl md:text-5xl font-heading font-bold text-primary-charcoal mb-6">{t('products.h2')}</h2>
-					<p class="text-gray-500 text-lg leading-relaxed">{t('prod.desc')}</p>
+					<h2 class="text-accent-gold font-semibold tracking-wider uppercase text-sm mb-3">Premium Collection</h2>
+					<h2 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">{t('products.h2')}</h2>
+					<p class="text-gray-400 text-lg leading-relaxed">{t('prod.desc')}</p>
 				</div>
 
 				<div class="space-y-32">
@@ -249,100 +249,100 @@ const schema = JSON.stringify({
 					<!-- Cocopeat Category -->
 					<div>
 						<div class="flex items-center justify-between mb-12">
-							<h3 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal">{t('prod.cat.cocopeat')}</h3>
+							<h3 class="text-3xl md:text-4xl font-heading font-bold text-white">{t('prod.cat.cocopeat')}</h3>
 							<div class="h-px bg-gray-200 flex-1 ml-8"></div>
 						</div>
 						
 						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 							<!-- Cocopeat Grade A -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-primary-green text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Grade A</div>
-								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/coco blok.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade A" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-gradient-gold text-primary-dark text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">Grade A</div>
+								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade A" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.1')}</h4>
-									<ul class="space-y-2 text-sm text-gray-600 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 60 - 65 L</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x30x12-15 cm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Shrink in pallet</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
+									<h4 class="text-xl font-bold text-white mb-4 leading-tight">{t('cocopeat.h4.1')}</h4>
+									<ul class="space-y-2 text-sm text-gray-400 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 60 - 65 L</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x30x12-15 cm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Shrink in pallet</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
 									</ul>
-									<div class="mt-auto pt-6 border-t border-gray-100">
+									<div class="mt-auto pt-6 border-t border-surface-dark">
 										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Cocopeat Grade B -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-gray-900 text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Grade B</div>
-								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/coco blok.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade B" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">Grade B</div>
+								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block Low EC Grade B" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.2')}</h4>
-									<ul class="space-y-2 text-sm text-gray-600 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 55 - 60 L</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Mesh:</strong> &gt; 1 mm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Shrink in pallet</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
+									<h4 class="text-xl font-bold text-white mb-4 leading-tight">{t('cocopeat.h4.2')}</h4>
+									<ul class="space-y-2 text-sm text-gray-400 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.6 mS/cm (1:3)</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 55 - 60 L</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Mesh:</strong> &gt; 1 mm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Shrink in pallet</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
 									</ul>
-									<div class="mt-auto pt-6 border-t border-gray-100">
+									<div class="mt-auto pt-6 border-t border-surface-dark">
 										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Cocopeat High EC -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-gray-600 text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">High EC</div>
-								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/coco blok.webp" width="554" height="554" alt="Cocopeat Block High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-gray-600 text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">High EC</div>
+								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Cocopeat Block High EC" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.3')}</h4>
-									<ul class="space-y-2 text-sm text-gray-600 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> &gt; 1 mS/cm (1:3)</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 55 - 60 L</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x30x12-15 cm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
+									<h4 class="text-xl font-bold text-white mb-4 leading-tight">{t('cocopeat.h4.3')}</h4>
+									<ul class="space-y-2 text-sm text-gray-400 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> &gt; 1 mS/cm (1:3)</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 4.5 - 5 Kg</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Expansion:</strong> 55 - 60 L</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x30x12-15 cm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 4600 blocks/40ft HC</span></li>
 									</ul>
-									<div class="mt-auto pt-6 border-t border-gray-100">
+									<div class="mt-auto pt-6 border-t border-surface-dark">
 										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Cocopeat Polybag -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
-								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/coco peat polybag.webp" width="1013" height="565" alt="Cocopeat Polybag Low EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
+								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/warehouse-cocopeat-blocks.webp" width="1013" height="565" alt="Cocopeat Polybag Low EC" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-4 leading-tight">{t('cocopeat.h4.polybag')}</h4>
-									<ul class="space-y-2 text-sm text-gray-600 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.5 ms/cm (1:3)</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 29 - 30 kgs/bag</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 40% - 50%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Mesh:</strong> 4 mm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x40x70 cm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Polybag</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 750-800 bags/40ft HC</span></li>
+									<h4 class="text-xl font-bold text-white mb-4 leading-tight">{t('cocopeat.h4.polybag')}</h4>
+									<ul class="space-y-2 text-sm text-gray-400 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>EC:</strong> Max 0.5 ms/cm (1:3)</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 29 - 30 kgs/bag</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 40% - 50%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>pH:</strong> 5 - 7</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Mesh:</strong> 4 mm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Dimension:</strong> 30x40x70 cm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Polybag</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Load:</strong> 750-800 bags/40ft HC</span></li>
 									</ul>
-									<div class="mt-auto pt-6 border-t border-gray-100">
+									<div class="mt-auto pt-6 border-t border-surface-dark">
 										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
@@ -353,24 +353,24 @@ const schema = JSON.stringify({
 					<!-- Fiber Category -->
 					<div>
 						<div class="flex items-center justify-between mb-12">
-							<h3 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal">{t('prod.cat.fiber')}</h3>
+							<h3 class="text-3xl md:text-4xl font-heading font-bold text-white">{t('prod.cat.fiber')}</h3>
 							<div class="h-px bg-gray-200 flex-1 ml-8"></div>
 						</div>
 						
 						<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 							<!-- Baby Fiber -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col sm:flex-row group hover:shadow-xl transition-all duration-300">
-								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/image copy 3.webp" width="720" height="540" alt="Baby Fiber High EC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col sm:flex-row group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
+								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/coconut-fiber-bale.webp" width="720" height="540" alt="Baby Fiber High EC" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">{t('fiber.h4.baby')}</h4>
+									<h4 class="text-2xl font-bold text-white mb-2 leading-tight">{t('fiber.h4.baby')}</h4>
 									<p class="text-sm text-yellow-700 font-semibold mb-6">Livestock Bedding</p>
-									<ul class="space-y-3 text-sm text-gray-600 mb-8">
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> +- 250 Kg/Bale</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 40-50%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Jumbo bag</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Loadability:</strong> 80 bales / 40ft HC</span></li>
+									<ul class="space-y-3 text-sm text-gray-400 mb-8">
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> +- 250 Kg/Bale</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 40-50%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Packing:</strong> Jumbo bag</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Loadability:</strong> 80 bales / 40ft HC</span></li>
 									</ul>
 									<div class="mt-auto">
 										<Button href={translatePath('/#contact')} variant="outline">Request Quote</Button>
@@ -379,20 +379,20 @@ const schema = JSON.stringify({
 							</div>
 
 							<!-- Coconut Fiber -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col sm:flex-row group hover:shadow-xl transition-all duration-300">
-								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-gray-100 overflow-hidden relative">
-									<img src="/images/cocopeat/image.webp" width="720" height="520" alt="Coconut Fiber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col sm:flex-row group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
+								<div class="sm:w-2/5 aspect-square sm:aspect-auto bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/raw-coconut-fiber.webp" width="720" height="520" alt="Coconut Fiber" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col justify-center">
-									<h4 class="text-2xl font-bold text-primary-charcoal mb-2 leading-tight">{t('products.h3.fiber')}</h4>
+									<h4 class="text-2xl font-bold text-white mb-2 leading-tight">{t('products.h3.fiber')}</h4>
 									<p class="text-sm text-yellow-700 font-semibold mb-6">Premium Grade</p>
-									<ul class="space-y-3 text-sm text-gray-600 mb-8">
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Color:</strong> Yellow Brownish</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Length:</strong> 10-15 cm</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Ash:</strong> &lt; 5%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 105-110 kg/bale</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Loadability:</strong> 18 MT / 40ft HC</span></li>
+									<ul class="space-y-3 text-sm text-gray-400 mb-8">
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Color:</strong> Yellow Brownish</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Length:</strong> 10-15 cm</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> &lt; 20%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Ash:</strong> &lt; 5%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Weight:</strong> 105-110 kg/bale</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-3 mt-0.5 flex-shrink-0" /> <span><strong>Loadability:</strong> 18 MT / 40ft HC</span></li>
 									</ul>
 									<div class="mt-auto">
 										<Button href={translatePath('/#contact')} variant="outline">Request Quote</Button>
@@ -405,92 +405,92 @@ const schema = JSON.stringify({
 					<!-- Charcoal Category -->
 					<div>
 						<div class="flex items-center justify-between mb-12">
-							<h3 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal">{t('prod.cat.charcoal')}</h3>
+							<h3 class="text-3xl md:text-4xl font-heading font-bold text-white">{t('prod.cat.charcoal')}</h3>
 							<div class="h-px bg-gray-200 flex-1 ml-8"></div>
 						</div>
 						
 						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
 							<!-- Charcoal 1 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
-								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/charcoal briket/image.webp" width="720" height="756" alt="Shisha Charcoal No 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
+								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/burning-hexagon-briquettes.webp" width="720" height="756" alt="Shisha Charcoal No 1" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.1')}</h4>
-									<p class="text-sm text-gray-500 mb-6">Specification No. 1</p>
-									<ul class="space-y-2 text-sm text-gray-600 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> &gt; 3%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≤ 75%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 7% Max</span></li>
+									<h4 class="text-xl font-bold text-white mb-1 leading-tight">{t('charcoal.h4.1')}</h4>
+									<p class="text-sm text-gray-400 mb-6">Specification No. 1</p>
+									<ul class="space-y-2 text-sm text-gray-400 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> &gt; 3%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≤ 75%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 7% Max</span></li>
 									</ul>
-									<div class="mt-auto pt-6 border-t border-gray-100">
+									<div class="mt-auto pt-6 border-t border-surface-dark">
 										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Charcoal 2 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-gray-900 text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Popular</div>
-								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/charcoal briket/image copy.webp" width="720" height="936" alt="Shisha Charcoal No 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-accent-gold text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">Popular</div>
+								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/stacked-hexagon-briquettes.webp" width="720" height="936" alt="Shisha Charcoal No 2" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.2')}</h4>
-									<p class="text-sm text-gray-500 mb-6">Specification No. 2</p>
-									<ul class="space-y-2 text-sm text-gray-600 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.5% - 3%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> &gt; 75%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 6% Max</span></li>
+									<h4 class="text-xl font-bold text-white mb-1 leading-tight">{t('charcoal.h4.2')}</h4>
+									<p class="text-sm text-gray-400 mb-6">Specification No. 2</p>
+									<ul class="space-y-2 text-sm text-gray-400 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.5% - 3%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> &gt; 75%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 6% Max</span></li>
 									</ul>
-									<div class="mt-auto pt-6 border-t border-gray-100">
+									<div class="mt-auto pt-6 border-t border-surface-dark">
 										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Charcoal 3 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300">
-								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/charcoal briket/image copy 4.webp" width="720" height="916" alt="Shisha Charcoal No 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300">
+								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/hexagon-briquettes-in-box.webp" width="720" height="916" alt="Shisha Charcoal No 3" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.3')}</h4>
-									<p class="text-sm text-gray-500 mb-6">Specification No. 3</p>
-									<ul class="space-y-2 text-sm text-gray-600 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.0-2.5%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≤ 80%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 5% Max</span></li>
+									<h4 class="text-xl font-bold text-white mb-1 leading-tight">{t('charcoal.h4.3')}</h4>
+									<p class="text-sm text-gray-400 mb-6">Specification No. 3</p>
+									<ul class="space-y-2 text-sm text-gray-400 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2.0-2.5%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≤ 80%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 5% Max</span></li>
 									</ul>
-									<div class="mt-auto pt-6 border-t border-gray-100">
+									<div class="mt-auto pt-6 border-t border-surface-dark">
 										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
 							</div>
 
 							<!-- Charcoal 4 -->
-							<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 flex flex-col group hover:shadow-xl transition-all duration-300 relative">
-								<div class="absolute top-4 right-4 z-10 bg-primary-charcoal text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-lg border border-white/20 tracking-wide">Premium</div>
-								<div class="aspect-[4/3] bg-gray-100 overflow-hidden relative">
-									<img src="/images/charcoal briket/image copy 5.webp" width="720" height="888" alt="Shisha Charcoal No 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+							<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-[2rem] overflow-hidden shadow-sm border border-surface-dark flex flex-col group hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] transition-all duration-300 relative">
+								<div class="absolute top-4 right-4 z-10 bg-primary-charcoal text-white text-sm md:text-base font-extrabold px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-white/20 tracking-wide">Premium</div>
+								<div class="aspect-[4/3] bg-surface-dark overflow-hidden relative">
+									<img src="/images/new_assets/burning-cube-briquettes.webp" width="720" height="888" alt="Shisha Charcoal No 4" class="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
 								</div>
 								<div class="p-6 md:p-8 flex-1 flex flex-col">
-									<h4 class="text-xl font-bold text-primary-charcoal mb-1 leading-tight">{t('charcoal.h4.4')}</h4>
-									<p class="text-sm text-gray-500 mb-6">Specification No. 4</p>
-									<ul class="space-y-2 text-sm text-gray-600 mb-6">
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2% Max</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≥ 80%</span></li>
-										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-primary-green mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 5% Max</span></li>
+									<h4 class="text-xl font-bold text-white mb-1 leading-tight">{t('charcoal.h4.4')}</h4>
+									<p class="text-sm text-gray-400 mb-6">Specification No. 4</p>
+									<ul class="space-y-2 text-sm text-gray-400 mb-6">
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Content:</strong> 2% Max</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Ash Color:</strong> Natural White</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Burning Time:</strong> &gt; 2 hours*</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Fixed Carbon:</strong> ≥ 80%</span></li>
+										<li class="flex items-start"><CheckCircle2 class="w-4 h-4 text-accent-gold mr-2 mt-0.5 flex-shrink-0" /> <span><strong>Moisture:</strong> 5% Max</span></li>
 									</ul>
-									<div class="mt-auto pt-6 border-t border-gray-100">
+									<div class="mt-auto pt-6 border-t border-surface-dark">
 										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center">Request Quote</Button>
 									</div>
 								</div>
@@ -499,17 +499,17 @@ const schema = JSON.stringify({
 						
 						<!-- Charcoal Notes & Packaging -->
 						<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-							<div class="lg:col-span-1 bg-gray-100 p-6 rounded-2xl flex items-center justify-center">
-								<p class="text-sm text-gray-600 italic text-center">* Note: Standard 25mm cube shape burning time.</p>
+							<div class="lg:col-span-1 bg-surface-dark p-6 rounded-2xl flex items-center justify-center">
+								<p class="text-sm text-gray-400 italic text-center">* Note: Standard 25mm cube shape burning time.</p>
 							</div>
-							<div class="lg:col-span-2 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
-								<h4 class="font-bold text-primary-charcoal mb-4 flex items-center"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-2" /> Available Packaging Options:</h4>
-								<ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 text-sm text-gray-600">
-									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Full Packaging + Full Color Master Box</li>
-									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Full Packaging + Brown Master Box</li>
-									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Master Box + Inner Plastics</li>
-									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Master Box + Single Plastic (Bulk)</li>
-									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-primary-green mr-2"></div> Plastics sacks (25kg)</li>
+							<div class="lg:col-span-2 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-6 md:p-8 rounded-2xl border border-surface-dark shadow-sm">
+								<h4 class="font-bold text-white mb-4 flex items-center"><CheckCircle2 class="w-5 h-5 text-accent-gold mr-2" /> Available Packaging Options:</h4>
+								<ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 text-sm text-gray-400">
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-gradient-gold text-primary-dark mr-2"></div> Full Packaging + Full Color Master Box</li>
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-gradient-gold text-primary-dark mr-2"></div> Full Packaging + Brown Master Box</li>
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-gradient-gold text-primary-dark mr-2"></div> Master Box + Inner Plastics</li>
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-gradient-gold text-primary-dark mr-2"></div> Master Box + Single Plastic (Bulk)</li>
+									<li class="flex items-center"><div class="w-1.5 h-1.5 rounded-full bg-gradient-gold text-primary-dark mr-2"></div> Plastics sacks (25kg)</li>
 								</ul>
 							</div>
 						</div>
@@ -524,31 +524,31 @@ const schema = JSON.stringify({
 			<div class="absolute inset-0 bg-[url('/images/gallery/grid-pattern.svg')] opacity-5"></div>
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div class="text-center mb-16">
-					<h2 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">Core Values</h2>
-					<h3 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal">{t('values.h2')}</h3>
+					<h2 class="text-accent-gold font-semibold tracking-wider uppercase text-sm mb-3">Core Values</h2>
+					<h3 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white">{t('values.h2')}</h3>
 				</div>
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-					<div class="bg-white p-12 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 relative overflow-hidden group hover:-translate-y-2">
+					<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-12 rounded-3xl shadow-sm border border-surface-dark hover:shadow-2xl transition-all duration-500 relative overflow-hidden group hover:-translate-y-2">
 						<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary-green/10 to-transparent rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-700"></div>
-						<div class="w-16 h-16 bg-primary-green/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary-green transition-colors duration-500">
-							<svg class="w-8 h-8 text-primary-green group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<div class="w-16 h-16 bg-gradient-gold text-primary-dark/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-gradient-gold text-primary-dark transition-colors duration-500">
+							<svg class="w-8 h-8 text-accent-gold group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
 							</svg>
 						</div>
-						<h4 class="text-2xl font-bold text-primary-charcoal mb-4 group-hover:text-primary-green transition-colors">{t('values.h3.vision')}</h4>
+						<h4 class="text-2xl font-bold text-white mb-4 group-hover:text-accent-gold transition-colors">{t('values.h3.vision')}</h4>
 						<p class="text-text-muted leading-relaxed text-lg">
 							{t('vm.vision.desc')}
 						</p>
 					</div>
-					<div class="bg-white p-12 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 relative overflow-hidden group hover:-translate-y-2">
+					<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-12 rounded-3xl shadow-sm border border-surface-dark hover:shadow-2xl transition-all duration-500 relative overflow-hidden group hover:-translate-y-2">
 						<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-accent-gold/15 to-transparent rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-700"></div>
 						<div class="w-16 h-16 bg-accent-gold/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-accent-gold transition-colors duration-500">
 							<svg class="w-8 h-8 text-accent-gold group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
 							</svg>
 						</div>
-						<h4 class="text-2xl font-bold text-primary-charcoal mb-4 group-hover:text-accent-gold transition-colors">{t('values.h3.mission')}</h4>
+						<h4 class="text-2xl font-bold text-white mb-4 group-hover:text-accent-gold transition-colors">{t('values.h3.mission')}</h4>
 						<p class="text-text-muted leading-relaxed text-lg">
 							{t('vm.mission.desc')}
 						</p>
@@ -558,55 +558,55 @@ const schema = JSON.stringify({
 		</section>
 
 <!-- HOW TO ORDER -->
-		<section class="py-24 bg-white overflow-hidden">
+		<section class="py-24 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 overflow-hidden">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 					<div class="order-2 lg:order-1">
-						<img loading="lazy" decoding="async" src="/images/angkut/image copy.webp" width="720" height="924" alt="Export Logistics" class="rounded-3xl shadow-xl w-full h-[600px] object-cover" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/loading-foil-wrapped-pallets.webp" width="720" height="924" alt="Export Logistics" class="rounded-3xl shadow-[0_0_25px_rgba(212,175,55,0.15)] w-full h-[600px] object-cover object-bottom" />
 					</div>
 					<div class="order-1 lg:order-2">
-						<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-10">{t('order.h2')}</h2>
+						<h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-10">{t('order.h2')}</h2>
 						
 						<div class="space-y-6">
 							<div class="flex gap-4">
-								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">1</div>
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-gold text-primary-dark text-white flex items-center justify-center font-bold text-lg shadow-md">1</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.1')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('order.h3.1')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step1.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
-								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold text-gray-900 flex items-center justify-center font-bold text-lg shadow-md">2</div>
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold text-white flex items-center justify-center font-bold text-lg shadow-md">2</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.2')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('order.h3.2')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step2.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
-								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">3</div>
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-gold text-primary-dark text-white flex items-center justify-center font-bold text-lg shadow-md">3</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.3')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('order.h3.3')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step3.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
 								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-charcoal text-white flex items-center justify-center font-bold text-lg shadow-md">4</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.4')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('order.h3.4')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step4.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
-								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold text-gray-900 flex items-center justify-center font-bold text-lg shadow-md">5</div>
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold text-white flex items-center justify-center font-bold text-lg shadow-md">5</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.5')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('order.h3.5')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step5.desc')}</p>
 								</div>
 							</div>
 							<div class="flex gap-4">
-								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-green text-white flex items-center justify-center font-bold text-lg shadow-md">6</div>
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-gold text-primary-dark text-white flex items-center justify-center font-bold text-lg shadow-md">6</div>
 								<div>
-									<h3 class="text-lg font-bold text-primary-charcoal mb-1">{t('order.h3.6')}</h3>
+									<h3 class="text-lg font-bold text-white mb-1">{t('order.h3.6')}</h3>
 									<p class="text-text-muted text-sm">{t('order.step6.desc')}</p>
 								</div>
 							</div>
@@ -617,12 +617,12 @@ const schema = JSON.stringify({
 		</section>
 
 <!-- GALLERY & VIDEOS -->
-		<section id="gallery" class="py-24 bg-white">
+		<section id="gallery" class="py-24 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-charcoal mb-4">{t('gallery.h2')}</h2>
-					<h3 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">{t('gallery.h3.facilities')} | {t('gallery.h3.inspection')}</h3>
-					<h3 class="text-primary-green font-semibold tracking-wider uppercase text-sm mb-3">{t('gallery.title')}</h3>
+					<h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">{t('gallery.h2')}</h2>
+					<h3 class="text-accent-gold font-semibold tracking-wider uppercase text-sm mb-3">{t('gallery.h3.facilities')} | {t('gallery.h3.inspection')}</h3>
+					<h3 class="text-accent-gold font-semibold tracking-wider uppercase text-sm mb-3">{t('gallery.title')}</h3>
 					<p class="text-text-muted max-w-2xl mx-auto">{t('gallery.desc')}</p>
 				</div>
 
@@ -631,7 +631,7 @@ const schema = JSON.stringify({
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
 						<video loop muted playsinline preload="none" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
 							<track kind="captions" />
-							<source src="/images/cocopeat/video proses olah cocopeat.mp4" type="video/mp4">
+							<source src="/videos/new_assets/kingcoco-video-01.mp4" type="video/mp4">
 						</video>
 						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
 							<span class="text-white font-bold text-lg">Cocopeat Processing</span>
@@ -642,91 +642,91 @@ const schema = JSON.stringify({
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/angkut_image.webp" width="720" height="528" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/loading-shipping-container.webp" width="720" height="528" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_dus rapi.webp" width="816" height="1024" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/hexagon-briquettes-in-box.webp" width="816" height="1024" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 2.webp" width="720" height="516" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/stacked-hexagon-briquettes.webp" width="720" height="516" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 3.webp" width="720" height="716" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/shisha-charcoal-brands.webp" width="720" height="716" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 4.webp" width="720" height="916" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/measuring-burning-charcoal-temp.webp" width="720" height="916" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 5.webp" width="720" height="888" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/burning-cube-briquettes.webp" width="720" height="888" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image copy 6.webp" width="768" height="1024" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/drying-hexagon-briquettes.webp" width="768" height="1024" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/charcoal briket_image.webp" width="720" height="756" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/burning-hexagon-briquettes.webp" width="720" height="756" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_coco blok.webp" width="554" height="554" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/cocopeat-block.webp" width="554" height="554" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_coco peat polybag.webp" width="1013" height="565" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/warehouse-cocopeat-blocks.webp" width="1013" height="565" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 2.webp" width="720" height="516" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/coconut-fiber-bale.webp" width="720" height="516" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 3.webp" width="720" height="540" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/raw-coconut-fiber.webp" width="720" height="540" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 4.webp" width="720" height="296" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/cocopeat-block.webp" width="720" height="296" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy 5.webp" width="720" height="316" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/coconut-fiber-bale.webp" width="720" height="316" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image copy.webp" width="720" height="688" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/container-loaded-pallets.webp" width="720" height="688" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/cocopeat_image.webp" width="720" height="520" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/raw-coconut-fiber.webp" width="720" height="520" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 					<!-- Image -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/gallery_assets/sabut kelapa.webp" width="2752" height="1536" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<img loading="lazy" decoding="async" src="/images/new_assets/wrapping-charcoal-pallet.webp" width="2752" height="1536" alt="Gallery Image" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 					</div>
 
 
@@ -735,7 +735,7 @@ const schema = JSON.stringify({
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
 						<video loop muted playsinline preload="none" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
 							<track kind="captions" />
-							<source src="/images/angkut/video angkut cocopeat yang di karung ke truck.mp4" type="video/mp4">
+							<source src="/videos/new_assets/kingcoco-video-02.mp4" type="video/mp4">
 						</video>
 						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
 							<span class="text-white font-bold text-lg">Export Loading</span>
@@ -746,7 +746,7 @@ const schema = JSON.stringify({
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
 						<video loop muted playsinline preload="none" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
 							<track kind="captions" />
-							<source src="/videos/produksi-briket.mp4" type="video/mp4">
+							<source src="/videos/new_assets/kingcoco-video-03.mp4" type="video/mp4">
 						</video>
 						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
 							<span class="text-white font-bold text-lg">Briquette Production Process</span>
@@ -761,7 +761,7 @@ const schema = JSON.stringify({
 <!-- CONTACT & RFQ -->
 		<section id="contact" class="py-32 bg-primary-charcoal relative overflow-hidden">
 			<!-- Subtle glow -->
-			<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary-green/10 rounded-full blur-[120px] -z-0"></div>
+			<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-gold text-primary-dark/10 rounded-full blur-[120px] -z-0"></div>
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 					<div class="pt-8">
@@ -773,16 +773,16 @@ const schema = JSON.stringify({
 						
 						<div class="space-y-6">
 							<!-- Email Card -->
-							<a href="mailto:export@kingcocondo.com" class="block bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 group">
+							<a href="mailto:ahmad@kingcocondo.com" class="block bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 hover:-translate-y-1 transition-all duration-300 group">
 								<h3 class="text-gray-300 text-sm font-medium uppercase tracking-wider mb-2">{t('contact.email')}</h3>
-								<p class="text-white text-xl font-bold group-hover:text-accent-gold transition-colors">export@kingcocondo.com</p>
+								<p class="text-white text-xl font-bold group-hover:text-accent-gold transition-colors">ahmad@kingcocondo.com</p>
 							</a>
 							
 							<!-- WhatsApp Card -->
-							<a href={waLink} target="_blank" rel="noopener noreferrer" class="block bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 group">
+							<a href={waLink} target="_blank" rel="noopener noreferrer" class="block bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/10 hover:-translate-y-1 transition-all duration-300 group">
 								<h4 class="font-medium text-gray-300 mb-2">{t('contact.wa')}</h4>
 								<div class="flex items-center justify-between">
-									<p class="text-white text-xl font-bold group-hover:text-emerald-400 transition-colors">+62 838 7909 9434</p>
+									<p class="text-white text-xl font-bold group-hover:text-emerald-400 transition-colors">+62 857 1961 9013</p>
 									<span class="text-sm font-semibold text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-2">
 										{t('contact.btn.wa')} &rarr;
 									</span>
@@ -792,27 +792,27 @@ const schema = JSON.stringify({
 					</div>
 					
 					<!-- RFQ Form -->
-					<div class="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative">
+					<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative">
 						<div class="absolute -top-6 -right-6 w-24 h-24 bg-[url('/images/gallery/grid-pattern.svg')] opacity-10"></div>
-						<h3 class="text-2xl font-bold text-primary-charcoal mb-8">{t('contact.form.title')}</h3>
+						<h3 class="text-2xl font-bold text-white mb-8">{t('contact.form.title')}</h3>
 						<form class="space-y-6" onsubmit="event.preventDefault(); alert('Form integration goes here.');">
 							<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 								<div>
-									<label for="contact-name" class="block text-sm font-semibold text-gray-700 mb-2">{t('contact.form.name')}</label>
-									<input id="contact-name" type="text" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50/50 text-primary-charcoal transition-all" required />
+									<label for="contact-name" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.name')}</label>
+									<input id="contact-name" type="text" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
 								</div>
 								<div>
-									<label for="contact-company" class="block text-sm font-semibold text-gray-700 mb-2">{t('contact.form.company')}</label>
-									<input id="contact-company" type="text" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50/50 text-primary-charcoal transition-all" required />
+									<label for="contact-company" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.company')}</label>
+									<input id="contact-company" type="text" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
 								</div>
 							</div>
 							<div>
-								<label for="contact-email" class="block text-sm font-semibold text-gray-700 mb-2">{t('contact.form.email')}</label>
-								<input id="contact-email" type="email" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50/50 text-primary-charcoal transition-all" required />
+								<label for="contact-email" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.email')}</label>
+								<input id="contact-email" type="email" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
 							</div>
 							<div>
-								<label for="contact-product" class="block text-sm font-semibold text-gray-700 mb-2">{t('contact.form.product')}</label>
-								<select id="contact-product" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50/50 text-primary-charcoal transition-all" required>
+								<label for="contact-product" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.product')}</label>
+								<select id="contact-product" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required>
 									<option value="">{lang === 'id' ? '-- Pilih Produk --' : '-- Select Product --'}</option>
 									<option value="cocopeat">Premium Cocopeat</option>
 									<option value="charcoal">{t('products.h3.charcoal')}</option>
@@ -820,8 +820,8 @@ const schema = JSON.stringify({
 								</select>
 							</div>
 							<div>
-								<label for="contact-message" class="block text-sm font-semibold text-gray-700 mb-2">{t('contact.form.msg')}</label>
-								<textarea id="contact-message" rows="4" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-gray-50/50 text-primary-charcoal transition-all"></textarea>
+								<label for="contact-message" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.msg')}</label>
+								<textarea id="contact-message" rows="4" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all"></textarea>
 							</div>
 							<Button type="submit" variant="primary" class="w-full justify-center py-4 text-lg font-bold rounded-xl mt-4">
 								{t('contact.form.send')}

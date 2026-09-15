@@ -8,30 +8,48 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm" id="main-header">
+<header class="fixed w-full top-0 z-50 transition-all duration-300 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/95 backdrop-blur-md border-b border-surface-dark shadow-sm" id="main-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center min-h-[5rem] py-2">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
                 <a href={translatePath('/')} class="flex gap-2 items-center py-2 overflow-visible">
-                    <img src="/images/logo-king-cocondo.webp" width="2048" height="2048" alt="King Cocondo Logo" class="h-16 sm:h-20 w-auto transform scale-[1.35] origin-left" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-                    <span class="text-3xl font-heading font-bold text-primary-charcoal tracking-tight" style="display: none;">KING<span class="text-accent-gold">COCONDO</span></span>
+                    <img src="/images/logo-king-cocondo.webp" width="2048" height="2048" alt="King Cocondo Logo" class="h-10 sm:h-12 w-auto rounded-lg shadow-md border border-white/10 p-1 bg-white/90" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                    <span class="text-3xl font-heading font-bold text-white tracking-tight" style="display: none;">KING<span class="text-accent-gold">COCONDO</span></span>
                 </a>
             </div>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden md:flex space-x-8 ltr:space-x-8 rtl:space-x-reverse">
-                <a href={translatePath('/')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.home')}</a>
-                <a href={translatePath('/#about')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.about')}</a>
-                <a href={translatePath('/#products')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.products')}</a>
-                <a href={translatePath('/#gallery')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.gallery')}</a>
-                <a href={translatePath('/#faq')} class="text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">{t('nav.faq')}</a>
+            <nav class="hidden lg:flex space-x-5 xl:space-x-7 ltr:space-x-5 rtl:space-x-reverse items-center">
+                <a href={translatePath('/')} class="text-white hover:text-accent-gold transition-colors font-medium text-sm tracking-wide py-4">{t('nav.home')}</a>
+                
+                <!-- Products Dropdown -->
+                <div class="relative group py-4">
+                    <button class="flex items-center text-white group-hover:text-accent-gold transition-colors font-medium text-sm tracking-wide">
+                        {t('nav.products')}
+                        <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180 text-accent-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0 z-50">
+                        <div class="bg-surface-dark/95 backdrop-blur-xl border border-accent-gold/20 rounded-xl shadow-2xl overflow-hidden py-2">
+                            <a href={translatePath('/products/shisha-charcoal')} class="block px-6 py-3 text-sm text-gray-300 hover:text-accent-gold hover:bg-white/5 transition-colors font-medium">Coconut Charcoal Briquette</a>
+                            <a href={translatePath('/products/cocopeat')} class="block px-6 py-3 text-sm text-gray-300 hover:text-accent-gold hover:bg-white/5 transition-colors border-t border-white/5 font-medium">Premium Cocopeat</a>
+                            <a href={translatePath('/products/coconut-fiber')} class="block px-6 py-3 text-sm text-gray-300 hover:text-accent-gold hover:bg-white/5 transition-colors border-t border-white/5 font-medium">Coconut Fiber</a>
+                            <a href={translatePath('/oem-private-label')} class="block px-6 py-3 text-sm text-accent-gold hover:bg-white/5 transition-colors border-t border-white/5 font-semibold">OEM / Private Label</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href={translatePath('/specifications')} class="text-white hover:text-accent-gold transition-colors font-medium text-sm tracking-wide py-4">{t('nav.specifications')}</a>
+                <a href={translatePath('/production')} class="text-white hover:text-accent-gold transition-colors font-medium text-sm tracking-wide py-4">{t('nav.production')}</a>
+                <a href={translatePath('/export')} class="text-white hover:text-accent-gold transition-colors font-medium text-sm tracking-wide py-4">{t('nav.export')}</a>
+                <a href={translatePath('/quality')} class="text-white hover:text-accent-gold transition-colors font-medium text-sm tracking-wide py-4">{t('nav.quality')}</a>
+                <a href={translatePath('/about')} class="text-white hover:text-accent-gold transition-colors font-medium text-sm tracking-wide py-4">{t('nav.about')}</a>
             </nav>
 
             <!-- Desktop CTA & Lang Switcher -->
             <div class="hidden md:flex items-center gap-4">
                 <div class="relative h-full flex items-center lang-dropdown-container">
-                    <button type="button" class="lang-toggle-btn flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8 cursor-pointer">
+                    <button type="button" class="lang-toggle-btn flex items-center gap-1 text-white hover:text-accent-gold transition-colors font-medium text-sm py-8 cursor-pointer">
                         <Globe class="w-4 h-4 pointer-events-none" />
                         <span class="uppercase pointer-events-none">{languages[lang as keyof typeof languages]?.prefix || lang}</span>
                     </button>
@@ -41,7 +59,7 @@ const translatePath = useTranslatedPath(lang);
                                 <span class="text-accent-gold text-xs font-bold tracking-[0.2em] uppercase">BAHASA</span>
                             </div>
                             {Object.entries(languages).map(([code, data]) => (
-                                <a href={`/${code}`} class="flex items-center justify-between px-5 py-3 hover:bg-white/5 transition-colors group">
+                                <a href={`/${code}`} class="flex items-center justify-between px-5 py-3 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 transition-colors group">
                                     <div class="flex items-center gap-4">
                                         <span class="text-[10px] font-bold text-gray-400 group-hover:text-white w-5">{data.prefix}</span>
                                         <span class={`text-sm ${lang === code ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{data.name}</span>
@@ -65,7 +83,7 @@ const translatePath = useTranslatedPath(lang);
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center gap-4">
                 <div class="relative h-full flex items-center lang-dropdown-container">
-                    <button type="button" class="lang-toggle-btn flex items-center gap-1 text-primary-charcoal hover:text-accent-gold transition-colors font-medium text-sm py-8 cursor-pointer">
+                    <button type="button" class="lang-toggle-btn flex items-center gap-1 text-white hover:text-accent-gold transition-colors font-medium text-sm py-8 cursor-pointer">
                         <span class="uppercase pointer-events-none">{languages[lang as keyof typeof languages]?.prefix || lang}</span>
                     </button>
                     <div class="lang-dropdown-menu absolute right-0 top-full -mt-2 w-56 pt-2 hidden z-50">
@@ -74,7 +92,7 @@ const translatePath = useTranslatedPath(lang);
                                 <span class="text-accent-gold text-xs font-bold tracking-[0.2em] uppercase">BAHASA</span>
                             </div>
                             {Object.entries(languages).map(([code, data]) => (
-                                <a href={`/${code}`} class="flex items-center justify-between px-5 py-3 hover:bg-white/5 transition-colors group">
+                                <a href={`/${code}`} class="flex items-center justify-between px-5 py-3 hover:bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/5 transition-colors group">
                                     <div class="flex items-center gap-4">
                                         <span class="text-[10px] font-bold text-gray-400 group-hover:text-white w-5">{data.prefix}</span>
                                         <span class={`text-sm ${lang === code ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{data.name}</span>
@@ -89,7 +107,7 @@ const translatePath = useTranslatedPath(lang);
                         </div>
                     </div>
                 </div>
-                <button type="button" id="mobile-menu-btn" class="text-primary-charcoal hover:text-accent-gold focus:outline-none">
+                <button type="button" id="mobile-menu-btn" class="text-white hover:text-accent-gold focus:outline-none">
                     <span class="sr-only">Open main menu</span>
                     <Menu class="h-6 w-6" id="menu-icon-open" />
                     <X class="h-6 w-6 hidden" id="menu-icon-close" />
@@ -99,13 +117,15 @@ const translatePath = useTranslatedPath(lang);
     </div>
 
     <!-- Mobile Navigation -->
-    <div class="md:hidden hidden bg-white border-t border-gray-100 shadow-lg" id="mobile-menu">
+    <div class="md:hidden hidden bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 border-t border-surface-dark shadow-[0_0_15px_rgba(212,175,55,0.1)]" id="mobile-menu">
         <div class="px-2 pt-2 pb-6 space-y-1 sm:px-3 flex flex-col items-center">
-            <a href={translatePath('/')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.home')}</a>
-            <a href={translatePath('/#about')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.about')}</a>
-            <a href={translatePath('/#products')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.products')}</a>
-            <a href={translatePath('/#gallery')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.gallery')}</a>
-            <a href={translatePath('/#faq')} class="block px-3 py-3 text-base font-medium text-primary-charcoal hover:text-accent-gold">{t('nav.faq')}</a>
+            <a href={translatePath('/')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.home')}</a>
+            <a href={translatePath('/products/shisha-charcoal')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.products')}</a>
+            <a href={translatePath('/specifications')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.specifications')}</a>
+            <a href={translatePath('/production')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.production')}</a>
+            <a href={translatePath('/export')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.export')}</a>
+            <a href={translatePath('/quality')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.quality')}</a>
+            <a href={translatePath('/about')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.about')}</a>
             <div class="mt-4 w-full px-4">
                 <Button href={translatePath('/#contact')} variant="primary" class="w-full justify-center">
                     {t('btn.quote')}

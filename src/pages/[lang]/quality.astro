@@ -1,0 +1,153 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+import Button from '../../components/common/Button.astro';
+import { Award, FileText, CheckCircle2, ShieldCheck, Thermometer, Flame } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as keyof typeof languages);
+const translatePath = useTranslatedPath(lang as keyof typeof languages);
+
+const certs = [
+  {
+    title: "COA (Certificate of Analysis)",
+    desc: "Independent chemical laboratory analysis report detailing exact Ash Content, Moisture, Fixed Carbon, Volatile Matter, and Gross Caloric Value for every production batch.",
+    icon: FileText
+  },
+  {
+    title: "MSDS (Material Safety Data Sheet)",
+    desc: "Comprehensive safety documentation compliant with international maritime hazardous material classification and port authority regulations.",
+    icon: ShieldCheck
+  },
+  {
+    title: "Self-Heating Test Certificate (SHT)",
+    desc: "Official maritime laboratory test confirming our coconut charcoal briquettes are non-self-heating under UN 3175 / IMDG Code class 4.2 regulations.",
+    icon: Thermometer
+  },
+  {
+    title: "Vanning & Seal Inspection",
+    desc: "Complete photo and video documentation of container loading, pallet weight verification, and official shipping line seal inspection before port departure.",
+    icon: Award
+  }
+];
+
+const labTests = [
+  { test: "Moisture Analyzer Test", standard: "≤ 5.0% - 7.0%", check: "Prevents mildew and guarantees instant ignition" },
+  { test: "Digital Pyrometer Heat Test", standard: "Peak Temp > 650°C", check: "Ensures intense, steady heat output for 2+ hours" },
+  { test: "1.5 Meter Drop Test", standard: "0% Shatter / Breakage", check: "Guarantees structural integrity during transport" },
+  { test: "Ash Color & Residue Test", standard: "Natural White / Light Grey", check: "Leaves minimal residue and zero foul odor" }
+];
+---
+
+<Layout 
+	title="QUALITY ASSURANCE & COA CERTIFICATIONS | King Cocondo" 
+	description="King Cocondo quality control standards, chemical lab analysis certificates (COA), MSDS, and Self-Heating Test (SHT) compliance."
+>
+	<Header />
+
+	<main class="flex-grow pt-24 pb-20 bg-primary-dark min-h-screen text-white">
+		<!-- Hero Section -->
+		<section class="relative py-16 bg-gradient-to-b from-surface-dark via-primary-dark to-primary-dark border-b border-white/5 overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+				<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-gold/10 text-accent-gold font-semibold text-xs tracking-widest uppercase mb-4 border border-accent-gold/20">
+					<Award class="w-4 h-4" /> Uncompromising Standards
+				</span>
+				<h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 tracking-tight">
+					QUALITY & <span class="text-accent-gold">CERTIFICATIONS</span>
+				</h1>
+				<p class="text-gray-300 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+					Every container leaving our factory is backed by independent chemical laboratory test reports (COA), Material Safety Data Sheets (MSDS), and SHT certificates.
+				</p>
+			</div>
+		</section>
+
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+
+			<!-- Certifications Grid -->
+			<section>
+				<div class="text-center max-w-3xl mx-auto mb-12">
+					<h2 class="text-3xl font-heading font-bold text-white mb-3">Export Compliance & Safety Documentation</h2>
+					<p class="text-gray-400 text-sm">Full documentation suite required for international maritime freight and customs clearance</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					{certs.map((c) => {
+						const IconComp = c.icon;
+						return (
+							<div class="bg-surface-dark/60 border border-accent-gold/15 rounded-2xl p-8 space-y-4 hover:border-accent-gold/40 transition-colors shadow-lg">
+								<div class="w-12 h-12 rounded-xl bg-accent-gold/10 text-accent-gold flex items-center justify-center">
+									<IconComp class="w-6 h-6" />
+								</div>
+								<h3 class="text-2xl font-bold text-white">{c.title}</h3>
+								<p class="text-sm text-gray-300 leading-relaxed">{c.desc}</p>
+							</div>
+						);
+					})}
+				</div>
+			</section>
+
+			<!-- Lab Inspection Grid & Image -->
+			<section class="bg-surface-dark/40 border border-white/10 rounded-3xl p-8 md:p-12">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					<div class="space-y-6">
+						<div class="flex items-center gap-3">
+							<Flame class="w-8 h-8 text-accent-gold" />
+							<h2 class="text-2xl md:text-3xl font-heading font-bold text-white">4-Point Factory Quality Protocol</h2>
+						</div>
+						<p class="text-gray-300 text-sm leading-relaxed">
+							Before briquettes are boxed and packed onto pallets, our internal QC team performs mandatory sample batch testing.
+						</p>
+
+						<div class="space-y-4">
+							{labTests.map((t) => (
+								<div class="bg-primary-dark/80 border border-white/10 rounded-xl p-4 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+									<div>
+										<h4 class="font-bold text-white text-base">{t.test}</h4>
+										<p class="text-xs text-gray-400">{t.check}</p>
+									</div>
+									<span class="text-xs font-semibold px-3 py-1 bg-accent-gold/10 text-accent-gold rounded-full border border-accent-gold/20 shrink-0">
+										{t.standard}
+									</span>
+								</div>
+							))}
+						</div>
+					</div>
+
+					<div class="space-y-6">
+						<div class="aspect-w-16 aspect-h-10 rounded-2xl overflow-hidden border border-accent-gold/20 shadow-2xl">
+							<img src="/images/new_assets/measuring-burning-charcoal-temp.webp" alt="Pyrometer Temperature Testing" class="w-full h-80 object-cover object-bottom" />
+						</div>
+						<div class="aspect-w-16 aspect-h-10 rounded-2xl overflow-hidden border border-white/10 shadow-xl">
+							<img src="/images/new_assets/shisha-charcoal-brands.webp" alt="OEM Charcoal Brands Inspection" class="w-full h-64 object-cover object-bottom" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="bg-gradient-to-r from-surface-dark via-primary-charcoal to-surface-dark border border-accent-gold/30 rounded-3xl p-8 md:p-12 text-center shadow-2xl">
+				<div class="max-w-3xl mx-auto space-y-6">
+					<ShieldCheck class="w-12 h-12 text-accent-gold mx-auto" />
+					<h3 class="text-3xl font-heading font-bold text-white">Request Official COA & Lab Test Reports</h3>
+					<p class="text-gray-300 text-base">
+						We are happy to provide recent Certificate of Analysis (COA) documents or send physical samples for independent testing in your country.
+					</p>
+					<div class="pt-4 flex flex-wrap justify-center gap-4">
+						<Button href="https://wa.me/6285719619013?text=Hello%20King%20Cocondo,%20I%20would%20like%20to%20request%20the%20official%20COA%20and%20MSDS%20documents." variant="primary" class="py-3 px-8 text-base">
+							Request COA & MSDS PDF
+						</Button>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<Footer />
+</Layout>

@@ -84,12 +84,12 @@ const schema = JSON.stringify({
 				<nav class="flex mb-8 text-sm" aria-label="Breadcrumb">
 					<ol class="inline-flex items-center space-x-1 md:space-x-3">
 						<li class="inline-flex items-center">
-							<a href={translatePath('/')} class="text-gray-500 hover:text-primary-green transition-colors">{t('nav.home')}</a>
+							<a href={translatePath('/')} class="text-gray-400 hover:text-accent-gold transition-colors">{t('nav.home')}</a>
 						</li>
 						<li>
 							<div class="flex items-center">
 								<ChevronRight class="w-4 h-4 text-gray-400 mx-1" />
-								<span class="text-gray-900 font-medium">{t('prod.cat.cocopeat')}</span>
+								<span class="text-white font-medium">{t('prod.cat.cocopeat')}</span>
 							</div>
 						</li>
 					</ol>
@@ -98,26 +98,26 @@ const schema = JSON.stringify({
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 					<!-- Image Gallery -->
 					<div class="space-y-4">
-						<div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden bg-white shadow-lg border border-gray-100">
-							<img src="/images/cocopeat/image copy 4.webp" width="720" height="296" alt={t('seo.coco.h1')} class="w-full h-full object-cover" />
+						<div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 shadow-[0_0_15px_rgba(212,175,55,0.1)] border border-surface-dark">
+							<img src="/images/cocopeat/image copy 4.webp" width="720" height="296" alt={t('seo.coco.h1')} class="w-full h-full object-cover object-bottom" />
 						</div>
 						<div class="grid grid-cols-2 gap-4">
-							<div class="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden bg-white shadow-sm border border-gray-100">
-								<img src="/images/cocopeat/image.webp" width="720" height="520" alt="Cocopeat Block" class="w-full h-full object-cover" />
+							<div class="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 shadow-sm border border-surface-dark">
+								<img src="/images/new_assets/raw-coconut-fiber.webp" width="720" height="520" alt={t('prod.coco.block.low')} class="w-full h-full object-cover object-bottom" />
 							</div>
-							<div class="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden bg-white shadow-sm border border-gray-100">
-								<img src="/images/cocopeat/image copy 5.webp" width="720" height="316" alt="Cocopeat Packaging" class="w-full h-full object-cover" />
+							<div class="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 shadow-sm border border-surface-dark">
+								<img src="/images/cocopeat/image copy 5.webp" width="720" height="316" alt={t('seo.coco.pack')} class="w-full h-full object-cover object-bottom" />
 							</div>
 						</div>
 					</div>
 
 					<!-- Product Info -->
 					<div>
-						<span class="inline-block px-4 py-1.5 rounded-full bg-primary-green/10 text-primary-green font-semibold text-sm mb-6">
+						<span class="inline-block px-4 py-1.5 rounded-full bg-gradient-gold text-primary-dark/10 text-accent-gold font-semibold text-sm mb-6">
 							{t('prod.cat.cocopeat')}
 						</span>
 						
-						<h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-charcoal mb-6 leading-tight">
+						<h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
 							{t('seo.coco.h1')}
 						</h1>
 						
@@ -126,73 +126,43 @@ const schema = JSON.stringify({
 						</p>
 
 						<!-- Specifications -->
-						<h2 class="text-2xl font-bold text-primary-charcoal mb-4">{t('seo.coco.spec')}</h2>
-						<div class="overflow-x-auto bg-white rounded-xl border border-gray-100 shadow-sm mb-8">
+						<h2 class="text-2xl font-bold text-white mb-4">{t('seo.coco.spec')}</h2>
+						<div class="overflow-x-auto bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-xl border border-surface-dark shadow-sm mb-8">
 							<table class="w-full text-sm text-left">
-								<thead class="text-xs text-gray-700 uppercase bg-gray-50 border-b border-gray-100">
+								<thead class="text-xs text-gray-300 uppercase bg-primary-dark border-b border-surface-dark">
 									<tr>
 										<th scope="col" class="px-6 py-4">Product Name</th>
 										<th scope="col" class="px-6 py-4 min-w-[300px]">Specifications</th>
 									</tr>
 								</thead>
 								<tbody class="divide-y divide-gray-100">
-									<tr class="hover:bg-gray-50/50">
-										<td class="px-6 py-4 font-semibold text-primary-green align-top">Cocopeat Block Low EC Grade A</td>
-										<td class="px-6 py-4 text-gray-600">
+									<tr class="hover:bg-primary-dark/50">
+										<td class="px-6 py-4 font-semibold text-accent-gold align-top">Cocopeat Block - Low EC (Premium Horticultural)</td>
+										<td class="px-6 py-4 text-gray-400">
 											<ul class="space-y-1">
-												<li><strong>EC:</strong> Max 0.6 mS/cm (1:3)</li>
-												<li><strong>Weight:</strong> 4.5 - 5 Kg</li>
-												<li><strong>Expansion Volume:</strong> 60 - 65 L / block</li>
-												<li><strong>Moisture:</strong> &lt; 20%</li>
-												<li><strong>pH:</strong> 5 - 7</li>
-												<li><strong>Dimension:</strong> 30x30x12-15 cm</li>
-												<li><strong>Packing:</strong> Shrink in pallet</li>
-												<li><strong>Loadability:</strong> 4600 blocks / 40ft HC</li>
+												<li><strong>Electrical Conductivity (EC):</strong> &lt; 0.5 dS/m</li>
+												<li><strong>Weight:</strong> 5 Kg</li>
+												<li><strong>Expansion Volume:</strong> 70 - 80 L</li>
+												<li><strong>Moisture:</strong> 20 &plusmn; 5%</li>
+												<li><strong>Fiber / Impurities:</strong> Max. 2.0%</li>
+												<li><strong>pH:</strong> 5.5 - 7.0</li>
+												<li><strong>Dimensions:</strong> 30 &times; 30 &times; 15 &plusmn; 3 cm</li>
+												<li><strong>Loadability (40FT HC):</strong> 22 pallets / approx. 4,200 blocks / 21 MT</li>
 											</ul>
 										</td>
 									</tr>
-									<tr class="hover:bg-gray-50/50">
-										<td class="px-6 py-4 font-semibold text-primary-green align-top">Cocopeat Block Low EC Grade B</td>
-										<td class="px-6 py-4 text-gray-600">
+									<tr class="hover:bg-primary-dark/50">
+										<td class="px-6 py-4 font-semibold text-accent-gold align-top">Cocopeat Block - Standard / High EC</td>
+										<td class="px-6 py-4 text-gray-400">
 											<ul class="space-y-1">
-												<li><strong>EC:</strong> Max 0.6 mS/cm (1:3)</li>
-												<li><strong>Weight:</strong> 4.5 - 5 Kg</li>
-												<li><strong>Expansion Volume:</strong> 55 - 60 L / block</li>
-												<li><strong>Moisture:</strong> &lt; 20%</li>
-												<li><strong>pH:</strong> 5 - 7</li>
-												<li><strong>Mesh:</strong> &gt; 1 mm</li>
-												<li><strong>Dimension:</strong> 30x30x12-15 cm</li>
-												<li><strong>Packing:</strong> Shrink in pallet</li>
-												<li><strong>Loadability:</strong> 4600 blocks / 40ft HC</li>
-											</ul>
-										</td>
-									</tr>
-									<tr class="hover:bg-gray-50/50">
-										<td class="px-6 py-4 font-semibold text-primary-green align-top">Cocopeat Block High EC</td>
-										<td class="px-6 py-4 text-gray-600">
-											<ul class="space-y-1">
-												<li><strong>EC:</strong> &gt; 1 mS/cm (1:3)</li>
-												<li><strong>Weight:</strong> 4.5 - 5 Kg</li>
-												<li><strong>Expansion Volume:</strong> 55 - 60 L / block</li>
-												<li><strong>Moisture:</strong> &lt; 20%</li>
-												<li><strong>pH:</strong> 5 - 7</li>
-												<li><strong>Dimension:</strong> 30x30x12-15 cm</li>
-												<li><strong>Loadability:</strong> 4600 blocks / 40ft HC</li>
-											</ul>
-										</td>
-									</tr>
-									<tr class="hover:bg-gray-50/50">
-										<td class="px-6 py-4 font-semibold text-primary-green align-top">Cocopeat Polybag Low EC</td>
-										<td class="px-6 py-4 text-gray-600">
-											<ul class="space-y-1">
-												<li><strong>EC:</strong> Max 0.5 ms/cm (ratio 1:3)</li>
-												<li><strong>Weight per bag:</strong> 29 - 30 kgs</li>
-												<li><strong>Moisture:</strong> 40% - 50%</li>
-												<li><strong>pH:</strong> 5 - 7</li>
-												<li><strong>Mesh:</strong> 4 mm</li>
-												<li><strong>Dimension:</strong> 30x40x70 cm</li>
-												<li><strong>Packing:</strong> Polybag packaging</li>
-												<li><strong>Loadability:</strong> 750 - 800 polybags / 40ft HC</li>
+												<li><strong>Electrical Conductivity (EC):</strong> &lt; 1000 &micro;S/cm</li>
+												<li><strong>Weight:</strong> 5 Kg</li>
+												<li><strong>Expansion Volume:</strong> 70 - 80 L</li>
+												<li><strong>Moisture:</strong> 20 &plusmn; 5%</li>
+												<li><strong>Fiber / Impurities:</strong> Max. 2.0%</li>
+												<li><strong>pH:</strong> 5.5 - 7.0</li>
+												<li><strong>Dimensions:</strong> 30 &times; 30 &times; 15 &plusmn; 3 cm</li>
+												<li><strong>Loadability (40FT HC):</strong> 22 pallets / approx. 4,200 blocks / 21 MT</li>
 											</ul>
 										</td>
 									</tr>
@@ -203,36 +173,36 @@ const schema = JSON.stringify({
 						<!-- Applications & Packaging -->
 						<div class="space-y-6 mb-10">
 							<div>
-								<h2 class="text-xl font-bold text-primary-charcoal mb-2">{t('seo.coco.app')}</h2>
+								<h2 class="text-xl font-bold text-white mb-2">{t('seo.coco.app')}</h2>
 								<p class="text-text-muted">{t('seo.coco.app.desc')}</p>
 							</div>
 						</div>
 
 						<!-- Frequently Asked Questions (FAQ) Section for B2B Buyers -->
-						<div class="mt-12 mb-10 pt-8 border-t border-gray-200">
-							<h2 class="text-2xl font-bold text-primary-charcoal mb-6">Frequently Asked Questions (FAQ) — Cocopeat Wholesale & Export</h2>
+						<div class="mt-12 mb-10 pt-8 border-t border-accent-gold/10">
+							<h2 class="text-2xl font-bold text-white mb-6">Frequently Asked Questions (FAQ) — Cocopeat Wholesale & Export</h2>
 							<div class="space-y-4">
-								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
-									<h3 class="font-bold text-gray-900 text-base mb-2">What is the difference between Low EC and High EC Cocopeat?</h3>
-									<p class="text-sm text-gray-600 leading-relaxed">Low EC cocopeat (&lt;0.6 mS/cm) is thoroughly washed with fresh water to remove salts, making it optimal for direct seed germination, hydroponics, and greenhouses. High EC is unwashed and used for animal bedding.</p>
+								<div class="p-5 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-xl border border-surface-dark shadow-sm">
+									<h3 class="font-bold text-white text-base mb-2">What is the difference between Low EC and High EC Cocopeat?</h3>
+									<p class="text-sm text-gray-400 leading-relaxed">Low EC cocopeat (&lt;0.6 mS/cm) is thoroughly washed with fresh water to remove salts, making it optimal for direct seed germination, hydroponics, and greenhouses. High EC is unwashed and used for animal bedding.</p>
 								</div>
-								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
-									<h3 class="font-bold text-gray-900 text-base mb-2">What is the expansion ratio of 5kg cocopeat blocks?</h3>
-									<p class="text-sm text-gray-600 leading-relaxed">Each 5kg block expands to approximately 60 to 65 liters of fluffy organic substrate upon hydration.</p>
+								<div class="p-5 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-xl border border-surface-dark shadow-sm">
+									<h3 class="font-bold text-white text-base mb-2">What is the expansion ratio of 5kg cocopeat blocks?</h3>
+									<p class="text-sm text-gray-400 leading-relaxed">Each 5kg block expands to approximately 60 to 65 liters of fluffy organic substrate upon hydration.</p>
 								</div>
-								<div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
-									<h3 class="font-bold text-gray-900 text-base mb-2">How are cocopeat blocks packaged for international container shipping?</h3>
-									<p class="text-sm text-gray-600 leading-relaxed">Blocks are individually shrink-wrapped or naked-packed on wooden pallets with protective corner boards and stretch wrapping (4,600 blocks per 40ft HC container).</p>
+								<div class="p-5 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 rounded-xl border border-surface-dark shadow-sm">
+									<h3 class="font-bold text-white text-base mb-2">How are cocopeat blocks packaged for international container shipping?</h3>
+									<p class="text-sm text-gray-400 leading-relaxed">Blocks are individually shrink-wrapped or naked-packed on wooden pallets with protective corner boards and stretch wrapping (4,600 blocks per 40ft HC container).</p>
 								</div>
 							</div>
 						</div>
 
 						<!-- Actions -->
 						<div class="flex flex-col sm:flex-row gap-4">
-							<Button href={translatePath('/#contact')} variant="primary" class="flex-1 justify-center py-4 text-lg shadow-lg shadow-primary-green/20">
+							<Button href={translatePath('/#contact')} variant="primary" class="flex-1 justify-center py-4 text-lg shadow-[0_0_15px_rgba(212,175,55,0.1)] shadow-primary-green/20">
 								{t('seo.coco.cta')}
 							</Button>
-							<Button href={translatePath('/#contact')} variant="outline" class="flex-1 justify-center py-4 text-lg border-2 border-primary-green text-primary-green hover:bg-primary-green hover:text-white">
+							<Button href={`https://wa.me/6285719619013?text=${encodeURIComponent(t('wa.template'))}`} target="_blank" rel="noopener noreferrer" variant="outline" class="flex-1 justify-center py-4 text-lg border-2 border-primary-green text-accent-gold hover:bg-gradient-gold text-primary-dark hover:text-white">
 								{t('contact.wa')}
 							</Button>
 						</div>

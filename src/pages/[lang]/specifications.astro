@@ -1,0 +1,315 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+import Button from '../../components/common/Button.astro';
+import { CheckCircle2, ShieldCheck, Flame, Layers, Box, Award } from 'lucide-astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as keyof typeof languages);
+const translatePath = useTranslatedPath(lang as keyof typeof languages);
+
+const charcoalGrades = [
+  {
+    grade: "Grade 1 (Ultra Low Ash / Premium)",
+    ash: "< 2.0%",
+    ashColor: "Natural White / Light Grey",
+    burnTime: "> 2.5 Hours",
+    fixedCarbon: "≥ 80%",
+    moisture: "≤ 5.0%",
+    volatile: "11% - 13%",
+    caloric: "7,500 - 7,800 Kcal/kg",
+    badge: "Top Seller for Export"
+  },
+  {
+    grade: "Grade 2 (Premium Shisha)",
+    ash: "2.0% - 2.5%",
+    ashColor: "Natural White",
+    burnTime: "> 2.0 Hours",
+    fixedCarbon: "78% - 80%",
+    moisture: "≤ 5.0%",
+    volatile: "12% - 14%",
+    caloric: "7,300 - 7,500 Kcal/kg",
+    badge: "Popular in Middle East"
+  },
+  {
+    grade: "Grade 3 (Standard Shisha)",
+    ash: "2.5% - 3.0%",
+    ashColor: "Natural White / Cream",
+    burnTime: "> 2.0 Hours",
+    fixedCarbon: "> 75%",
+    moisture: "≤ 6.0%",
+    volatile: "13% - 15%",
+    caloric: "7,100 - 7,300 Kcal/kg",
+    badge: "Cost Effective"
+  },
+  {
+    grade: "Grade 4 (BBQ / Multi-Purpose)",
+    ash: "> 3.0%",
+    ashColor: "Natural Grey",
+    burnTime: "> 2.0 Hours",
+    fixedCarbon: "≤ 75%",
+    moisture: "≤ 7.0%",
+    volatile: "14% - 16%",
+    caloric: "6,800 - 7,100 Kcal/kg",
+    badge: "Industrial & BBQ"
+  }
+];
+
+const shapes = [
+  { name: "Cube 25mm", size: "25 x 25 x 25 mm", count: "72 pcs / kg", recommended: "Shisha / Hookah Standard" },
+  { name: "Cube 26mm", size: "26 x 26 x 26 mm", count: "64 pcs / kg", recommended: "Heavy Shisha Users" },
+  { name: "Cube 27mm", size: "27 x 27 x 27 mm", count: "56 pcs / kg", recommended: "Long-Session Hookah Lounge" },
+  { name: "Hexagonal", size: "20 x 50 mm / 20 x 35 mm", count: "Custom", recommended: "BBQ & High Heat Grill" },
+  { name: "Flat / Pillow", size: "25 x 25 x 15 mm", count: "96 pcs / kg", recommended: "Quick Heat Hookah" }
+];
+---
+
+<Layout 
+	title="PRODUCT SPECIFICATIONS | King Cocondo - Technical Lab Data" 
+	description="Complete chemical laboratory analysis and technical specifications for King Cocondo coconut charcoal briquettes, cocopeat blocks, and raw coconut fiber."
+>
+	<Header />
+
+	<main class="flex-grow pt-24 pb-20 bg-primary-dark min-h-screen text-white">
+		<!-- Hero Banner -->
+		<section class="relative py-16 bg-gradient-to-b from-surface-dark via-primary-dark to-primary-dark border-b border-white/5 overflow-hidden">
+			<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px]"></div>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+				<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-gold/10 text-accent-gold font-semibold text-xs tracking-widest uppercase mb-4 border border-accent-gold/20">
+					<ShieldCheck class="w-4 h-4" /> Lab Certified Standards
+				</span>
+				<h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 tracking-tight">
+					TECHNICAL <span class="text-accent-gold">SPECIFICATIONS</span>
+				</h1>
+				<p class="text-gray-300 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+					Verified chemical properties, moisture levels, burning duration, and precise dimensions for our coconut charcoal briquettes, cocopeat, and fiber products.
+				</p>
+			</div>
+		</section>
+
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+			<!-- 1. Coconut Charcoal Briquettes Specs -->
+			<section id="charcoal-specs">
+				<div class="flex items-center gap-3 mb-8">
+					<div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold">
+						<Flame class="w-6 h-6" />
+					</div>
+					<div>
+						<h2 class="text-2xl md:text-3xl font-heading font-bold text-white">Coconut Charcoal Briquette Specifications</h2>
+						<p class="text-gray-400 text-sm">Graded laboratory parameters per international export standards</p>
+					</div>
+				</div>
+
+				<div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+					{charcoalGrades.map((g) => (
+						<div class="bg-surface-dark/60 backdrop-blur-md border border-accent-gold/15 rounded-2xl p-6 relative hover:border-accent-gold/40 transition-all duration-300 flex flex-col justify-between group shadow-xl">
+							<div>
+								<div class="flex justify-between items-start mb-4">
+									<span class="text-xs font-semibold px-3 py-1 rounded-full bg-accent-gold/10 text-accent-gold border border-accent-gold/20">
+										{g.badge}
+									</span>
+								</div>
+								<h3 class="text-lg font-bold text-white mb-4 group-hover:text-accent-gold transition-colors">{g.grade}</h3>
+								
+								<div class="space-y-3 text-sm text-gray-300">
+									<div class="flex justify-between py-1 border-b border-white/5">
+										<span class="text-gray-400">Ash Content</span>
+										<span class="font-semibold text-accent-gold">{g.ash}</span>
+									</div>
+									<div class="flex justify-between py-1 border-b border-white/5">
+										<span class="text-gray-400">Ash Color</span>
+										<span class="font-medium text-white">{g.ashColor}</span>
+									</div>
+									<div class="flex justify-between py-1 border-b border-white/5">
+										<span class="text-gray-400">Burn Time</span>
+										<span class="font-medium text-white">{g.burnTime}</span>
+									</div>
+									<div class="flex justify-between py-1 border-b border-white/5">
+										<span class="text-gray-400">Fixed Carbon</span>
+										<span class="font-semibold text-white">{g.fixedCarbon}</span>
+									</div>
+									<div class="flex justify-between py-1 border-b border-white/5">
+										<span class="text-gray-400">Moisture</span>
+										<span class="font-medium text-white">{g.moisture}</span>
+									</div>
+									<div class="flex justify-between py-1">
+										<span class="text-gray-400">Caloric Value</span>
+										<span class="font-medium text-white">{g.caloric}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</section>
+
+			<!-- 2. Shapes & Dimensions Grid -->
+			<section id="shapes-specs" class="bg-surface-dark/40 border border-white/10 rounded-3xl p-8 md:p-12">
+				<div class="flex items-center gap-3 mb-8">
+					<div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold">
+						<Box class="w-6 h-6" />
+					</div>
+					<div>
+						<h2 class="text-2xl md:text-3xl font-heading font-bold text-white">Shapes, Dimensions & Packaging Units</h2>
+						<p class="text-gray-400 text-sm">Custom shapes engineered for uniform heat distribution</p>
+					</div>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+					{shapes.map((s) => (
+						<div class="bg-primary-dark/80 border border-white/10 rounded-xl p-5 hover:border-accent-gold/30 transition-colors">
+							<div class="flex justify-between items-center mb-2">
+								<h4 class="font-bold text-accent-gold text-lg">{s.name}</h4>
+								<span class="text-xs bg-white/5 px-2.5 py-1 rounded text-gray-300">{s.count}</span>
+							</div>
+							<p class="text-white font-mono text-sm mb-2">{s.size}</p>
+							<p class="text-xs text-gray-400">Best For: <span class="text-gray-300">{s.recommended}</span></p>
+						</div>
+					))}
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+					<div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+						<img src="/images/new_assets/burning-cube-briquettes.webp" alt="Burning Cube Charcoal" class="w-full h-64 object-cover object-bottom" />
+					</div>
+					<div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+						<img src="/images/new_assets/burning-hexagon-briquettes.webp" alt="Hexagon Briquette Charcoal" class="w-full h-64 object-cover object-bottom" />
+					</div>
+				</div>
+			</section>
+
+			<!-- 3. Cocopeat & Fiber Specs -->
+			<section id="cocopeat-fiber-specs">
+				<div class="flex items-center gap-3 mb-8">
+					<div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold">
+						<Layers class="w-6 h-6" />
+					</div>
+					<div>
+						<h2 class="text-2xl md:text-3xl font-heading font-bold text-white">Cocopeat & Raw Coconut Fiber Specifications</h2>
+						<p class="text-gray-400 text-sm">Horticultural substrate and industrial fiber metrics</p>
+					</div>
+				</div>
+
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+					<!-- Cocopeat Card -->
+					<div class="bg-surface-dark/60 border border-accent-gold/15 rounded-2xl p-8 flex flex-col justify-between">
+						<div>
+							<span class="inline-block px-3 py-1 rounded-full bg-accent-gold/10 text-accent-gold font-semibold text-xs uppercase mb-4">
+								Agricultural Substrate
+							</span>
+							<h3 class="text-2xl font-bold text-white mb-4">Cocopeat Block (5 Kg)</h3>
+							
+							<div class="overflow-x-auto">
+								<table class="w-full text-sm text-left">
+									<tbody class="divide-y divide-white/5 text-gray-300">
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">EC (Low EC Grade)</td>
+											<td class="py-2.5 font-bold text-accent-gold">&lt; 0.5 dS/m (Washed)</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">EC (High EC Grade)</td>
+											<td class="py-2.5 text-white">&lt; 1.5 dS/m (Unwashed)</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">pH Level</td>
+											<td class="py-2.5 text-white">5.5 – 6.8</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Expansion Volume</td>
+											<td class="py-2.5 text-white">70 – 80 Liters / 5kg Block</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Moisture Content</td>
+											<td class="py-2.5 text-white">15% – 20% Max</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Compression Ratio</td>
+											<td class="py-2.5 text-white">5 : 1</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Block Dimension</td>
+											<td class="py-2.5 text-white font-mono">30 x 30 x 15 cm (±3cm)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="mt-6 pt-4 border-t border-white/10">
+							<img src="/images/new_assets/cocopeat-block.webp" alt="Cocopeat Block 5kg" class="w-full h-48 object-cover object-bottom rounded-xl" />
+						</div>
+					</div>
+
+					<!-- Fiber Card -->
+					<div class="bg-surface-dark/60 border border-accent-gold/15 rounded-2xl p-8 flex flex-col justify-between">
+						<div>
+							<span class="inline-block px-3 py-1 rounded-full bg-accent-gold/10 text-accent-gold font-semibold text-xs uppercase mb-4">
+								Industrial Raw Material
+							</span>
+							<h3 class="text-2xl font-bold text-white mb-4">Golden Raw Coconut Fiber</h3>
+							
+							<div class="overflow-x-auto">
+								<table class="w-full text-sm text-left">
+									<tbody class="divide-y divide-white/5 text-gray-300">
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Serat Length</td>
+											<td class="py-2.5 font-bold text-accent-gold">5 cm – 25 cm (Golden Yellow)</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Moisture Content</td>
+											<td class="py-2.5 text-white">12% – 15% Max</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Impurities / Dust</td>
+											<td class="py-2.5 text-white">&lt; 3.0% Max</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Bale Weight</td>
+											<td class="py-2.5 text-white">90 kg – 100 kg per Bale</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Bale Dimensions</td>
+											<td class="py-2.5 text-white font-mono">110 x 70 x 50 cm</td>
+										</tr>
+										<tr>
+											<td class="py-2.5 font-medium text-gray-400">Loadability (40FT HC)</td>
+											<td class="py-2.5 text-white">Approx. 18 Metric Tons (200 Bales)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="mt-6 pt-4 border-t border-white/10">
+							<img src="/images/new_assets/raw-coconut-fiber.webp" alt="Raw Coconut Fiber" class="w-full h-48 object-cover object-bottom rounded-xl" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Box -->
+			<section class="bg-gradient-to-r from-surface-dark via-primary-charcoal to-surface-dark border border-accent-gold/30 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden shadow-2xl">
+				<div class="max-w-3xl mx-auto space-y-6">
+					<Award class="w-12 h-12 text-accent-gold mx-auto" />
+					<h3 class="text-3xl font-heading font-bold text-white">Need Customized Technical Specifications?</h3>
+					<p class="text-gray-300 text-base">
+						We produce customized ash content, block weights, and shapes according to your private label or market specifications.
+					</p>
+					<div class="pt-4 flex flex-wrap justify-center gap-4">
+						<Button href="https://wa.me/6285719619013?text=Hello%20King%20Cocondo,%20I%20would%20like%20to%20request%20a%20Customized%20Specification%20Sheet." variant="primary" class="py-3 px-8 text-base">
+							Request Custom Spec Sheet
+						</Button>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<Footer />
+</Layout>
