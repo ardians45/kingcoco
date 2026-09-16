@@ -5,7 +5,7 @@ import Footer from '../../components/common/Footer.astro';
 import Button from '../../components/common/Button.astro';
 import StackedProductCarousel from '../../components/common/StackedProductCarousel.astro';
 import StackedMediaCarousel from '../../components/common/StackedMediaCarousel.astro';
-import { CheckCircle2, Factory, PackageCheck, Ship, Globe } from 'lucide-astro';
+import { CheckCircle2, Factory, PackageCheck, Ship, Globe, Play } from 'lucide-astro';
 import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '../../i18n/utils';
 
 export function getStaticPaths() {
@@ -631,18 +631,126 @@ const schema = JSON.stringify({
 				</div>
 
 				<div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-					<!-- 1. RAW MATERIAL & PRIMARY PROCESSING -->
-					<!-- Image: Raw Material -->
+					<!-- PRIORITY PRODUCTION & QUALITY VIDEOS (TOP ORDER FOR MOBILE & DESKTOP) -->
+					<!-- 1. Video: Raw Charcoal Sorting (Video 03) -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<img loading="lazy" decoding="async" src="/images/new_assets/raw-coconut-fiber.webp" width="720" height="540" alt="Raw Coconut Shell & Fiber Sourcing" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-03.mp4" type="video/mp4">
+						</video>
 						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-							<span class="text-white font-bold text-lg">Raw Material Sourcing</span>
+							<span class="text-white font-bold text-lg">Raw Material Sourcing & Sorting</span>
 						</div>
 					</div>
 
-					<!-- Video 1: Raw Material Processing -->
+					<!-- 2. Video: Briquette Extrusion & Cutting (Video 10) -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<video loop muted playsinline preload="none" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-10.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Briquette Extrusion & Cutting</span>
+						</div>
+					</div>
+
+					<!-- 3. Video: Burning Charcoal Heat Test (Video 05) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-05.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">High-Heat Briquette Glow Test</span>
+						</div>
+					</div>
+
+					<!-- 4. Video: Shisha Charcoal Test (Video 04) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-04.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Shisha Charcoal Burning Test</span>
+						</div>
+					</div>
+
+					<!-- 5. Video: Steak Grilling Performance (Video 09) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-09.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Steak Grill & BBQ Performance</span>
+						</div>
+					</div>
+
+					<!-- 6. Video: Cube Charcoal on Hookah (Video 13) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-13.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Cube Briquettes on Shisha Hookah</span>
+						</div>
+					</div>
+
+					<!-- CONTINUATION VIDEOS (7 to 13) -->
+					<!-- 7. Video: Coir Fiber Sun Drying (Video 08) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-08.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Raw Coir Sun Drying Yard</span>
+						</div>
+					</div>
+
+					<!-- 8. Video: Cocopeat Rotary Drum Screening (Video 12) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-12.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Rotary Drum Mesh Screening</span>
+						</div>
+					</div>
+
+					<!-- 9. Video: Cocopeat & Fiber Extraction (Video 01) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
 							<track kind="captions" />
 							<source src="/videos/new_assets/kingcoco-video-01.mp4" type="video/mp4">
 						</video>
@@ -651,23 +759,76 @@ const schema = JSON.stringify({
 						</div>
 					</div>
 
+					<!-- 10. Video: Cocopeat Solar Drying (Video 11) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-11.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Cocopeat Solar Curing Field</span>
+						</div>
+					</div>
+
+					<!-- 11. Video: Pallet Wrapping & Storage (Video 06) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-06.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Export Pallet Wrapping & Storage</span>
+						</div>
+					</div>
+
+					<!-- 12. Video: Coir Hydraulic Baling (Video 07) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-07.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Hydraulic Coir Baling Press</span>
+						</div>
+					</div>
+
+					<!-- 13. Video: Port Container Loading (Video 02) -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<div class="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-accent-gold/30 text-accent-gold text-xs font-semibold flex items-center gap-1.5 pointer-events-none shadow-md">
+							<Play class="w-3 h-3 fill-current" /> Live Video
+						</div>
+						<video loop muted playsinline preload="metadata" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
+							<track kind="captions" />
+							<source src="/videos/new_assets/kingcoco-video-02.mp4" type="video/mp4">
+						</video>
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Port Container Stuffing & Loading</span>
+						</div>
+					</div>
+
+					<!-- MANUFACTURING, PACKAGING & LOGISTICS PROCESS PHOTOS -->
+					<!-- Image: Raw Material -->
+					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
+						<img loading="lazy" decoding="async" src="/images/new_assets/raw-coconut-fiber.webp" width="720" height="540" alt="Raw Coconut Shell & Fiber Sourcing" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
+						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+							<span class="text-white font-bold text-lg">Raw Material Sourcing</span>
+						</div>
+					</div>
+
 					<!-- Image: Fiber Bales -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
 						<img loading="lazy" decoding="async" src="/images/new_assets/coconut-fiber-bale.webp" width="720" height="516" alt="Raw Coconut Fiber Bales" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
 						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
 							<span class="text-white font-bold text-lg">Raw Coir Baling</span>
-						</div>
-					</div>
-
-					<!-- 2. BRIQUETTE MANUFACTURING & OVEN CURING -->
-					<!-- Video 3: Produksi Briket -->
-					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<video loop muted playsinline preload="none" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
-							<track kind="captions" />
-							<source src="/videos/new_assets/kingcoco-video-03.mp4" type="video/mp4">
-						</video>
-						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-							<span class="text-white font-bold text-lg">Briquette Extrusion Process</span>
 						</div>
 					</div>
 
@@ -687,7 +848,6 @@ const schema = JSON.stringify({
 						</div>
 					</div>
 
-					<!-- 3. PACKAGING, WAREHOUSING & SHIPMENT LOGISTICS -->
 					<!-- Image: Pallet Wrapping -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
 						<img loading="lazy" decoding="async" src="/images/new_assets/wrapping-charcoal-pallet.webp" width="2752" height="1536" alt="Pallet Shrink Wrapping" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
@@ -720,17 +880,6 @@ const schema = JSON.stringify({
 						</div>
 					</div>
 
-					<!-- Video 2: Container Loading -->
-					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
-						<video loop muted playsinline preload="none" class="w-full h-auto transition-transform duration-700 group-hover:scale-105 lazy-video">
-							<track kind="captions" />
-							<source src="/videos/new_assets/kingcoco-video-02.mp4" type="video/mp4">
-						</video>
-						<div class="absolute inset-0 bg-gradient-to-t from-primary-charcoal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-							<span class="text-white font-bold text-lg">Port Container Loading</span>
-						</div>
-					</div>
-
 					<!-- Image: Loaded Container -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid">
 						<img loading="lazy" decoding="async" src="/images/new_assets/container-loaded-pallets.webp" width="720" height="688" alt="Loaded Container Pallets" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
@@ -739,7 +888,7 @@ const schema = JSON.stringify({
 						</div>
 					</div>
 
-					<!-- 4. FINISHED PRODUCTS (FOTO-FOTO PRODUK DI PALING AKHIR) -->
+					<!-- FINISHED PRODUCTS (FOTO-FOTO PRODUK DI PALING AKHIR) -->
 					<!-- Image: OEM Charcoal Brands -->
 					<div class="relative group rounded-3xl overflow-hidden shadow-md break-inside-avoid border border-accent-gold/30">
 						<img loading="lazy" decoding="async" src="/images/new_assets/shisha-charcoal-brands.webp" width="720" height="716" alt="OEM Charcoal Brands Packaging" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" />
