@@ -85,7 +85,7 @@ const schema = JSON.stringify({
 					</p>
 					
 					<div class="flex flex-col sm:flex-row gap-4 sm:gap-5">
-						<Button href={translatePath('/#contact')} variant="primary" class="py-3.5 sm:py-4 px-8 sm:px-10 text-base sm:text-lg w-full sm:w-auto justify-center shadow-[0_0_20px_rgba(27,59,43,0.5)] hover:shadow-[0_0_30px_rgba(27,59,43,0.8)] transition-all hover:-translate-y-1">
+						<Button href={waLink} target="_blank" rel="noopener noreferrer" variant="primary" class="py-3.5 sm:py-4 px-8 sm:px-10 text-base sm:text-lg w-full sm:w-auto justify-center shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] transition-all hover:-translate-y-1">
 							{t('btn.quote')}
 						</Button>
 						<Button href={translatePath('/#products')} variant="outline" class="py-3.5 sm:py-4 px-8 sm:px-10 text-base sm:text-lg w-full sm:w-auto justify-center bg-surface-dark/80 backdrop-blur-md hover:bg-surface-dark text-white border-white/20 transition-all hover:-translate-y-1">
@@ -1007,35 +1007,35 @@ const schema = JSON.stringify({
 					<div class="bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10 p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative">
 						<div class="absolute -top-6 -right-6 w-24 h-24 bg-[url('/images/gallery/grid-pattern.svg')] opacity-10"></div>
 						<h3 class="text-2xl font-bold text-white mb-8">{t('contact.form.title')}</h3>
-						<form class="space-y-6" onsubmit="event.preventDefault(); alert('Form integration goes here.');">
+						<form id="rfq-form" class="space-y-6">
 							<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 								<div>
 									<label for="contact-name" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.name')}</label>
-									<input id="contact-name" type="text" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
+									<input id="contact-name" name="name" type="text" placeholder="e.g. John Doe" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
 								</div>
 								<div>
 									<label for="contact-company" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.company')}</label>
-									<input id="contact-company" type="text" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
+									<input id="contact-company" name="company" type="text" placeholder="e.g. Global Trading Ltd" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
 								</div>
 							</div>
 							<div>
 								<label for="contact-email" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.email')}</label>
-								<input id="contact-email" type="email" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
+								<input id="contact-email" name="email" type="email" placeholder="e.g. john@company.com" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required />
 							</div>
 							<div>
 								<label for="contact-product" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.product')}</label>
-								<select id="contact-product" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required>
+								<select id="contact-product" name="product" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all" required>
 									<option value="">{lang === 'id' ? '-- Pilih Produk --' : '-- Select Product --'}</option>
 									<option value="cocopeat">Premium Cocopeat</option>
 									<option value="charcoal">{t('products.h3.charcoal')}</option>
-									<option value="both">{lang === 'id' ? 'Kedua Produk' : 'Both Products'}</option>
+									<option value="both">{lang === 'id' ? 'Kedua Produk (Cocopeat & Charcoal)' : 'Both Products (Cocopeat & Charcoal)'}</option>
 								</select>
 							</div>
 							<div>
 								<label for="contact-message" class="block text-sm font-semibold text-gray-300 mb-2">{t('contact.form.msg')}</label>
-								<textarea id="contact-message" rows="4" class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all"></textarea>
+								<textarea id="contact-message" name="message" rows="4" placeholder={lang === 'id' ? 'Tuliskan volume pesanan, pelabuhan tujuan, dan spesifikasi khusus...' : 'Describe volume required, destination port, or specific requirements...'} class="w-full px-5 py-4 rounded-xl border border-accent-gold/10 focus:ring-2 focus:ring-primary-green focus:border-transparent outline-none bg-primary-dark/50 text-white transition-all"></textarea>
 							</div>
-							<Button type="submit" variant="primary" class="w-full justify-center py-4 text-lg font-bold rounded-xl mt-4">
+							<Button type="submit" variant="primary" class="w-full justify-center py-4 text-lg font-bold rounded-xl mt-4 cursor-pointer hover:shadow-lg hover:shadow-primary-green/20 transition-all">
 								{t('contact.form.send')}
 							</Button>
 						</form>
@@ -1057,10 +1057,10 @@ const schema = JSON.stringify({
             const videoObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        const video = entry.target;
+                        const video = entry.target as HTMLVideoElement;
                         video.play().catch(e => console.log("Autoplay prevented:", e));
                     } else {
-                        entry.target.pause();
+                        (entry.target as HTMLVideoElement).pause();
                     }
                 });
             }, { rootMargin: '100px' });
@@ -1068,7 +1068,41 @@ const schema = JSON.stringify({
             videos.forEach(v => videoObserver.observe(v));
         } else {
             videos.forEach(v => {
-                v.play().catch(e => console.log("Autoplay prevented:", e));
+                (v as HTMLVideoElement).play().catch(e => console.log("Autoplay prevented:", e));
+            });
+        }
+
+        // RFQ Form Handler
+        const rfqForm = document.getElementById('rfq-form') as HTMLFormElement | null;
+        if (rfqForm) {
+            rfqForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const nameInput = document.getElementById('contact-name') as HTMLInputElement | null;
+                const companyInput = document.getElementById('contact-company') as HTMLInputElement | null;
+                const emailInput = document.getElementById('contact-email') as HTMLInputElement | null;
+                const productSelect = document.getElementById('contact-product') as HTMLSelectElement | null;
+                const messageInput = document.getElementById('contact-message') as HTMLTextAreaElement | null;
+
+                const name = nameInput?.value.trim() || '';
+                const company = companyInput?.value.trim() || '';
+                const email = emailInput?.value.trim() || '';
+                const product = (productSelect && productSelect.selectedIndex > 0)
+                    ? productSelect.options[productSelect.selectedIndex].text
+                    : 'General Inquiry';
+                const message = messageInput?.value.trim() || '';
+
+                const waMessage = 
+`*RFQ - Request for Quotation (King Cocondo)*
+
+👤 *Name:* ${name}
+🏢 *Company:* ${company}
+✉️ *Email:* ${email}
+📦 *Product:* ${product}
+${message ? `📝 *Message:* ${message}\n` : ''}
+Hello, I submitted this quotation inquiry from your website. Please provide pricing and FOB/CIF details. Thank you!`;
+
+                const waUrl = `https://wa.me/6285719619013?text=${encodeURIComponent(waMessage)}`;
+                window.open(waUrl, '_blank');
             });
         }
     });

@@ -6,6 +6,17 @@ import { getLangFromUrl, useTranslations, useTranslatedPath, languages } from '.
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+// Direct WhatsApp Quote Link with template
+const waNumber = "6285719619013";
+const waTemplates: Record<string, string> = {
+    id: "Halo King Cocondo, saya ingin meminta penawaran harga (quotation) untuk produk Anda.",
+    'zh-cn': "您好 King Cocondo，我想获取贵公司产品的报价及出口详情。",
+    ar: "مرحباً كينغ كوكو، أنا مهتم بمنتجاتكم وأود طلب تسعيرة.",
+    en: "Hello King Cocondo, I would like to request a quotation for your products."
+};
+const waMessage = waTemplates[lang] || waTemplates.en;
+const waQuoteLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
 ---
 
 <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-surface-dark/50 backdrop-blur-md border border-accent-gold/10/95 backdrop-blur-md border-b border-surface-dark shadow-sm" id="main-header">
@@ -75,7 +86,7 @@ const translatePath = useTranslatedPath(lang);
                     </div>
                 </div>
 
-                <Button href={translatePath('/#contact')} variant="primary" class="py-2.5 px-6 text-sm">
+                <Button href={waQuoteLink} target="_blank" rel="noopener noreferrer" variant="primary" class="py-2.5 px-6 text-sm shadow-md hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
                     {t('btn.quote')}
                 </Button>
             </div>
@@ -127,7 +138,7 @@ const translatePath = useTranslatedPath(lang);
             <a href={translatePath('/quality')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.quality')}</a>
             <a href={translatePath('/about')} class="block px-3 py-2 text-base font-medium text-white hover:text-accent-gold">{t('nav.about')}</a>
             <div class="mt-4 w-full px-4">
-                <Button href={translatePath('/#contact')} variant="primary" class="w-full justify-center">
+                <Button href={waQuoteLink} target="_blank" rel="noopener noreferrer" variant="primary" class="w-full justify-center">
                     {t('btn.quote')}
                 </Button>
             </div>
