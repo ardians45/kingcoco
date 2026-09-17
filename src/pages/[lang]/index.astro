@@ -20,6 +20,18 @@ const waText = lang === 'id'
 	? "Halo King Cocondo, saya tertarik untuk mendiskusikan kebutuhan produk kelapa premium." 
 	: "Hello King Cocondo, I am interested in discussing premium coconut products.";
 const waLink = `https://wa.me/6285719619013?text=${encodeURIComponent(waText)}`;
+
+const getWaProductLink = (productName: string) => {
+  let message = `Hello King Cocondo, I would like to request a quote for ${productName}.`;
+  if (lang === 'id') {
+    message = `Halo King Cocondo, saya ingin meminta penawaran harga untuk ${productName}.`;
+  } else if (lang === 'ar') {
+    message = `مرحباً كينغ كوكو، أود طلب تسعيرة لمنتج ${productName}.`;
+  } else if (lang === 'zh-cn') {
+    message = `你好 King Cocondo，我想索取关于 ${productName} 的报价。`;
+  }
+  return `https://wa.me/6285719619013?text=${encodeURIComponent(message)}`;
+};
 const schema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -262,7 +274,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
+										<Button href={getWaProductLink(t('cocopeat.h4.1'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -287,7 +299,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
+										<Button href={getWaProductLink(t('cocopeat.h4.2'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -312,7 +324,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
+										<Button href={getWaProductLink(t('cocopeat.h4.3'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -337,7 +349,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
+										<Button href={getWaProductLink(t('cocopeat.h4.polybag'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -368,7 +380,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center text-xs py-2">Request Quote</Button>
+										<Button href={getWaProductLink(t('fiber.h4.baby'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center text-xs py-2">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -389,7 +401,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center text-xs py-2">Request Quote</Button>
+										<Button href={getWaProductLink(t('fiber.h4.coconut'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center text-xs py-2">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -423,7 +435,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
+										<Button href={getWaProductLink(t('charcoal.h4.1'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -447,7 +459,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
+										<Button href={getWaProductLink(t('charcoal.h4.2'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -471,7 +483,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
+										<Button href={getWaProductLink(t('charcoal.h4.3'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
@@ -495,7 +507,7 @@ const schema = JSON.stringify({
 										</ul>
 									</div>
 									<div class="pt-4 border-t border-white/10">
-										<Button href={translatePath('/#contact')} variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
+										<Button href={getWaProductLink(t('charcoal.h4.4'))} target="_blank" rel="noopener noreferrer" variant="outline" class="w-full justify-center py-2 text-xs">Request Quote</Button>
 									</div>
 								</div>
 							</div>
